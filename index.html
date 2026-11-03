@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+<title>SPOTLIGHT | Inicio</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config" src="js/config/index-tailwind.config.js"></script>
+
+<link rel="stylesheet" href="css/global.css">
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased" id="top">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(31,40,51,0.06)]">
+    <div class="h-20 w-full max-w-[1320px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group"
+          data-path="explorar-reseñas" href="#top" title="Ir al inicio"><img alt="SPOTLIGHT Logo"
+            class="h-8 w-auto object-contain transition-transform group-hover:scale-105"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1VaJKtqktZauoe632jZcdVZULawSItVNz_R4pG_Cz0qn9-MHJejNW0hChjsmnF3ehrCP8SOa4cXEIN8SXyB-mGR6wU-g8gxYj58ZWbCzmHxTrdMsaYLLoPHq77Azr6phEWEsb1hWAS0kr1JKPPSt0_S-n3RIEmtIxCifcWsVToKcvCxXIZzc4s4I8uXGsTImQoS8ipsDTMPrpYqiWYH9tue42-clvypwrDPdpLDsEFpo1ESUSeG0oNz3C8" /><span
+            class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase group-hover:text-primary transition-colors">SPOTLIGHT</span></a>
+        <nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a
+            class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors nav-link"
+            data-path="explorar-reseñas" href="feedforyou.html">Explorar Reseñas</a><a
+            class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors nav-link"
+            data-path="por-estado-de-ánimo" href="#seccion-animo">Por Estado de Ánimo</a><a
+            class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors nav-link"
+            data-path="top-plataformas" href="catalogo.html">Top Plataformas</a><a
+            class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors nav-link"
+            data-path="comunidad-&amp;-críticas" href="reviews.html">Comunidad &amp; Críticas</a><button
+            class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 focus:outline-none"
+            data-path="qué-ver-hoy-(quiz)" id="nav-btn-quiz" type="button"><span>Qué ver hoy (Quiz)</span><span
+              class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary-container"></span></button>
+        </nav>
+      </div>
+      <div class="flex-1 max-w-md hidden lg:block mx-space-sm">
+        <div class="relative flex items-center"><span
+            class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input
+            class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-14 py-2 rounded-lg outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all cursor-pointer"
+            id="header-search-trigger" placeholder="Buscar película, serie, director o actor..." readonly=""
+            type="text" /><button
+            class="absolute right-2 font-label-badge text-label-badge text-on-surface-variant bg-surface-container hover:bg-surface-container-high px-2 py-0.5 rounded cursor-pointer transition-colors"
+            id="header-kbd-btn" title="Buscar (Atajo de teclado)" type="button">⌘K</button></div>
+      </div>
+      <div class="flex items-center gap-space-md shrink-0"><button
+          class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent px-space-md py-2.5 rounded-lg shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:bg-primary-fixed hover:scale-[1.02] active:scale-95 transition-all"
+          id="btn-surprise-me" type="button"><span
+            class="material-symbols-outlined text-[18px]">casino</span><span>Sorpréndeme</span></button>
+        <div class="relative" id="user-menu-container"><button aria-expanded="false" aria-haspopup="true"
+            class="flex items-center gap-space-sm pl-space-xs rounded-xl p-1 hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container"
+            id="user-menu-button" type="button">
+            <div class="relative"><img alt="Profile"
+                class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv6TOp4w4ACHYpGedGPnfzLQGhyi1Z4_FNttalB1AlChZD9bwBI9hpPiCC30lZ3kOXCE8tq-LB0q6Cu73kwpgnsxOzVEwAqphWrmWYt8bpaY6MAQE-BzHhWaOlZHNfqKOMLO0tAhXJkUUgSTRAE_-kQ9sv5ef81ZzQyhRRJDuZttfk8XPgMitCirmENlXDaN-Y3n7p1Ttxg9awJlvNaE8LTys0GsGeMco6Y08Ww3gSHMm4lNPrkw_7" /><span
+                class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-primary-container rounded-full ring-2 ring-surface-container-lowest"></span>
+            </div>
+            <div class="hidden sm:flex flex-col text-left"><span
+                class="font-label-meta text-label-meta font-bold text-on-surface leading-none flex items-center gap-0.5">Sofía
+                M. <span
+                  class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span></span><span
+                class="font-label-badge text-label-badge text-on-primary-fixed bg-secondary-container px-1.5 py-0.5 rounded-full mt-0.5 text-center">Crítico
+                Fan</span></div>
+          </button><!-- User Dropdown Menu -->
+          <div
+            class="hidden absolute right-0 mt-2 w-64 bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/30 py-2 z-50 transform origin-top-right transition-all"
+            id="user-dropdown">
+            <div class="px-4 py-3 border-b border-surface-container-low flex items-center gap-3"><img alt="Sofía M."
+                class="w-10 h-10 rounded-full object-cover ring-2 ring-primary-container"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv6TOp4w4ACHYpGedGPnfzLQGhyi1Z4_FNttalB1AlChZD9bwBI9hpPiCC30lZ3kOXCE8tq-LB0q6Cu73kwpgnsxOzVEwAqphWrmWYt8bpaY6MAQE-BzHhWaOlZHNfqKOMLO0tAhXJkUUgSTRAE_-kQ9sv5ef81ZzQyhRRJDuZttfk8XPgMitCirmENlXDaN-Y3n7p1Ttxg9awJlvNaE8LTys0GsGeMco6Y08Ww3gSHMm4lNPrkw_7" />
+              <div class="flex flex-col"><span class="font-label-prominent text-label-prominent text-on-surface">Sofía
+                  Mendoza</span><span
+                  class="font-label-meta text-label-meta text-tertiary">sofia.cine@spotlight.app</span><span
+                  class="font-label-badge text-label-badge text-primary font-bold mt-0.5">Nivel 4 • 24 críticas
+                  publicadas</span></div>
+            </div>
+            <div class="py-1"><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm font-label-prominent text-on-surface hover:bg-surface-container hover:text-primary transition-colors"
+                href="login.html"><span class="material-symbols-outlined text-[20px] text-primary">person</span> Mi
+                Perfil de
+                Crítico</a><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm font-label-prominent text-on-surface hover:bg-surface-container hover:text-primary transition-colors"
+                href="catalogo.html"><span class="material-symbols-outlined text-[20px] text-primary">bookmark</span>
+                Listas
+                Guardadas <span
+                  class="ml-auto font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-1.5 py-0.5 rounded-full">18</span></a><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm font-label-prominent text-on-surface hover:bg-surface-container hover:text-primary transition-colors"
+                href="reviews.html"><span class="material-symbols-outlined text-[20px] text-primary">rate_review</span>
+                Mis Reseñas
+                Express</a><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm font-label-prominent text-on-surface hover:bg-surface-container hover:text-primary transition-colors"
+                href="dashboard.html"><span class="material-symbols-outlined text-[20px] text-primary">edit_note</span>
+                Panel
+                Editorial &amp; Votaciones</a></div>
+            <div class="border-t border-surface-container-low pt-1"><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm text-on-surface-variant hover:bg-surface-container transition-colors"
+                href="login.html"><span class="material-symbols-outlined text-[20px]">settings</span>
+                Configuración</a><a
+                class="flex items-center gap-3 px-4 py-2.5 text-body-sm text-error hover:bg-error-container/30 transition-colors"
+                href="login.html"><span class="material-symbols-outlined text-[20px]">logout</span> Cerrar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-surface min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- SECTION 1: HERO & MOOD SELECTOR (Sunlit warm editorial feel) -->
+      <section class="relative w-full max-w-[1320px] mx-auto px-gutter py-space-xl overflow-hidden scroll-mt-24"
+        id="seccion-animo">
+        <!-- Ambient subtle warm glow -->
+        <div
+          class="absolute -top-24 right-10 w-96 h-96 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div
+          class="absolute top-1/2 left-0 w-80 h-80 bg-surface-container-high/40 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-lg">
+          <div class="max-w-2xl flex flex-col gap-space-xs">
+            <div
+              class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-fixed px-space-md py-1 rounded-full w-fit">
+              <span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+              <span class="font-label-badge text-label-badge uppercase tracking-wider">Algoritmo Emocional
+                SPOTLIGHT</span>
+            </div>
+            <h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+              ¿Qué vibra tienes hoy?
+            </h1>
+            <p class="font-title-editorial text-title-editorial text-on-surface-variant font-normal">
+              Olvídate del scroll interminable. Selecciona cómo te sientes y te diremos la joya exacta que necesitas ver
+              en streaming ahora mismo.
+            </p>
+          </div>
+          <!-- Quick stats ticker pill -->
+          <div
+            class="hidden sm:flex items-center gap-space-md bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border-none">
+            <div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg">
+              <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+              <span class="font-label-meta text-label-meta text-on-surface font-semibold">1,420+ Reseñas
+                verificadas</span>
+            </div>
+            <div class="flex items-center gap-space-xs px-space-sm py-1">
+              <span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">420 cinéfilos en vivo</span>
+            </div>
+          </div>
+        </div>
+        <!-- Interactive Mood Chips -->
+        <div class="flex flex-wrap items-center gap-space-sm pb-space-lg" id="mood-pill-container">
+          <button
+            class="mood-btn active-mood px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-primary-container text-on-primary-fixed"
+            data-mood="all" type="button">
+            <span>✨</span><span>Todo el catálogo</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="mindfuck" type="button">
+            <span>🤯</span><span>Mente Explotada</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">Sci-Fi/Misterio</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="laugh" type="button">
+            <span>😂</span><span>Risas sin Pensar</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">Comedia</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="cry" type="button">
+            <span>😭</span><span>Llorar a Gusto</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">Drama</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="adrenaline" type="button">
+            <span>⚡</span><span>Adrenalina Pura</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">Acción</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="tension" type="button">
+            <span>🕯️</span><span>Tensión Nocturna</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">Terror Psicológico</span>
+          </button>
+          <button
+            class="mood-btn px-space-md py-2.5 rounded-full font-label-prominent text-label-prominent transition-all shadow-sm flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-secondary-container/40"
+            data-mood="romance" type="button">
+            <span>🍷</span><span>Plan Cita / Romance</span>
+            <span class="font-label-badge text-label-badge text-tertiary ml-1">RomCom</span>
+          </button>
+        </div>
+        <!-- Prominent Dynamic Search & Filter Bar -->
+        <div
+          class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col md:flex-row items-center gap-space-md">
+          <div class="relative flex-1 w-full flex items-center">
+            <span class="material-symbols-outlined absolute left-4 text-primary text-[22px]">search</span>
+            <input
+              class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md pl-12 pr-4 py-3.5 rounded-xl outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all"
+              id="catalogo-search" placeholder="Buscar por título, director, actor o temática..." type="text" />
+          </div>
+          <div class="flex items-center gap-space-sm w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
+            <select
+              class="bg-surface-container-low text-on-surface font-label-prominent text-label-prominent px-space-md py-3.5 rounded-xl outline-none cursor-pointer focus:ring-2 focus:ring-primary-container">
+              <option value="all">Todo formato</option>
+              <option value="movie">Películas (Largo)</option>
+              <option value="series">Series &amp; Miniseries</option>
+              <option value="doc">Documentales</option>
+            </select>
+            <select
+              class="bg-surface-container-low text-on-surface font-label-prominent text-label-prominent px-space-md py-3.5 rounded-xl outline-none cursor-pointer focus:ring-2 focus:ring-primary-container">
+              <option value="all">Todas las plataformas</option>
+              <option value="max">Max (HBO)</option>
+              <option value="netflix">Netflix</option>
+              <option value="prime">Prime Video</option>
+              <option value="apple">Apple TV+</option>
+              <option value="filmin">Filmin</option>
+            </select>
+            <button
+              class="bg-inverse-surface text-inverse-on-surface font-label-prominent text-label-prominent px-space-lg py-3.5 rounded-xl shrink-0 hover:bg-on-surface transition-all flex items-center gap-space-xs"
+              id="quick-filter-trigger" type="button">
+              <span class="material-symbols-outlined text-[18px]">tune</span>
+              <span>Filtrar</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 2: EDITORIAL SPOTLIGHT OF THE WEEK (High Contrast, Wide Cinematic Card) -->
+      <section class="w-full max-w-[1320px] mx-auto px-gutter py-space-lg">
+        <div class="flex items-center justify-between mb-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div class="w-3 h-8 bg-primary-container rounded-full"></div>
+            <div>
+              <span class="font-label-badge text-label-badge uppercase tracking-wider text-primary">Elección de la
+                Crítica</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">Recomendación Destacada de la Semana</h2>
+            </div>
+          </div>
+          <span
+            class="hidden sm:inline-flex items-center gap-space-xs font-label-meta text-label-meta text-on-surface-variant bg-surface-container-high px-space-md py-1 rounded-full">
+            <span class="material-symbols-outlined text-primary text-[16px]">military_tech</span>
+            Premio SPOTLIGHT Gold 2024
+          </span>
+        </div>
+        <!-- Cinematic Showcase Hero Card -->
+        <div
+          class="relative bg-inverse-surface text-inverse-on-surface rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12">
+          <!-- Media Aspect: Production Still -->
+          <div class="lg:col-span-7 relative min-h-[380px] lg:min-h-[500px]">
+            <img class="w-full h-full object-cover"
+              data-alt="High-concept psychological thriller cinematic movie scene with neon amber and deep cyan lighting, cinematic aspect ratio, high detail 35mm film grain aesthetic"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_79Luo3Zjy2toc5T-Jsy0XUnVu6Hk5CWdoTc-ppYtl3-vLmf3bfphJ8RJ3vckcIb07rnjFxmykq28nxM-tOUTwRPHL1kkzrDJNC9cw2QWOx9hqnLASIq1YgKXlOnLTr-_fO_pzikxluDztGD5by9EaY8fXu2QJ2SMzHZfH055HBzz4uISHrAX_t8p-cOHDKefSwthW-VkaSlSTQIqOsOJJ2cutrDwn5JglsgQ_W8kKHIpVi_SNI8B" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-inverse-surface">
+            </div>
+            <div class="absolute top-4 left-4 flex flex-wrap gap-space-xs">
+              <span
+                class="bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-badge text-label-badge px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px] text-primary">schedule</span> 2h 18min
+              </span>
+              <span
+                class="bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-badge text-label-badge px-3 py-1 rounded-full shadow-sm">
+                4K Ultra HD • Dolby Atmos
+              </span>
+            </div>
+          </div>
+          <!-- Content Details & Critique Hook -->
+          <div class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between">
+            <div class="flex flex-col gap-space-sm">
+              <div class="flex items-center justify-between gap-space-xs">
+                <!-- Mood Badge -->
+                <div
+                  class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-fixed font-label-badge text-label-badge px-3 py-1 rounded-full">
+                  <span>🤯</span>
+                  <span>Mind-Bending Thriller</span>
+                </div>
+                <!-- Stars -->
+                <div class="flex items-center gap-space-xs bg-surface-container-lowest/10 px-2.5 py-1 rounded-lg">
+                  <div class="flex text-primary-container text-[16px]">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                  </div>
+                  <span class="font-label-prominent text-label-prominent text-primary-fixed">4.8 / 5.0</span>
+                </div>
+              </div>
+              <h3 class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-tight">
+                El Ojo del Vórtice
+              </h3>
+              <p class="font-label-meta text-label-meta text-secondary-fixed uppercase tracking-wider">
+                Dirigida por Denis Villeneuve • Reparto: Florence Pugh, Lakeith Stanfield
+              </p>
+              <p class="font-body-md text-body-md text-inverse-on-surface/80 line-clamp-4 leading-relaxed">
+                Una atmósfera asfixiante donde el tiempo no es lineal, sino una espiral de recuerdos manipulados. Una
+                joya arquitectónica visual que redefine el suspenso contemporáneo y deja al espectador buscando
+                respuestas días después del final.
+              </p>
+              <!-- Streaming Availability Badges -->
+              <div class="mt-space-sm bg-surface/10 rounded-xl p-space-sm flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-prominent text-label-prominent flex items-center justify-center font-bold">M</span>
+                  <div>
+                    <p class="font-label-badge text-label-badge text-inverse-on-surface/60 uppercase">Streaming Oficial
+                    </p>
+                    <p class="font-label-prominent text-label-prominent text-inverse-on-surface">Disponible en Max (4K)
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="font-label-badge text-label-badge text-primary-fixed bg-primary-container/20 px-2 py-0.5 rounded">Incluido
+                  en suscripción</span>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-md">
+              <button
+                class="w-full sm:flex-1 bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent py-3 rounded-xl shadow-md hover:bg-primary-fixed transition-all flex items-center justify-center gap-space-xs"
+                type="button">
+                <span class="material-symbols-outlined text-[20px]">menu_book</span>
+                <span>Leer Reseña Completa</span>
+              </button>
+              <a class="w-full sm:w-auto bg-surface/20 text-inverse-on-surface hover:bg-surface/30 font-label-prominent text-label-prominent px-space-lg py-3 rounded-xl transition-all flex items-center justify-center gap-space-xs"
+                href="#seccion-plataformas">
+                <span class="material-symbols-outlined text-[20px]">play_circle</span>
+                <span>Ver Dónde Ver</span>
+              </a>
+              <button class="p-3 bg-surface/10 hover:bg-surface/20 text-inverse-on-surface rounded-xl transition-all"
+                title="Guardar en Mi Lista" type="button">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3: REVIEWS FEED GRID (3 Columns with Posters, Moods, Metas) -->
+      <section class="w-full max-w-[1320px] mx-auto px-gutter py-space-xl scroll-mt-24" id="seccion-feed">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+          <div>
+            <span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">Feed Curado</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Reseñas Recientes &amp; Más Votadas</h2>
+          </div>
+          <div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl">
+            <button
+              class="feed-tab-btn active px-space-md py-1.5 rounded-lg font-label-prominent text-label-prominent bg-surface-container-lowest text-on-surface shadow-sm transition-all"
+              type="button">Tendencia Semanal</button>
+            <button
+              class="feed-tab-btn px-space-md py-1.5 rounded-lg font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-all"
+              type="button">Más Críticas 2024</button>
+            <button
+              class="feed-tab-btn px-space-md py-1.5 rounded-lg font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-all"
+              type="button">Ocultas de Autor</button>
+          </div>
+        </div>
+        <!-- 3-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Dark atmospheric neo-noir mystery crime movie vertical cinematic still, rainy Tokyo alley with vibrant gold and amber lighting reflections"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNHsXv_VmKUC9INTgju9NMDuVxOlfI9hS_ZGqx6JqYMyNSu5yL04ThrsinqcWvU_0_j88tOjYh7kbjfActAJbCORTB5n0v84BWBmeO1XWSmkOzjNQ-lVHPd9vtgQ2h7CIp_imi5_bJOHt0WtARGh5g0enue7gD8tkMSvcsV6TZVIAc95hBCBmkKbyU34xYsnxNhUyRMOA1JTwomwHHF9eqtxgx_zbhPRl5m8Oa0c7dXvxxQ02PHXaN" />
+              <div class="absolute top-3 left-3 flex items-center gap-space-xs">
+                <span
+                  class="bg-surface-container-lowest/90 backdrop-blur-md font-label-badge text-label-badge text-on-surface px-2.5 py-1 rounded-md shadow-sm">
+                  Película • 1h 54m
+                </span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span
+                  class="bg-inverse-surface/80 backdrop-blur-md text-primary-fixed font-label-prominent text-label-prominent px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary-container"
+                    style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span
+                  class="bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-badge text-label-badge px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span>🕯️</span> Tensión Nocturna
+                </span>
+                <span
+                  class="bg-surface-container-lowest/95 text-on-surface font-label-badge text-label-badge px-2 py-0.5 rounded font-bold">Netflix</span>
+              </div>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+                  <span>Neon Noir • Crimen</span>
+                  <span>2024</span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Las Sombras de Shinjuku
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Un detective insomne desmantela un sindicato algorítmico en las noches de lluvia perpetua. Ritmo
+                  implacable y cinematografía magistral.
+                </p>
+              </div>
+              <div
+                class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+                <div class="flex items-center gap-space-xs">
+                  <img class="w-6 h-6 rounded-full object-cover"
+                    data-alt="Portrait photo of a young cultured cinema reviewer smiling with soft warm lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAziGmQyFAl7NPIUYw_BLpyhZRkHEwq28Ld4sEYtf2ufqUu8yh-0vwdj9TH97uuwy0YXrWZwelY7D4tEwzEGlZEkLJS05xCuZ-KVJT-aqO10bQEX8BQHLxHTs7NamGI03dgHX-vFK9pbPHru-2uCoeaidx1UmKuUA5KeoMI4aV42aD8dictQE9tucKVFQjXiwHwHHArZkNBRSJALqkZxzg5C61d4-6fFB8rX1wFtsoJbEHwBXBhKrtc" />
+                  <span class="font-label-meta text-label-meta text-on-surface font-medium">Por Mateo Ruiz</span>
+                </div>
+                <div class="flex items-center gap-space-xs text-on-surface-variant font-label-badge text-label-badge">
+                  <span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+                  <span>64 opiniones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Witty modern comedy drama film scene in a warm Italian sunlit courtyard with eccentric young creatives sharing wine"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuyKXV3s3tq385svfOrloprS9wC-9BMiSkPXOVjuKwrW2lQfsOLJemXfWT4OqnB8E2T55RlCGt3k6PYwooC6098CJOJTqyOPQXJdpLOi4_LZr3WpfWpt2DVxS7AUh_-xYAOTvZMfvi54z_Vy3Riw8RKplSMRri5bZyqhkZRAyf1hE80f1ZYu7eef0u3blBrKzJXQYObE-oHFMaSzAYwgJTeHjsCi_N42kQdGwp-FZS1EtmjexuAiT1" />
+              <div class="absolute top-3 left-3 flex items-center gap-space-xs">
+                <span
+                  class="bg-surface-container-lowest/90 backdrop-blur-md font-label-badge text-label-badge text-on-surface px-2.5 py-1 rounded-md shadow-sm">
+                  Serie • Temp 1 (8 eps)
+                </span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span
+                  class="bg-inverse-surface/80 backdrop-blur-md text-primary-fixed font-label-prominent text-label-prominent px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary-container"
+                    style="font-variation-settings: 'FILL' 1;">star</span> 4.7
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span
+                  class="bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-badge text-label-badge px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span>😂</span> Risas sin Pensar
+                </span>
+                <span
+                  class="bg-surface-container-lowest/95 text-on-surface font-label-badge text-label-badge px-2 py-0.5 rounded font-bold">Apple
+                  TV+</span>
+              </div>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+                  <span>Dramedia • Satírico</span>
+                  <span>2024</span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  La Herencia Toscanini
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Diálogos afiladísimos al estilo Succession pero con el encanto caótico de una familia disfuncional en
+                  el verano mediterráneo.
+                </p>
+              </div>
+              <div
+                class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+                <div class="flex items-center gap-space-xs">
+                  <img class="w-6 h-6 rounded-full object-cover"
+                    data-alt="Portrait photo of a young female film critic with chic glasses looking thoughtful"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqRnuNQfG8DaXV4z-hruWXNsfijaUohbWl9_R1IoskG7TYB-zwHnuwKFu1H3-mGXhUhfZqqu4dNtIw6_xMqU6ASM4kchN9wIotRtBwL9khjSRPdedZljo7TFIr3qTSAMG6A5tKgtE0eSpAfvBS1KYMbB_6GCwoOmRxNL54SHnFThT1pLcUqIj7P42LgVC5HLn8Xi6Y4Kyu5-m2E_ZLtZET70jTFTDdE7UMRdmpXTnHau5GA1vxWNDW" />
+                  <span class="font-label-meta text-label-meta text-on-surface font-medium">Por Clara Vega</span>
+                </div>
+                <div class="flex items-center gap-space-xs text-on-surface-variant font-label-badge text-label-badge">
+                  <span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+                  <span>89 opiniones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Heartbreaking intimate indie drama movie still, golden hour light touching tears on protagonist's face in a vintage apartment"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWnue8o1UBm6Od8Pwrvhx_DADlz7qR8F58JMTuh0bTIJfj2s1sA86M7ZZFkzQ9l9SjXShOdQ32oS9_pNa6PuYFea8EvYozQiLU4I5laMDB5HR0CsPJwpePQsv0Iaoe7yuIPHU-D2CTN4IoN-PjtbzMm1o0DQIjt1YqK0CsbwzPAdH57-Rnw8n8cHt8_IlTrozlnJujfCoaXMysxioEvxb51yQynkFh6IB0KPgLWh2k-fBI8hNKigpg" />
+              <div class="absolute top-3 left-3 flex items-center gap-space-xs">
+                <span
+                  class="bg-surface-container-lowest/90 backdrop-blur-md font-label-badge text-label-badge text-on-surface px-2.5 py-1 rounded-md shadow-sm">
+                  Película • 1h 42m
+                </span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span
+                  class="bg-inverse-surface/80 backdrop-blur-md text-primary-fixed font-label-prominent text-label-prominent px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[16px] text-primary-container"
+                    style="font-variation-settings: 'FILL' 1;">star</span> 4.6
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span
+                  class="bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-badge text-label-badge px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span>😭</span> Llorar a Gusto
+                </span>
+                <span
+                  class="bg-surface-container-lowest/95 text-on-surface font-label-badge text-label-badge px-2 py-0.5 rounded font-bold">Filmin</span>
+              </div>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+                  <span>Drama Poético • Autor</span>
+                  <span>2023</span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Antes de que Olvide Tu Voz
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Una oda sublime a los amores truncados por el tiempo. Prepárate pañuelos: una experiencia emocional
+                  demoledora pero reconfortante.
+                </p>
+              </div>
+              <div
+                class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+                <div class="flex items-center gap-space-xs">
+                  <img class="w-6 h-6 rounded-full object-cover"
+                    data-alt="Portrait photo of a young male film writer smiling kindly against a studio background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTrDVwjDf42RKTADrEaF-q8j3wHWyMtdHkGLD8S7X6wA4aWc_wYRN5Ib3uIFgKlSxEahy4emy3BtpuuEkgSY1E2N1KLWMDpXICRr-dVlODTXIj8Qv4FhbRVPcwvOx0qwSdejDgRM2tgJrquDMmd2gEAH-_Boldkguzw-r1lnCulsCcajB4cGrTZeOpva0rZ8fNz0WNq9aRyIiKlE3Ns7o3doVdXvCQFG0aAT5ippfESQaVVkguqod" />
+                  <span class="font-label-meta text-label-meta text-on-surface font-medium">Por Lucas B.</span>
+                </div>
+                <div class="flex items-center gap-space-xs text-on-surface-variant font-label-badge text-label-badge">
+                  <span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+                  <span>112 opiniones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner inline for quiz lead-in -->
+        <div
+          class="mt-space-xl bg-surface-container rounded-2xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+          <div class="flex items-center gap-space-md">
+            <div
+              class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-fixed flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[26px]">psychology_alt</span>
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface">¿Indeciso con tu pareja o amigos?</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Haz el test interactivo de 3 preguntas y
+                SPOTLIGHT entrega el veredicto unánime.</p>
+            </div>
+          </div>
+          <button
+            class="bg-on-surface text-surface font-label-prominent text-label-prominent px-space-lg py-3 rounded-xl shrink-0 hover:bg-inverse-surface transition-all flex items-center gap-space-xs shadow-md"
+            id="banner-btn-quiz" type="button">
+            <span>Iniciar Quiz de 2 Minutos</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+      <!-- SECTION 4: WHERE TO WATCH PLATFORM FILTER (Interactive Top 3 Carousel) -->
+      <section class="w-full bg-surface-container-low py-space-xl scroll-mt-24" id="seccion-plataformas">
+        <div class="w-full max-w-[1320px] mx-auto px-gutter flex flex-col gap-space-lg">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+            <div>
+              <span class="font-label-badge text-label-badge uppercase tracking-wider text-primary">Disponibilidad en
+                Streaming</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">¿En qué plataforma lo veo?</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-1">Elige tu suscripción activa y descubre
+                su Top 3 imperdible seleccionado hoy.</p>
+            </div>
+            <div class="flex items-center gap-space-xs text-on-surface-variant font-label-meta text-label-meta">
+              <span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+              <span>Actualizado hace 15 minutos</span>
+            </div>
+          </div>
+          <!-- Platform Selection Tabs -->
+          <div class="flex items-center gap-space-sm overflow-x-auto pb-2 scrollbar-none" id="platform-tabs">
+            <button
+              class="platform-tab active px-space-md py-3 rounded-xl bg-surface-container-lowest font-label-prominent text-label-prominent text-on-surface shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="max" type="button">
+              <span class="w-3 h-3 rounded-full bg-primary-container"></span>
+              <span>Max</span>
+              <span
+                class="font-label-badge text-label-badge bg-secondary-container px-1.5 py-0.5 rounded text-on-secondary-fixed">88
+                títulos</span>
+            </button>
+            <button
+              class="platform-tab px-space-md py-3 rounded-xl bg-surface-container-lowest/60 font-label-prominent text-label-prominent text-on-surface-variant hover:bg-surface-container-lowest shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="netflix" type="button">
+              <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+              <span>Netflix</span>
+              <span class="font-label-badge text-label-badge bg-surface-container px-1.5 py-0.5 rounded">142
+                títulos</span>
+            </button>
+            <button
+              class="platform-tab px-space-md py-3 rounded-xl bg-surface-container-lowest/60 font-label-prominent text-label-prominent text-on-surface-variant hover:bg-surface-container-lowest shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="prime" type="button">
+              <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+              <span>Prime Video</span>
+              <span class="font-label-badge text-label-badge bg-surface-container px-1.5 py-0.5 rounded">95
+                títulos</span>
+            </button>
+            <button
+              class="platform-tab px-space-md py-3 rounded-xl bg-surface-container-lowest/60 font-label-prominent text-label-prominent text-on-surface-variant hover:bg-surface-container-lowest shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="disney" type="button">
+              <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+              <span>Disney+</span>
+              <span class="font-label-badge text-label-badge bg-surface-container px-1.5 py-0.5 rounded">74
+                títulos</span>
+            </button>
+            <button
+              class="platform-tab px-space-md py-3 rounded-xl bg-surface-container-lowest/60 font-label-prominent text-label-prominent text-on-surface-variant hover:bg-surface-container-lowest shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="apple" type="button">
+              <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+              <span>Apple TV+</span>
+              <span class="font-label-badge text-label-badge bg-surface-container px-1.5 py-0.5 rounded">41 joyas</span>
+            </button>
+            <button
+              class="platform-tab px-space-md py-3 rounded-xl bg-surface-container-lowest/60 font-label-prominent text-label-prominent text-on-surface-variant hover:bg-surface-container-lowest shadow-sm flex items-center gap-space-xs shrink-0 transition-all"
+              data-platform="filmin" type="button">
+              <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+              <span>Filmin</span>
+              <span class="font-label-badge text-label-badge bg-surface-container px-1.5 py-0.5 rounded">110
+                joyas</span>
+            </button>
+          </div>
+          <!-- Top 3 Carousel / Cards for Active Platform -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md" id="platform-content-grid">
+            <!-- Item 1 -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+              <div class="relative h-48 rounded-xl overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover"
+                  data-alt="Cinematic high contrast frame of a gritty crime thriller in Chicago with warm streetlights and shadows"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuClM3yQmvZGcX-ESeGydyCiQl0uZgopicdMQKEdIS3o1ukZH7HIREncTfuW7h9OfvD9Lh3R7Mo8rc2CzOHvuNsHiT2I_xWs9_hDqMu8OocQ6dvExISh9US5yblExMGgzplOZVi--tsj6D-MJd1JmeVdcU6K8l_d9sSio8U-HNRsiFdqOy6CQ4ju6dAyJfboQXlgTCoHKH2QnamWjvQDlp81rLmmwIxkNmcK3KFbE7dSekPqbcNvDXDm" />
+                <span
+                  class="absolute top-2 left-2 bg-on-surface text-surface font-label-badge text-label-badge px-2 py-0.5 rounded">Top
+                  #1 en Max</span>
+              </div>
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="font-label-badge text-label-badge text-primary font-bold">THRILLER POLICIAL</span>
+                  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-0.5">
+                    <span class="material-symbols-outlined text-[16px] text-primary-container"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+                  </span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">El Pingüino: Ascenso Criminal</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Actuaciones de nivel Emmy en una
+                  Gotham visceral sin filtro heroico.</p>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs mt-auto">
+                <span class="font-label-meta text-label-meta text-on-surface-variant">Miniserie • 8 Caps</span>
+                <button
+                  class="text-primary font-label-prominent text-label-prominent hover:underline flex items-center gap-0.5"
+                  type="button">
+                  Ver ficha <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+              <div class="relative h-48 rounded-xl overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover"
+                  data-alt="Moody cinematic sci-fi scene of a futuristic sand desert with giant space vessels above in soft golden hour"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUbrYjWsHQAczo-Gt2fmUm6QuEz_NOC8N3-4kvRgQ_YMGUIRbzgH50PBfUTn6f2j2gmsPNYwkXsK7x2XVPMDOwR0QkK2jwM1GV2x1Ns-94mC5jUyfT6v5bmKkbxlESIW3Ub6yySVstPtDciURx-3zzB4wO-CUFokEjXiy0ztrtqgayov6zwBEC59VNpAdhQ9aZm-iJOOoqiJY3YA_fWIUjEfON64uTPgi9bmc5ZBrKHaeZSrW-rFSK" />
+                <span
+                  class="absolute top-2 left-2 bg-on-surface text-surface font-label-badge text-label-badge px-2 py-0.5 rounded">Top
+                  #2 en Max</span>
+              </div>
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="font-label-badge text-label-badge text-primary font-bold">SCI-FI ÉPICO</span>
+                  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-0.5">
+                    <span class="material-symbols-outlined text-[16px] text-primary-container"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+                  </span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Dune: Parte Dos</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">El espectáculo audiovisual definitivo
+                  para lucir la mejor pantalla de casa.</p>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs mt-auto">
+                <span class="font-label-meta text-label-meta text-on-surface-variant">Película • 2h 46m</span>
+                <button
+                  class="text-primary font-label-prominent text-label-prominent hover:underline flex items-center gap-0.5"
+                  type="button">
+                  Ver ficha <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+              <div class="relative h-48 rounded-xl overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover"
+                  data-alt="Subtle architectural drama scene in high modern kitchen with two characters in deep intense dialogue"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxz-aHtGunDfs18KEBu02PopxUGhlDkO-PCaHB-EMcOZU66UWqIXFQMEsw36wFvFNoL2_dW1bbeC2Nzqqe8RdOT4kagILHjo7zgtwP36SgVivBFORUx9gPWRRjas01l52K4Dni84L1Dbp0QLB1uLRRQz7h0OK_9dfkncr_Y3wuue_fOOUGgJ-fiAgj-gR3eq_lIbYR84mKdRpTS3GxS0TbRIDylINnS9pKCU36hcJjt67UyT46gj26" />
+                <span
+                  class="absolute top-2 left-2 bg-on-surface text-surface font-label-badge text-label-badge px-2 py-0.5 rounded">Top
+                  #3 en Max</span>
+              </div>
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="font-label-badge text-label-badge text-primary font-bold">DRAMA PSICOLÓGICO</span>
+                  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-0.5">
+                    <span class="material-symbols-outlined text-[16px] text-primary-container"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.7
+                  </span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Succession (Temporada Final)</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">La cumbre de la televisión dramática
+                  contemporánea que tienes que revivir.</p>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs mt-auto">
+                <span class="font-label-meta text-label-meta text-on-surface-variant">Serie Completa • 39 Eps</span>
+                <button
+                  class="text-primary font-label-prominent text-label-prominent hover:underline flex items-center gap-0.5"
+                  type="button">
+                  Ver ficha <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 5: COMMUNITY & DAILY DEBATE WIDGET -->
+      <section class="w-full max-w-[1320px] mx-auto px-gutter py-space-xl mb-space-lg scroll-mt-24"
+        id="seccion-comunidad">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+          <!-- Community Spotlight Debate: Left 7 Cols -->
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-space-sm">
+                <span class="w-3 h-3 rounded-full bg-error animate-pulse"></span>
+                <h3 class="font-headline-md text-headline-md text-on-surface">Debate del Día en la Comunidad</h3>
+              </div>
+              <span class="font-label-meta text-label-meta text-tertiary">Hilo activo • 348 cinéfilos comentando</span>
+            </div>
+            <!-- Featured Express Review Card -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <img class="w-11 h-11 rounded-full object-cover ring-2 ring-primary-container"
+                    data-alt="Avatar portrait of a stylish creative guy in his twenties holding a film roll"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtGTpcnCa6tfFOeDp9qA1ZjrwzB07vOTCJd1z_GABkIJgi4Ecwfezll0s5TO_mlsoIpToLng_FbOumMVjK7m0gwC1_s_s8knifH221JrjcOE6Dr--KYr6CWDPezdNTQvl9Vyt_exXMD7rFW-kwkHbINPLstM8Yr82WCxjMlqttFOMux124M1H93AueQ7eHfdQZhjOh1ArtIt6kKah8kS7_PIyficvx5c6O5ZaTlcHEi3xCpDScDC3w" />
+                  <div>
+                    <div class="flex items-center gap-space-xs">
+                      <span class="font-label-prominent text-label-prominent text-on-surface">Julián Restrepo</span>
+                      <span
+                        class="font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-1.5 py-0.5 rounded">Crítico
+                        Fan Nivel 4</span>
+                    </div>
+                    <span class="font-label-meta text-label-meta text-on-surface-variant">Reseña sobre «Anatomía de una
+                      Caída» • Hace 42 minutos</span>
+                  </div>
+                </div>
+                <!-- User Rating -->
+                <div class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-full">
+                  <span class="material-symbols-outlined text-primary-container text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="font-label-prominent text-label-prominent text-on-surface">4.5 / 5.0</span>
+                </div>
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface leading-relaxed italic bg-surface-container-low/50 p-space-md rounded-xl">
+                "Lo más brillante no es si ella es inocente o culpable, sino cómo la película desnuda cómo construimos
+                narrativas para no afrontar la ambigüedad moral de una pareja real. Sandra Hüller da una clase magistral
+                de contención. ¿Ustedes creen que él se cayó o lo empujaron?"
+              </p>
+              <!-- Interactive Micro Poll -->
+              <div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+                <div
+                  class="flex items-center justify-between text-on-surface font-label-prominent text-label-prominent">
+                  <span>¿Cuál es tu veredicto final?</span>
+                  <span class="font-label-meta text-label-meta text-tertiary">912 votos</span>
+                </div>
+                <div class="grid grid-cols-2 gap-space-sm">
+                  <button
+                    class="poll-btn bg-surface-container-lowest hover:bg-secondary-container/50 p-3 rounded-lg text-left transition-all shadow-sm flex flex-col"
+                    type="button">
+                    <span class="font-label-prominent text-label-prominent text-on-surface">Fue un accidente /
+                      Suicidio</span>
+                    <span class="font-label-meta text-label-meta text-primary font-bold mt-1">68% (620 votos)</span>
+                  </button>
+                  <button
+                    class="poll-btn bg-surface-container-lowest hover:bg-secondary-container/50 p-3 rounded-lg text-left transition-all shadow-sm flex flex-col"
+                    type="button">
+                    <span class="font-label-prominent text-label-prominent text-on-surface">Ella lo empujó</span>
+                    <span class="font-label-meta text-label-meta text-primary font-bold mt-1">32% (292 votos)</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Comment Stream preview -->
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-start gap-space-sm text-body-sm text-body-sm">
+                  <span class="font-label-prominent text-label-prominent text-on-surface shrink-0">@valencinema:</span>
+                  <span class="text-on-surface-variant">El perro Snoop merece todos los galardones del cine mundial sin
+                    discusión 🐾</span>
+                </div>
+                <div class="flex items-start gap-space-sm text-body-sm text-body-sm">
+                  <span class="font-label-prominent text-label-prominent text-on-surface shrink-0">@carlotafilm:</span>
+                  <span class="text-on-surface-variant">El juicio en francés e inglés expone perfectamente el
+                    aislamiento cultural de Sandra. Obra maestra.</span>
+                </div>
+              </div>
+              <!-- Quick comment input -->
+              <div class="flex items-center gap-space-xs pt-space-xs">
+                <input
+                  class="flex-1 bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-2.5 rounded-xl outline-none focus:ring-2 focus:ring-primary-container"
+                  placeholder="Suma tu argumento al debate..." type="text" />
+                <button
+                  class="bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent px-4 py-2.5 rounded-xl hover:bg-primary-fixed transition-all shrink-0"
+                  type="button">
+                  Comentar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Quick Rating / Zero-Friction Submission Widget: Right 5 Cols -->
+          <div
+            class="lg:col-span-5 flex flex-col justify-between bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+            <div class="flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-xs text-primary">
+                <span class="material-symbols-outlined">rate_review</span>
+                <span class="font-label-badge text-label-badge uppercase tracking-wider font-bold">Voz de la
+                  Comunidad</span>
+              </div>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-on-surface">Deja tu reseña express</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  ¿Viste algo anoche? Comparte tu puntuación y 1 frase clave. Sin formularios eternos, tu voz impacta el
+                  ranking.
+                </p>
+              </div>
+              <form class="flex flex-col gap-space-sm" id="express-review-form">
+                <div>
+                  <label class="font-label-prominent text-label-prominent text-on-surface block mb-1">¿Qué viste
+                    recientemente?</label>
+                  <input
+                    class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary-container"
+                    placeholder="Ej: Challengers, Shogun, Baby Reindeer..." type="text" />
+                </div>
+                <div>
+                  <label class="font-label-prominent text-label-prominent text-on-surface block mb-1">Tu
+                    calificación</label>
+                  <div class="flex items-center gap-space-xs py-1" id="interactive-star-rating">
+                    <button class="star-rate text-primary-container text-[28px] focus:outline-none" data-val="1"
+                      type="button">★</button>
+                    <button class="star-rate text-primary-container text-[28px] focus:outline-none" data-val="2"
+                      type="button">★</button>
+                    <button class="star-rate text-primary-container text-[28px] focus:outline-none" data-val="3"
+                      type="button">★</button>
+                    <button class="star-rate text-primary-container text-[28px] focus:outline-none" data-val="4"
+                      type="button">★</button>
+                    <button class="star-rate text-surface-container-high text-[28px] focus:outline-none" data-val="5"
+                      type="button">★</button>
+                    <span class="font-label-prominent text-label-prominent text-on-surface ml-space-sm"
+                      id="star-rate-label">4.0 / 5.0</span>
+                  </div>
+                </div>
+                <div>
+                  <label class="font-label-prominent text-label-prominent text-on-surface block mb-1">Tu estado de ánimo
+                    sugerido</label>
+                  <select
+                    class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary-container">
+                    <option>🤯 Ideal para que te vuele la cabeza</option>
+                    <option>😂 Para reírte a carcajadas un domingo</option>
+                    <option>😭 Para sacar los pañuelos y desahogarte</option>
+                    <option>⚡ Para no levantarte del sillón con la adrenalina</option>
+                    <option>🍷 Para impresionar en una primera cita</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="font-label-prominent text-label-prominent text-on-surface block mb-1">Tu síntesis en 1 o
+                    2 oraciones</label>
+                  <textarea
+                    class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm p-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-container"
+                    placeholder="¿Vale la pena verla? ¿Qué actor o elemento destaca más?" rows="3"></textarea>
+                </div>
+                <button
+                  class="w-full bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent py-3.5 rounded-xl shadow-md hover:bg-primary-fixed transition-all flex items-center justify-center gap-space-xs"
+                  type="submit">
+                  <span class="material-symbols-outlined text-[18px]">send</span>
+                  <span>Publicar Reseña en Spotlight</span>
+                </button>
+              </form>
+            </div>
+            <p class="font-label-meta text-label-meta text-on-surface-variant text-center pt-space-sm">
+              Acreditado al perfil actual de <strong>Sofía M.</strong> • Puedes editar o borrar tu reseña cuando
+              quieras.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- MODAL: BÚSQUEDA RÁPIDA ⌘K -->
+  <div
+    class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-start justify-center pt-16 md:pt-24 px-4 transition-all"
+    id="search-modal">
+    <div
+      class="w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/40 overflow-hidden transform transition-all">
+      <div class="p-4 border-b border-surface-container flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary text-[24px]">search</span>
+        <input autocomplete="off"
+          class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-title-editorial text-title-editorial outline-none"
+          id="search-modal-input" placeholder="Buscar por título, director, actor o género..." type="text" />
+        <button
+          class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container transition-colors close-modal"
+          data-target="search-modal" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="p-4 max-h-[60vh] overflow-y-auto flex flex-col gap-3">
+        <div class="text-label-badge font-label-badge uppercase tracking-wider text-tertiary">Sugerencias recomendadas
+          hoy</div>
+        <div class="flex flex-col gap-1.5" id="search-results-list">
+          <a class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group"
+            href="#seccion-feed">
+            <div class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold text-lg">🌪️</span>
+              <div>
+                <p
+                  class="font-label-prominent text-label-prominent text-on-surface group-hover:text-primary transition-colors">
+                  El Ojo del Vórtice</p>
+                <p class="font-label-meta text-label-meta text-on-surface-variant">Dir. Denis Villeneuve • Max •
+                  Thriller</p>
+              </div>
+            </div>
+            <span
+              class="font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-2 py-0.5 rounded">4.8
+              ★</span>
+          </a>
+          <a class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group"
+            href="#seccion-feed">
+            <div class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold text-lg">🌧️</span>
+              <div>
+                <p
+                  class="font-label-prominent text-label-prominent text-on-surface group-hover:text-primary transition-colors">
+                  Las Sombras de Shinjuku</p>
+                <p class="font-label-meta text-label-meta text-on-surface-variant">Dir. Kenji Sato • Netflix • Neon Noir
+                </p>
+              </div>
+            </div>
+            <span
+              class="font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-2 py-0.5 rounded">4.9
+              ★</span>
+          </a>
+          <a class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group"
+            href="#seccion-feed">
+            <div class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold text-lg">🍷</span>
+              <div>
+                <p
+                  class="font-label-prominent text-label-prominent text-on-surface group-hover:text-primary transition-colors">
+                  La Herencia Toscanini</p>
+                <p class="font-label-meta text-label-meta text-on-surface-variant">Serie (8 eps) • Apple TV+ • Dramedia
+                </p>
+              </div>
+            </div>
+            <span
+              class="font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-2 py-0.5 rounded">4.7
+              ★</span>
+          </a>
+          <a class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group"
+            href="#seccion-feed">
+            <div class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold text-lg">🍂</span>
+              <div>
+                <p
+                  class="font-label-prominent text-label-prominent text-on-surface group-hover:text-primary transition-colors">
+                  Antes de que Olvide Tu Voz</p>
+                <p class="font-label-meta text-label-meta text-on-surface-variant">Cine de Autor • Filmin • Drama</p>
+              </div>
+            </div>
+            <span
+              class="font-label-badge text-label-badge bg-secondary-container text-on-secondary-fixed px-2 py-0.5 rounded">4.6
+              ★</span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="p-3 bg-surface-container-low border-t border-surface-container flex items-center justify-between text-label-meta font-label-meta text-on-surface-variant">
+        <span>Usa <kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-mono">ESC</kbd> para salir</span>
+        <span>Presiona <kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-mono">↵</kbd> para ver todas
+          las coincidencias</span>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL: SORPRÉNDEME (RANDOM PICKER) -->
+  <div
+    class="fixed inset-0 z-50 hidden bg-inverse-surface/70 backdrop-blur-md flex items-center justify-center p-4 transition-all"
+    id="surprise-modal">
+    <div
+      class="w-full max-w-lg bg-surface-container-lowest rounded-3xl shadow-2xl border border-primary-container/30 overflow-hidden relative">
+      <!-- Decorative Header -->
+      <div class="bg-gradient-to-r from-primary to-primary-container p-6 text-on-primary text-center relative">
+        <button
+          class="absolute top-4 right-4 text-on-primary/80 hover:text-on-primary p-1 rounded-full hover:bg-white/10 transition-colors close-modal"
+          data-target="surprise-modal" type="button">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div
+          class="w-12 h-12 mx-auto rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-lg mb-2">
+          <span class="material-symbols-outlined text-[28px] animate-spin" id="surprise-spinner">casino</span>
+        </div>
+        <span class="font-label-badge text-label-badge uppercase tracking-widest text-on-primary/80">Recomendación
+          Aleatoria SPOTLIGHT</span>
+        <h3 class="font-headline-md text-headline-md font-bold mt-1 text-on-primary">Tu Destino Cinéfilo de Hoy</h3>
+      </div>
+      <div class="p-6 flex flex-col gap-4" id="surprise-card-content">
+        <div class="flex items-center justify-between">
+          <span
+            class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-fixed font-label-badge text-label-badge px-3 py-1 rounded-full"
+            id="surprise-mood">🤯 Mindfuck / Misterio</span>
+          <span class="font-label-prominent text-label-prominent text-primary flex items-center gap-1"
+            id="surprise-score"><span class="material-symbols-outlined text-[16px] text-primary-container"
+              style="font-variation-settings: 'FILL' 1;">star</span> 4.9 / 5.0</span>
+        </div>
+        <div>
+          <h4 class="font-headline-md text-headline-md text-on-surface" id="surprise-title">El Ojo del Vórtice</h4>
+          <p class="font-label-meta text-label-meta text-tertiary mt-0.5" id="surprise-meta">Denis Villeneuve • 2h 18m •
+            2024</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-2" id="surprise-synopsis">Una espiral de
+            recuerdos manipulados donde el tiempo se dobla. Perfecta para quienes buscan una experiencia sensorial
+            irrepetible esta noche.</p>
+        </div>
+        <div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span
+              class="w-7 h-7 rounded-lg bg-surface-container-lowest text-on-surface font-bold text-xs flex items-center justify-center shadow-sm">M</span>
+            <span class="font-label-prominent text-label-prominent text-on-surface text-sm" id="surprise-platform">Max
+              (HBO)</span>
+          </div>
+          <span class="font-label-badge text-label-badge text-primary font-bold">Listo para reproducir</span>
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button
+            class="flex-1 bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent py-3 rounded-xl hover:bg-primary-fixed transition-all flex items-center justify-center gap-2 shadow-md close-modal"
+            data-target="surprise-modal" type="button">
+            <span class="material-symbols-outlined text-[20px]">play_arrow</span> ¡Veré esta hoy!
+          </button>
+          <button
+            class="px-4 py-3 bg-surface-container hover:bg-surface-container-high rounded-xl text-on-surface font-label-prominent text-label-prominent flex items-center gap-1 transition-colors"
+            id="btn-roll-again" type="button">
+            <span class="material-symbols-outlined text-[18px]">sync</span> Otra
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL: QUIZ INTERACTIVO "¿QUÉ VER HOY?" -->
+  <div
+    class="fixed inset-0 z-50 hidden bg-inverse-surface/70 backdrop-blur-md flex items-center justify-center p-4 transition-all"
+    id="quiz-modal">
+    <div
+      class="w-full max-w-xl bg-surface-container-lowest rounded-3xl shadow-2xl border border-outline-variant/30 overflow-hidden relative">
+      <div class="bg-surface-container-low p-6 border-b border-surface-container flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div
+            class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-fixed flex items-center justify-center font-bold">
+            <span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Quiz Express: ¿Qué ver hoy?</h3>
+            <p class="font-label-meta text-label-meta text-on-surface-variant">3 preguntas rápidas para el veredicto
+              perfecto</p>
+          </div>
+        </div>
+        <button
+          class="text-on-surface-variant hover:text-on-surface p-1 rounded-full hover:bg-surface-container transition-colors close-modal"
+          data-target="quiz-modal" type="button">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="p-6">
+        <!-- Step 1 -->
+        <div class="quiz-step flex flex-col gap-4" id="quiz-step-1">
+          <div class="flex items-center justify-between text-label-badge font-label-badge text-tertiary">
+            <span>PASO 1 DE 3</span>
+            <span class="text-primary font-bold">Compañía</span>
+          </div>
+          <h4 class="font-title-editorial text-title-editorial text-on-surface font-bold">¿Con quién vas a ver la
+            pantalla hoy?</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="solo" type="button">
+              <span class="text-2xl">🍿</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">En solitario</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Quiero una inmersión completa sin
+                interrupciones.</span>
+            </button>
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="pareja" type="button">
+              <span class="text-2xl">🍷</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">En pareja</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Algo cautivador que nos enganche a
+                los dos.</span>
+            </button>
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="amigos" type="button">
+              <span class="text-2xl">🍕</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">Con amigos</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Cero silencios incómodos: risas o
+                giros locos.</span>
+            </button>
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="familia" type="button">
+              <span class="text-2xl">🛋️</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">En familia</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Apta para varias edades y sin sustos
+                raros.</span>
+            </button>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="quiz-step hidden flex-col gap-4" id="quiz-step-2">
+          <div class="flex items-center justify-between text-label-badge font-label-badge text-tertiary">
+            <span>PASO 2 DE 3</span>
+            <span class="text-primary font-bold">Tiempo Disponible</span>
+          </div>
+          <h4 class="font-title-editorial text-title-editorial text-on-surface font-bold">¿Cuánto tiempo tienes antes de
+            dormir?</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="40m" type="button">
+              <span class="text-2xl">⚡</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">&lt; 45 minutos</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">1 episodio de serie</span>
+            </button>
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="90m" type="button">
+              <span class="text-2xl">⏳</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">~ 1h 30m</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Película ágil directa</span>
+            </button>
+            <button
+              class="quiz-opt-btn p-4 rounded-xl border border-surface-container hover:border-primary-container hover:bg-secondary-container/20 text-left transition-all flex flex-col gap-1"
+              data-answer="maraton" type="button">
+              <span class="text-2xl">🌙</span>
+              <span class="font-label-prominent text-label-prominent text-on-surface">Toda la noche</span>
+              <span class="font-label-meta text-label-meta text-on-surface-variant">Maratón o épica 2h+</span>
+            </button>
+          </div>
+        </div>
+        <!-- Step 3 (Result) -->
+        <div class="quiz-step hidden flex-col gap-4" id="quiz-step-3">
+          <div class="p-4 bg-secondary-container/40 rounded-2xl flex items-center gap-3">
+            <span class="text-3xl">🎯</span>
+            <div>
+              <h5 class="font-label-prominent text-label-prominent text-on-surface">¡Tenemos tu match perfecto!</h5>
+              <p class="font-label-meta text-label-meta text-on-surface-variant">Basado en tus elecciones de compañía y
+                duración.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-2xl flex items-center gap-4">
+            <div
+              class="w-16 h-20 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center font-bold text-2xl text-primary">
+              🎬</div>
+            <div class="flex-1">
+              <span
+                class="font-label-badge text-label-badge bg-primary-container text-on-primary-fixed px-2 py-0.5 rounded">98%
+                Afinidad</span>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">La Herencia Toscanini</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Dramedia afilada • Disponible en Apple TV+ •
+                45 min por episodio</p>
+            </div>
+          </div>
+          <div class="flex gap-2 pt-2">
+            <button
+              class="flex-1 bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent py-3 rounded-xl hover:bg-primary-fixed transition-all flex items-center justify-center gap-1 shadow-md close-modal"
+              data-target="quiz-modal" type="button">
+              <span>Añadir a mi Lista</span>
+            </button>
+            <button
+              class="px-4 py-3 bg-surface-container hover:bg-surface-container-high rounded-xl text-on-surface font-label-prominent text-label-prominent"
+              id="btn-restart-quiz" type="button">
+              Reiniciar Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-xl pb-space-lg">
+    <div class="w-full max-w-[1320px] mx-auto px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl">
+        <div class="lg:col-span-4 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-xs"><a
+              class="font-headline-md text-headline-md font-bold tracking-tight text-primary-fixed hover:opacity-90 transition-opacity"
+              href="#top">SPOTLIGHT</a></div>
+          <p class="font-title-editorial text-title-editorial text-inverse-on-surface/90 italic">Decide qué ver en menos
+            de 2 minutos.</p>
+          <p class="font-body-sm text-body-sm text-inverse-on-surface/70 leading-relaxed">El espacio editorial de
+            recomendaciones cinematográficas y series curado por la comunidad digital más apasionada. Menos scroll, más
+            cine de calidad.</p>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-space-sm">
+          <h3 class="font-label-prominent text-label-prominent text-primary-fixed uppercase tracking-wider">Plataformas
+          </h3>
+          <ul class="flex flex-col gap-space-xs">
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-plataformas">Netflix</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-plataformas">Max</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-plataformas">Prime Video</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-plataformas">Disney+</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-plataformas">Apple TV+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <h3 class="font-label-prominent text-label-prominent text-primary-fixed uppercase tracking-wider">Por Estado
+            de Ánimo</h3>
+          <ul class="flex flex-col gap-space-xs">
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-animo">Para no pensar</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-animo">Para llorar a gusto</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-animo">Misterio cerebral</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-animo">Adrenalina pura</a>
+            </li>
+            <li
+              class="font-body-sm text-body-sm text-inverse-on-surface/80 hover:text-primary-fixed transition-colors cursor-pointer">
+              <a href="#seccion-animo">Cita perfecta</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <h3 class="font-label-prominent text-label-prominent text-primary-fixed uppercase tracking-wider">El
+              Fotograma Semanal</h3>
+            <p class="font-body-sm text-body-sm text-inverse-on-surface/70">Recibe en tu correo las 3 joyas de streaming
+              imprescindibles para el fin de semana.</p>
+          </div>
+          <form class="flex flex-col gap-space-xs"><input
+              class="bg-surface/10 text-inverse-on-surface placeholder:text-inverse-on-surface/40 font-body-sm text-body-sm px-space-md py-2.5 rounded-lg outline-none focus:ring-2 focus:ring-primary-container"
+              placeholder="tu@email.com" type="email" /><button
+              class="bg-primary-container text-on-primary-fixed font-label-prominent text-label-prominent py-2.5 rounded-lg hover:bg-primary-fixed transition-all"
+              type="button">Suscribirme</button></form>
+        </div>
+      </div>
+      <div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><span
+          class="font-label-meta text-label-meta text-inverse-on-surface/60">© 2024 SPOTLIGHT Cine &amp; Streaming.
+          Todos los derechos reservados.</span>
+        <div class="flex items-center gap-space-md font-label-meta text-label-meta text-inverse-on-surface/60"><span
+            class="hover:text-primary-fixed cursor-pointer transition-colors">Privacidad</span><span
+            class="hover:text-primary-fixed cursor-pointer transition-colors">Términos</span><span
+            class="hover:text-primary-fixed cursor-pointer transition-colors">Manifiesto Editorial</span></div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPT: INTERACCIONES & MODALES CONECTADOS -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>

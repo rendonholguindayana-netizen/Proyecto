@@ -1,0 +1,488 @@
+  <!DOCTYPE html>
+
+  <html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>SPOTLIGHT — Autenticación Segura y Plataforma Cinéfila</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config" src="js/config/login-tailwind.config.js"></script>
+<link rel="stylesheet" href="css/global.css">
+</head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><main class="w-full min-h-screen flex items-center justify-center p-4 sm:p-6 bg-surface-bright relative"><div class="flex flex-col w-full max-w-6xl mx-auto py-4 md:py-8">
+  <!-- Floating Return & Utility Bar -->
+  <header class="flex flex-wrap items-center justify-between gap-4 mb-8">
+  <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-all duration-300 shadow-sm group active:scale-95" href="catalogo.html">
+  <span class="material-symbols-outlined text-primary text-lg transition-transform group-hover:-translate-x-1">arrow_back</span>
+  <span class="font-label-prominent text-label-prominent text-on-surface">Volver al Catálogo Público</span>
+  </a>
+  <div class="flex items-center gap-3">
+  <button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors text-on-surface-variant font-label-badge text-label-badge uppercase tracking-wider cursor-pointer" onclick="showSecurityInfo()" title="Ver detalles del cifrado y auditoría" type="button">
+  <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          Curaduría 100% Humana • SSL 256-Bit
+        </button>
+  <a class="hidden sm:inline-flex items-center gap-1 text-primary font-label-prominent text-label-prominent hover:underline active:scale-95 transition-all" href="dashboard.html">
+  <span class="material-symbols-outlined text-sm">shield_person</span>
+          Acceso Directo Staff
+        </a>
+  </div>
+  </header>
+  <!-- Editorial Main Stage -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+  <!-- Left Asymmetric Panel: Cinematic Storytelling & Mood Palette -->
+  <section class="lg:col-span-5 flex flex-col justify-between rounded-xl bg-surface-container-lowest p-6 sm:p-8 shadow-xl relative overflow-hidden border border-outline-variant/30">
+  <!-- Decorative Atmospheric Glow & Subtle SVG Motif -->
+  <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-surface-container-lowest to-transparent pointer-events-none"></div>
+  <div class="relative z-10">
+  <!-- Masthead -->
+  <div class="flex items-center justify-between gap-2 mb-4">
+  <div class="flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+  <span class="font-headline-md text-headline-md tracking-tight text-on-surface font-extrabold">SPOTLIGHT</span>
+  <span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold">PREMIUM</span>
+  </div>
+  <button class="text-outline hover:text-primary transition-colors p-1" onclick="showToast('Editorial SPOTLIGHT', 'Revista y curaduría cinematográfica independiente activa.', 'info')" title="Información de la plataforma" type="button">
+  <span class="material-symbols-outlined text-xl">info</span>
+  </button>
+  </div>
+  <p class="font-title-editorial text-title-editorial text-secondary mb-6 leading-snug">
+            Cine &amp; Streaming diseccionados con la calma que mereces.
+          </p>
+  <!-- Cinematic Production Preview Card with interactive "Ficha" trigger -->
+  <div class="relative rounded-lg overflow-hidden shadow-md group mb-6 bg-surface-container border border-outline-variant/40 transition-transform duration-300 hover:-translate-y-0.5">
+  <div class="w-full h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 35mm film still of two actors under warm golden hour lighting in a sunlit modern film set, crisp artistic composition, shallow depth of field, warm amber tones, subtle film grain, editorial photography feel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVuXsgywH_a3Nb33vJ6u9hG_VrMZRA_hdtJkUMFUjW9rfSMHKa1IWxWqAXisS2hPmXp4k7fnHon_ZOZ7i9Xz-l8CnaZUog35tPPLec9PYBMyaoWHylHP9eB3eFmpYDNRuQqAJj7PY8vV2ijz53vcelHwLVOQU5egGzLNsKAloGUG8W96oHuzA7EgSlBlP1-4waHtv5dEAZtmzlc7H9S3VHdR-zUbzLSTQiLgBrlaCUYB4tc80ak9yi');"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-on-surface/95 via-on-surface/40 to-transparent p-4 flex flex-col justify-end text-on-primary">
+  <div class="flex items-center justify-between mb-1">
+  <span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary-fixed">Muestra de la Semana</span>
+  <!-- Botón Ficha Técnica interactivo -->
+  <button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all font-label-badge text-label-badge shadow active:scale-95" onclick="openMovieDetailModal()" title="Abrir Ficha Técnica y Sinopsis Completa" type="button">
+  <span class="material-symbols-outlined text-xs">visibility</span>
+  <span>Ver Ficha</span>
+  </button>
+  </div>
+  <h2 class="font-headline-sm text-headline-sm font-bold leading-tight line-clamp-1 cursor-pointer hover:text-primary-fixed transition-colors" onclick="openMovieDetailModal()">Anatomía de una Caída</h2>
+  <div class="flex items-center gap-3 mt-1.5 font-label-meta text-label-meta text-tertiary-fixed">
+  <button class="flex items-center gap-1 text-primary-fixed font-bold hover:underline" onclick="showToast('Calificación Crítica', '4.9/5.0 basado en 142 reseñas de especialistas.', 'info')" type="button">
+  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 4.9/5.0
+                </button>
+  <span>•</span>
+  <button class="hover:underline" onclick="showToast('Palmarés', 'Ganadora de la Palma de Oro en el Festival de Cannes 2023.', 'info')" type="button">Palma de Oro</button>
+  <span>•</span>
+  <button class="hover:underline" onclick="showToast('Disponibilidad', 'Disponible para streaming en Max y Filmin (España/Latam).', 'info')" type="button">Max / Filmin</button>
+  </div>
+  </div>
+  </div>
+  <!-- Editorial Quotes & Metrics with reactive tooltips -->
+  <div class="space-y-4 mb-6">
+  <!-- Testimonial interactivo -->
+  <div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer flex items-start gap-3 border border-outline-variant/20 group" onclick="showToast('Nota de Sofía Morales', '“Nuestra línea editorial rechaza cualquier texto automatizado. Creemos en la mirada subjetiva humana.”', 'info')" title="Haz clic para ver el manifiesto editorial">
+  <span class="material-symbols-outlined text-primary text-xl mt-0.5 group-hover:scale-110 transition-transform">format_quote</span>
+  <div>
+  <p class="font-body-sm text-body-sm text-on-surface italic group-hover:text-primary transition-colors">
+                  “Sin algoritmos perezosos. Reseñas escritas por personas que aman la sala oscura.”
+                </p>
+  <div class="flex items-center justify-between mt-1">
+  <span class="font-label-meta text-label-meta text-outline">— Sofía Morales, Jefa Editorial</span>
+  <span class="font-label-badge text-label-badge text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-0.5">Leer más <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
+  </div>
+  </div>
+  </div>
+  <!-- Mini Inline Chart: Community Taste Spectrum interactivo -->
+  <div class="p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors border border-outline-variant/20">
+  <div class="flex justify-between items-center mb-2">
+  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-1.5">
+  <span class="material-symbols-outlined text-sm text-primary">analytics</span>
+                  Consenso de la Comunidad
+                </span>
+  <button class="font-label-meta text-label-meta text-primary font-bold hover:underline" onclick="showToast('Índice de Acierto', 'El 98% de los miembros coincidió con las recomendaciones personalizadas.', 'success')" type="button">98% Acierto</button>
+  </div>
+  <!-- Barra con microinteracciones en cada segmento -->
+  <div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex gap-0.5 p-0.5 shadow-inner">
+  <button class="bg-primary-container h-full w-[45%] rounded-l-full hover:brightness-110 transition-transform hover:scale-y-125" onclick="showToast('Cine de Autor (45%)', '45% del catálogo orientado a directores con visión singular (Rohmer, Varda, PTA, etc.)', 'info')" title="Cine de Autor: 45%"></button>
+  <button class="bg-primary h-full w-[35%] hover:brightness-110 transition-transform hover:scale-y-125" onclick="showToast('Joyas Ocultas (35%)', '35% de títulos independientes y rarezas internacionales no comerciales.', 'info')" title="Joyas Ocultas: 35%"></button>
+  <button class="bg-secondary h-full w-[20%] rounded-r-full hover:brightness-110 transition-transform hover:scale-y-125" onclick="showToast('Festivales (20%)', '20% provenientes del circuito Cannes, Venecia, Sundance y Berlín.', 'info')" title="Festivales: 20%"></button>
+  </div>
+  <div class="flex justify-between font-label-meta text-label-meta text-outline mt-2">
+  <button class="hover:text-on-surface transition-colors" onclick="showToast('Cine de Autor', '45% de recomendaciones enfocadas en lenguaje visual autoral.', 'info')">Cine de Autor (45%)</button>
+  <button class="hover:text-on-surface transition-colors" onclick="showToast('Joyas Ocultas', '35% de propuestas poco conocidas rescatadas semanalmente.', 'info')">Joyas Ocultas (35%)</button>
+  <button class="hover:text-on-surface transition-colors" onclick="showToast('Festivales', '20% con reconocimientos en festivales mundiales.', 'info')">Festivales (20%)</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Footer Perks -->
+  <div class="relative z-10 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-outline font-label-meta text-label-meta">
+  <button class="flex items-center gap-1.5 hover:text-on-surface transition-colors group" onclick="showToast('Catálogo Indexado', 'Actualmente disponemos de 12,418 fichas cinematográficas completas.', 'info')">
+  <span class="material-symbols-outlined text-primary text-base group-hover:rotate-12 transition-transform">local_movies</span> +12,400 Títulos indexados
+          </button>
+  <button class="flex items-center gap-1.5 hover:text-on-surface transition-colors group" onclick="showToast('Comunidad Activa', '+45,000 cinéfilos debatiendo en foros y salas de conversación.', 'info')">
+  <span class="material-symbols-outlined text-primary text-base group-hover:scale-110 transition-transform">group</span> Comunidad Activa
+          </button>
+  </div>
+  </section>
+  <!-- Right Interaction Panel: The Unified Portal -->
+  <section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-xl relative border border-outline-variant/30">
+  <!-- Interactive Tab Navigator -->
+  <nav aria-label="Modo de Autenticación" class="flex p-1.5 mb-8 rounded-lg bg-surface-container">
+  <button class="flex-1 py-3 px-4 rounded-md font-label-prominent text-label-prominent transition-all duration-200 text-center flex items-center justify-center gap-2 bg-surface-container-lowest shadow-sm text-on-surface border border-outline-variant/30" id="tab-login-btn" onclick="switchAuthTab('login')" type="button">
+  <span class="material-symbols-outlined text-primary text-lg">login</span>
+  <span>Iniciar Sesión</span>
+  </button>
+  <button class="flex-1 py-3 px-4 rounded-md font-label-prominent text-label-prominent transition-all duration-200 text-center flex items-center justify-center gap-2 text-outline hover:text-on-surface" id="tab-register-btn" onclick="switchAuthTab('register')" type="button">
+  <span class="material-symbols-outlined text-primary text-lg">person_add</span>
+  <span>Crear Cuenta Cinéfila</span>
+  </button>
+  </nav>
+  <!-- UNIFIED REACTIVE FORM CONTAINER -->
+  <form class="space-y-6" id="auth-unified-form" onsubmit="handleUnifiedFormSubmit(event)">
+  <!-- Fast Demo Credential Strip (visible primarily in Login tab, toggleable) -->
+  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 transition-all duration-300" id="quick-presets-wrapper">
+  <div class="flex items-center justify-between mb-2.5">
+  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-1.5">
+  <span class="material-symbols-outlined text-primary text-base animate-pulse">bolt</span>
+                Acceso Rápido con 1 Clic (Entornos de Prueba):
+              </span>
+  <span class="font-label-meta text-label-meta text-outline hidden sm:inline">Relleno instantáneo</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+  <!-- Admin Preset -->
+  <button class="px-3 py-2.5 text-left rounded-md bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm flex flex-col group border border-outline-variant/30 hover:border-primary active:scale-95" onclick="selectRole('admin')" type="button">
+  <span class="font-label-prominent text-label-prominent text-on-surface group-hover:text-on-secondary-container flex items-center justify-between">
+                  Admin
+                  <span class="material-symbols-outlined text-xs text-primary group-hover:rotate-12 transition-transform">security</span>
+  </span>
+  <span class="font-label-meta text-label-meta text-outline truncate group-hover:text-on-secondary-container/80">admin@spotlight.cine</span>
+  </button>
+  <!-- Crítica Editorial Preset -->
+  <button class="px-3 py-2.5 text-left rounded-md bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm flex flex-col group border border-outline-variant/30 hover:border-primary active:scale-95" onclick="selectRole('critic')" type="button">
+  <span class="font-label-prominent text-label-prominent text-on-surface group-hover:text-on-secondary-container flex items-center justify-between">
+                  Crítica Editorial
+                  <span class="material-symbols-outlined text-xs text-primary group-hover:rotate-12 transition-transform">edit_note</span>
+  </span>
+  <span class="font-label-meta text-label-meta text-outline truncate group-hover:text-on-secondary-container/80">sofia@spotlight.cine</span>
+  </button>
+  <!-- Cinéfilo Preset -->
+  <button class="px-3 py-2.5 text-left rounded-md bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm flex flex-col group border border-outline-variant/30 hover:border-primary active:scale-95" onclick="selectRole('cinephile')" type="button">
+  <span class="font-label-prominent text-label-prominent text-on-surface group-hover:text-on-secondary-container flex items-center justify-between">
+                  Cinéfilo
+                  <span class="material-symbols-outlined text-xs text-primary group-hover:rotate-12 transition-transform">movie_filter</span>
+  </span>
+  <span class="font-label-meta text-label-meta text-outline truncate group-hover:text-on-secondary-container/80">lucas@cinemateca.org</span>
+  </button>
+  </div>
+  </div>
+  <!-- Campos condicionales de Registro (Nombre completo y Alias) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 hidden transition-all duration-300" id="register-name-fields">
+  <div>
+  <label class="block font-label-prominent text-label-prominent text-on-surface mb-1.5" for="form-fullname">
+                Nombre Completo
+              </label>
+  <div class="relative">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">person</span>
+  <input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all border border-outline-variant/30" id="form-fullname" placeholder="Elena Santos" type="text"/>
+  </div>
+  </div>
+  <div>
+  <label class="block font-label-prominent text-label-prominent text-on-surface mb-1.5" for="form-username">
+                Alias Cinéfilo (@usuario)
+              </label>
+  <div class="relative">
+  <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-outline font-label-prominent text-label-prominent pointer-events-none">@</span>
+  <input class="w-full pl-9 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all border border-outline-variant/30" id="form-username" placeholder="elenacine" type="text"/>
+  </div>
+  </div>
+  </div>
+  <!-- Correo Electrónico Principal -->
+  <div>
+  <label class="block font-label-prominent text-label-prominent text-on-surface mb-1.5" for="form-email">
+              Correo Electrónico
+            </label>
+  <div class="relative">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">mail</span>
+  <input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all border border-outline-variant/30" id="form-email" placeholder="ema@gmail.com" required="" type="email" value="ema@gmail.com"/>
+  </div>
+  </div>
+  <!-- Bloque de Contraseña -->
+  <div>
+  <div class="flex items-center justify-between mb-1.5">
+  <label class="font-label-prominent text-label-prominent text-on-surface" for="form-password" id="password-label">Contraseña</label>
+  <button class="font-label-meta text-label-meta text-primary hover:underline font-semibold transition-all hover:text-on-primary-container" id="forgot-password-link" onclick="openRecoverModal()" type="button">
+                ¿Olvidaste tu contraseña?
+              </button>
+  </div>
+  <div class="relative">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">lock</span>
+  <input class="w-full pl-11 pr-12 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all border border-outline-variant/30" id="form-password" placeholder="1234567" required="" type="password" value="1234567"/>
+  <!-- Botón toggle contraseña -->
+  <button aria-label="Mostrar u ocultar contraseña" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface p-1 transition-colors rounded-full hover:bg-surface-container" onclick="togglePasswordVisibility('form-password', 'main-pwd-icon')" type="button">
+  <span class="material-symbols-outlined text-lg block" id="main-pwd-icon">visibility</span>
+  </button>
+  </div>
+  </div>
+  <!-- Confirmar Contraseña (solo visible en modo registro) -->
+  <div class="hidden transition-all duration-300" id="register-confirm-password-wrapper">
+  <label class="block font-label-prominent text-label-prominent text-on-surface mb-1.5" for="form-confirm-password">
+              Confirmar Contraseña
+            </label>
+  <div class="relative">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">verified_user</span>
+  <input class="w-full pl-11 pr-12 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all border border-outline-variant/30" id="form-confirm-password" placeholder="Repite tu contraseña segura" type="password"/>
+  <button aria-label="Mostrar u ocultar confirmación de contraseña" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface p-1 transition-colors rounded-full hover:bg-surface-container" onclick="togglePasswordVisibility('form-confirm-password', 'confirm-pwd-icon')" type="button">
+  <span class="material-symbols-outlined text-lg block" id="confirm-pwd-icon">visibility</span>
+  </button>
+  </div>
+  </div>
+  <!-- Cinephile Taste Preferences Module (visible in registration mode) -->
+  <div class="p-4 rounded-lg bg-surface-container-low space-y-3 hidden transition-all duration-300 border border-outline-variant/30" id="register-taste-module">
+  <span class="font-label-prominent text-label-prominent text-on-surface flex items-center gap-1.5">
+  <span class="material-symbols-outlined text-primary text-base">tune</span>
+              Personaliza tu Radar de Streaming Inicial:
+            </span>
+  <div>
+  <span class="font-label-meta text-label-meta text-outline block mb-2">¿Qué suscripciones utilizas habitualmente?</span>
+  <div class="flex flex-wrap gap-2">
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">Max</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-secondary-container text-on-secondary-container shadow-sm border border-secondary transition-all active:scale-95" onclick="toggleSelection(this)" type="button">Filmin</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">Apple TV+</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-secondary-container text-on-secondary-container shadow-sm border border-secondary transition-all active:scale-95" onclick="toggleSelection(this)" type="button">MUBI</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">Netflix</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">Prime Video</button>
+  </div>
+  </div>
+  <div>
+  <span class="font-label-meta text-label-meta text-outline block mb-2">Estado de ánimo cinematográfico predilecto:</span>
+  <div class="flex flex-wrap gap-2">
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-secondary-container text-on-secondary-container shadow-sm border border-secondary transition-all active:scale-95" onclick="toggleSelection(this)" type="button">“Mente abierta / Misterio” 🔍</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">“Adrenalina Pura” ⚡</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">“Emotivo / Llorar” 💧</button>
+  <button class="px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-lowest text-on-surface shadow-sm hover:bg-secondary-container transition-all active:scale-95 border border-outline-variant/30" onclick="toggleSelection(this)" type="button">“Para Desconectar” 😂</button>
+  </div>
+  </div>
+  </div>
+  <!-- Remember Me Checkbox (Modo Login) -->
+  <div class="flex items-center justify-between pt-1" id="remember-device-wrapper">
+  <label class="flex items-center gap-2.5 cursor-pointer select-none">
+  <input checked="" class="w-4 h-4 rounded text-primary accent-primary bg-surface-container focus:ring-primary" id="remember-device" type="checkbox"/>
+  <span class="font-body-sm text-body-sm text-on-surface-variant">Recordar sesión en este equipo</span>
+  </label>
+  <button class="font-label-meta text-label-meta text-outline hover:text-primary transition-colors flex items-center gap-1" onclick="showToast('Seguridad de Conexión', 'Protocolo mTLS con cifrado de clave pública RSA-4096 activo.', 'info')" type="button">
+  <span class="material-symbols-outlined text-xs text-primary">lock</span> Protección mTLS activa
+            </button>
+  </div>
+  <!-- Terms & Human Manifesto Checkbox (Modo Registro) -->
+  <div class="space-y-2 pt-1 hidden" id="register-terms-wrapper">
+  <label class="flex items-start gap-2.5 cursor-pointer select-none">
+  <input checked="" class="w-4 h-4 mt-0.5 rounded text-primary accent-primary bg-surface-container focus:ring-primary" id="reg-terms" type="checkbox"/>
+  <span class="font-body-sm text-body-sm text-on-surface-variant">
+                Acepto los <button class="text-primary underline hover:text-on-primary-container bg-transparent border-0 p-0 cursor-pointer" onclick="showManifestoModal()" type="button">Términos del Servicio</button> y apoyo el <strong class="text-on-surface">Manifiesto SPOTLIGHT de Crítica Cinematográfica 100% Humana</strong> (sin reseñas generadas por bots).
+              </span>
+  </label>
+  </div>
+  <!-- Botón Principal Reactivo -->
+  <button class="w-full py-3.5 px-6 rounded-lg bg-primary-container hover:bg-primary hover:text-on-primary text-on-primary-container font-label-prominent text-label-prominent transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-[0.99]" id="unified-submit-btn" type="submit">
+  <span class="material-symbols-outlined text-xl animate-spin hidden" id="submit-spinner">progress_activity</span>
+  <span id="submit-btn-text">Acceder a la Plataforma SPOTLIGHT</span>
+  </button>
+  </form>
+  <!-- Social Separator -->
+  <div class="relative flex py-4 items-center">
+  <div class="flex-grow border-t border-outline-variant/40"></div>
+  <span class="flex-shrink mx-4 font-label-meta text-label-meta text-outline uppercase tracking-wider">o ingresar mediante red cinéfila</span>
+  <div class="flex-grow border-t border-outline-variant/40"></div>
+  </div>
+  <!-- Social Logins (letterboxd, Google, Apple ID) -->
+  <div class="grid grid-cols-3 gap-3">
+  <button class="py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex items-center justify-center gap-2 font-label-prominent text-label-prominent text-on-surface border border-outline-variant/30 active:scale-95 group shadow-sm" onclick="openSocialModal('Letterboxd')" type="button">
+  <span class="material-symbols-outlined text-primary text-lg group-hover:scale-110 transition-transform">movie</span>
+  <span>Letterboxd</span>
+  </button>
+  <button class="py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex items-center justify-center gap-2 font-label-prominent text-label-prominent text-on-surface border border-outline-variant/30 active:scale-95 group shadow-sm" onclick="openSocialModal('Google')" type="button">
+  <span class="material-symbols-outlined text-primary text-lg group-hover:scale-110 transition-transform">public</span>
+  <span>Google</span>
+  </button>
+  <button class="py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex items-center justify-center gap-2 font-label-prominent text-label-prominent text-on-surface border border-outline-variant/30 active:scale-95 group shadow-sm" onclick="openSocialModal('Apple ID')" type="button">
+  <span class="material-symbols-outlined text-primary text-lg group-hover:scale-110 transition-transform">terminal</span>
+  <span>Apple ID</span>
+  </button>
+  </div>
+  <!-- Feedback Toast Notification Container -->
+  <div aria-live="assertive" class="hidden absolute top-6 right-6 left-6 sm:left-auto sm:w-96 p-4 rounded-lg shadow-2xl transition-all duration-300 transform translate-y-0 z-50 flex items-start gap-3 border-l-4 pointer-events-auto" id="auth-toast">
+  <span class="material-symbols-outlined text-2xl mt-0.5 flex-shrink-0" id="toast-icon">check_circle</span>
+  <div class="flex-1">
+  <h3 class="font-headline-sm text-headline-sm text-sm font-bold" id="toast-title">Operación exitosa</h3>
+  <p class="font-body-sm text-body-sm mt-0.5" id="toast-message">Has iniciado sesión correctamente.</p>
+  </div>
+  <button aria-label="Cerrar notificación" class="text-outline hover:text-on-surface transition-colors p-1" onclick="closeToast()" type="button">
+  <span class="material-symbols-outlined text-sm">close</span>
+  </button>
+  </div>
+  </section>
+  </div>
+  </div></main>
+  <!-- ========================================== -->
+  <!-- MODALES INTERACTIVOS COMPLETOS -->
+  <!-- ========================================== -->
+  <!-- 1. Password Recovery Modal (Dialog Box) -->
+  <div class="fixed inset-0 bg-on-surface/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" id="recover-modal">
+  <div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-outline-variant/40 animate-in fade-in zoom-in-95">
+  <button aria-label="Cerrar modal" class="absolute top-5 right-5 text-outline hover:text-on-surface transition-colors p-1 rounded-full hover:bg-surface-container" onclick="closeRecoverModal()" type="button">
+  <span class="material-symbols-outlined text-xl">close</span>
+  </button>
+  <div class="flex items-center gap-2.5 mb-3">
+  <div class="w-10 h-10 rounded-full bg-primary-container/30 flex items-center justify-center text-primary">
+  <span class="material-symbols-outlined text-2xl">key</span>
+  </div>
+  <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Recuperar Contraseña</h3>
+  </div>
+  <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+        Ingresa tu dirección de correo vinculada a SPOTLIGHT. Te enviaremos un enlace de recuperación seguro con vigencia de 15 minutos.
+      </p>
+  <form class="space-y-4" onsubmit="handleRecoverSubmit(event)">
+  <div>
+  <label class="block font-label-prominent text-label-prominent text-on-surface mb-1.5" for="recover-email">Correo Electrónico Registrado</label>
+  <div class="relative">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">mail</span>
+  <input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none shadow-inner border border-outline-variant/30" id="recover-email" placeholder="tu@correo.com" required="" type="email"/>
+  </div>
+  </div>
+  <div class="flex items-center justify-end gap-3 pt-2">
+  <button class="px-4 py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-prominent text-label-prominent transition-colors" onclick="closeRecoverModal()" type="button">
+            Cancelar
+          </button>
+  <button class="px-5 py-2.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-prominent text-label-prominent shadow-md transition-all flex items-center gap-2" id="recover-btn-submit" type="submit">
+  <span class="material-symbols-outlined text-sm">send</span>
+            Enviar enlace de recuperación
+          </button>
+  </div>
+  </form>
+  </div>
+  </div>
+  <!-- 2. Modal de Éxito de Autenticación / Bienvenida -->
+  <div class="fixed inset-0 bg-on-surface/60 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" id="welcome-success-modal">
+  <div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-primary-container/40 text-center animate-in fade-in zoom-in-95">
+  <div class="w-16 h-16 rounded-full bg-primary-container/20 border-2 border-primary-container mx-auto flex items-center justify-center mb-4 text-primary">
+  <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+  </div>
+  <span class="font-label-badge text-label-badge uppercase tracking-wider text-primary font-bold px-3 py-1 rounded-full bg-primary-fixed/40 inline-block mb-2">Sesión Validada</span>
+  <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2" id="welcome-modal-title">¡Bienvenido a SPOTLIGHT!</h3>
+  <p class="font-body-md text-body-md text-on-surface-variant mb-6" id="welcome-modal-desc">
+        Tus credenciales y preferencias cinéfilas se han sincronizado en tiempo real. ¿A dónde deseas dirigirte ahora?
+      </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+  <button class="py-3 px-4 rounded-lg bg-primary-container hover:bg-primary hover:text-on-primary text-on-primary-container font-label-prominent text-label-prominent transition-all shadow flex items-center justify-center gap-2" onclick="simulateRedirect('Catálogo Público')" type="button">
+  <span class="material-symbols-outlined text-lg">local_movies</span>
+          Ir al Catálogo Público
+        </button>
+  <button class="py-3 px-4 rounded-lg bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-label-prominent text-label-prominent transition-all shadow flex items-center justify-center gap-2" onclick="simulateRedirect('Panel de Control / Backoffice')" type="button">
+  <span class="material-symbols-outlined text-lg">dashboard</span>
+          Panel de Control / Staff
+        </button>
+  </div>
+  <button class="text-outline font-label-meta text-label-meta hover:text-on-surface underline p-1" onclick="closeWelcomeModal()" type="button">
+        Permanecer en esta pantalla de bienvenida
+      </button>
+  </div>
+  </div>
+  <!-- 3. Modal de Conexión Social Simulada -->
+  <div class="fixed inset-0 bg-on-surface/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" id="social-modal">
+  <div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-outline-variant/40 animate-in fade-in zoom-in-95 text-center">
+  <button aria-label="Cerrar modal" class="absolute top-4 right-4 text-outline hover:text-on-surface p-1 rounded-full hover:bg-surface-container" onclick="closeSocialModal()" type="button">
+  <span class="material-symbols-outlined text-xl">close</span>
+  </button>
+  <div class="w-14 h-14 rounded-full bg-surface-container mx-auto flex items-center justify-center mb-3 text-primary" id="social-modal-avatar">
+  <span class="material-symbols-outlined text-3xl" id="social-modal-icon">movie</span>
+  </div>
+  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-1" id="social-modal-title">Conectando con Letterboxd</h3>
+  <p class="font-body-sm text-body-sm text-outline mb-6" id="social-modal-subtitle">
+        Importando tus listas de seguimiento, calificaciones y diarios de visionado...
+      </p>
+  <!-- Barra animada -->
+  <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mb-6">
+  <div class="bg-primary h-full w-2/3 animate-pulse"></div>
+  </div>
+  <div class="flex items-center justify-center gap-3">
+  <button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-prominent text-label-prominent transition-colors" onclick="closeSocialModal()" type="button">
+          Cancelar
+        </button>
+  <button class="px-5 py-2 rounded-lg bg-primary text-on-primary font-label-prominent text-label-prominent hover:bg-on-primary-container transition-colors shadow flex items-center gap-2" onclick="confirmSocialAuth()" type="button">
+  <span class="material-symbols-outlined text-sm">link</span>
+          Autorizar Sincronización
+        </button>
+  </div>
+  </div>
+  </div>
+  <!-- 4. Modal Ficha de la Película ("Anatomía de una Caída") -->
+  <div class="fixed inset-0 bg-on-surface/60 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" id="movie-detail-modal">
+  <div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative border border-outline-variant/40 animate-in fade-in zoom-in-95 max-h-[90vh] overflow-y-auto">
+  <button aria-label="Cerrar ficha" class="absolute top-5 right-5 text-outline hover:text-on-surface p-1 rounded-full hover:bg-surface-container transition-colors" onclick="closeMovieDetailModal()" type="button">
+  <span class="material-symbols-outlined text-xl">close</span>
+  </button>
+  <div class="flex items-start gap-4 mb-4">
+  <div class="w-20 h-28 rounded-lg bg-cover bg-center flex-shrink-0 shadow-md border border-outline-variant/30" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVuXsgywH_a3Nb33vJ6u9hG_VrMZRA_hdtJkUMFUjW9rfSMHKa1IWxWqAXisS2hPmXp4k7fnHon_ZOZ7i9Xz-l8CnaZUog35tPPLec9PYBMyaoWHylHP9eB3eFmpYDNRuQqAJj7PY8vV2ijz53vcelHwLVOQU5egGzLNsKAloGUG8W96oHuzA7EgSlBlP1-4waHtv5dEAZtmzlc7H9S3VHdR-zUbzLSTQiLgBrlaCUYB4tc80ak9yi');"></div>
+  <div>
+  <div class="flex items-center gap-2 mb-1">
+  <span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold">PALMA DE ORO 2023</span>
+  <span class="text-outline font-label-meta text-label-meta">Francia • 152 min</span>
+  </div>
+  <h2 class="font-headline-md text-headline-md font-extrabold text-on-surface leading-tight">Anatomía de una Caída</h2>
+  <p class="font-body-sm text-body-sm text-secondary font-medium mt-1">Dirigida por Justine Triet • Con Sandra Hüller y Swann Arlaud</p>
+  </div>
+  </div>
+  <div class="space-y-4 text-on-surface font-body-md text-body-md border-t border-outline-variant/30 pt-4">
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface mb-1 flex items-center gap-1.5">
+  <span class="material-symbols-outlined text-primary text-base">auto_stories</span>
+            Sinopsis Editorial SPOTLIGHT
+          </h4>
+  <p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+            Sandra, una escritora alemana, vive con su esposo Samuel y su hijo ciego Daniel en un remoto chalet en los Alpes franceses. Cuando Samuel es encontrado muerto en la nieve debajo de su casa, la policía investiga si fue suicidio o asesinato. Sandra se convierte en la principal sospechosa en un juicio que disecciona minuciosamente su relación de pareja y las complejas fronteras de la verdad.
+          </p>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+  <div class="p-2.5 rounded bg-surface-container-low">
+  <span class="text-outline font-label-meta text-label-meta block">Calificación</span>
+  <span class="text-primary font-bold font-label-prominent text-label-prominent flex items-center gap-1">
+  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> 4.9 / 5.0
+            </span>
+  </div>
+  <div class="p-2.5 rounded bg-surface-container-low">
+  <span class="text-outline font-label-meta text-label-meta block">Guion Original</span>
+  <span class="text-on-surface font-bold font-label-prominent text-label-prominent">Oscar Ganador</span>
+  </div>
+  <div class="p-2.5 rounded bg-surface-container-low">
+  <span class="text-outline font-label-meta text-label-meta block">Streaming</span>
+  <span class="text-on-surface font-bold font-label-prominent text-label-prominent">Max &amp; Filmin</span>
+  </div>
+  <div class="p-2.5 rounded bg-surface-container-low">
+  <span class="text-outline font-label-meta text-label-meta block">Formato</span>
+  <span class="text-on-surface font-bold font-label-prominent text-label-prominent">4K HDR / Dolby 5.1</span>
+  </div>
+  </div>
+  </div>
+  <div class="flex items-center justify-end gap-3 pt-6 border-t border-outline-variant/30 mt-6">
+  <button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-prominent text-label-prominent transition-colors" onclick="closeMovieDetailModal()" type="button">
+          Cerrar
+        </button>
+  <button class="px-5 py-2 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-prominent text-label-prominent transition-all shadow flex items-center gap-2" onclick="showToast('Añadida a tu Watchlist', 'Anatomía de una Caída se guardó en tus películas prioritarias.', 'success'); closeMovieDetailModal();" type="button">
+  <span class="material-symbols-outlined text-sm">bookmark_add</span>
+          Guardar en Mi Watchlist
+        </button>
+  </div>
+  </div>
+  </div>
+  <!-- 5. Modal de Confirmación de Redirección / Navegación -->
+  <div class="fixed inset-0 bg-on-surface/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" id="nav-confirm-modal">
+  <div class="bg-surface-container-lowest rounded-xl max-w-sm w-full p-6 shadow-2xl relative border border-outline-variant/40 animate-in fade-in zoom-in-95 text-center">
+  <div class="w-12 h-12 rounded-full bg-surface-container mx-auto flex items-center justify-center mb-3 text-primary" id="nav-modal-icon-wrapper">
+  <span class="material-symbols-outlined text-2xl" id="nav-modal-icon">arrow_back</span>
+  </div>
+  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2" id="nav-modal-title">Navegación</h3>
+  <p class="font-body-sm text-body-sm text-on-surface-variant mb-5" id="nav-modal-message">
+        ¿Deseas salir del portal de autenticación y navegar al Catálogo Público?
+      </p>
+  <div class="flex items-center justify-center gap-2.5">
+  <button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-prominent text-label-prominent transition-colors" onclick="closeNavModal()" type="button">
+          Cancelar
+        </button>
+  <button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary hover:text-on-primary text-on-primary-container font-label-prominent text-label-prominent transition-all shadow" id="nav-confirm-btn" onclick="executeNavigationAction()" type="button">
+          Confirmar Navegación
+        </button>
+  </div>
+  </div>
+  </div>
+  <script src="js/login.js"></script>
+  </body></html>

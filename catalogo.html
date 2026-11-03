@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>SPOTLIGHT | Catálogo Maestro 30 Obras Aclamadas</title>
+  <!-- Tailwind CSS v3 with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/config/catalogo-tailwind.config.js"></script>
+  <!-- Google Fonts for Editorial Aesthetic -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body class="antialiased selection:bg-brand-gold selection:text-brand-graphiteDark text-brand-graphite">
+  <!-- BEGIN: MainNavbar -->
+  <!-- Barra de navegación fija con diseño cinematográfico de alta gama -->
+  <header
+    class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-gold/20 transition-all duration-300 shadow-sm"
+    data-purpose="primary-navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logotipo SPOTLIGHT -->
+        <div class="flex items-center gap-3">
+          <a aria-label="SPOTLIGHT Inicio" class="flex items-center gap-3 group focus:outline-none" href="index.html">
+            <img alt="SPOTLIGHT Logo"
+              class="h-10 w-10 object-contain rounded-md ring-1 ring-brand-gold/30 shadow-sm transition-transform duration-300 group-hover:scale-105"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1XK68YSv8g_kjHVgZpbW8EDZ8zCju0ujnwft3ytCfedpygJj24LcWxXgIiwzGl8ySV3J21o2KE2YfJHh9FMJFDW_rta4RcQSYYk1aUK-ad-OK1NztScgDeiOcwSk21fmZl8k_7UsjRpbz0n35DiM2VnU-6pY66htTYXbXzMCfC7L_KcdOKafKMi8O2J6FRcxHmwMaBTwfieImz_6-5IPdsAJZz_Z6tWwRwotaxZuHKZfFM8CleRgTTTYqQ" />
+            <div>
+              <span
+                class="text-xl font-bold tracking-[0.2em] font-editorial text-brand-graphite block leading-none group-hover:text-brand-goldDark transition-colors">SPOTLIGHT</span>
+              <span class="text-[9px] uppercase tracking-[0.25em] text-brand-gold font-semibold block mt-1">Cine &amp;
+                Telefilia Curada</span>
+            </div>
+          </a>
+        </div>
+        <!-- Enlaces principales del menú -->
+        <nav aria-label="Navegación General" class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a class="px-3.5 py-2 text-sm font-medium text-brand-graphite/70 hover:text-brand-graphite hover:bg-slate-50 rounded-lg transition-colors"
+            href="feedforyou.html">Feed Para Ti</a>
+          <a aria-current="page"
+            class="px-3.5 py-2 text-sm font-semibold text-brand-goldDark bg-brand-gold/10 border border-brand-gold/30 rounded-lg transition-all"
+            href="catalogo.html">
+            Catálogo <span
+              class="text-xs bg-brand-graphite text-brand-gold px-1.5 py-0.5 rounded-full font-bold ml-1">30</span>
+          </a>
+          <a class="px-3.5 py-2 text-sm font-medium text-brand-graphite/70 hover:text-brand-graphite hover:bg-slate-50 rounded-lg transition-colors"
+            href="index.html#seccion-animo">Por Ánimo</a>
+          <a class="px-3.5 py-2 text-sm font-medium text-brand-graphite/70 hover:text-brand-graphite hover:bg-slate-50 rounded-lg transition-colors"
+            href="reviews.html">Debates &amp; Ágora</a>
+        </nav>
+        <!-- Perfil y Acciones Rápidas -->
+        <div class="flex items-center gap-3">
+          <button aria-label="Notificaciones"
+            class="p-2 text-brand-graphite/70 hover:text-brand-graphite hover:bg-slate-100 rounded-full transition-colors relative">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
+            </svg>
+            <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-brand-gold rounded-full ring-2 ring-white"></span>
+          </button>
+          <!-- Avatar de usuario -->
+          <a aria-label="Acceder a mi cuenta" class="flex items-center gap-2 pl-2 border-l border-slate-200" href="login.html">
+            <div class="relative group cursor-pointer">
+              <div
+                class="w-10 h-10 rounded-full ring-2 ring-brand-gold/40 p-0.5 bg-gradient-to-tr from-brand-gold to-amber-200 shadow-sm">
+                <div
+                  class="w-full h-full rounded-full bg-brand-graphite text-brand-gold flex items-center justify-center font-editorial font-bold text-sm">
+                  CR
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:block text-left">
+              <p class="text-xs font-bold text-brand-graphite leading-none">Clara Romero</p>
+              <span class="text-[10px] text-brand-goldDark font-semibold uppercase tracking-wider">Miembro
+                Canónico</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END: MainNavbar -->
+  <!-- BEGIN: EditorialHeroSection -->
+  <!-- Encabezado con estética de revista y métricas clave -->
+  <section
+    class="relative py-12 md:py-16 bg-gradient-to-b from-white via-brand-canvas to-white border-b border-brand-gold/15 overflow-hidden"
+    data-purpose="catalog-header">
+    <div
+      class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#1F2833_1px,transparent_1px)] [background-size:16px_16px]">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+        <!-- Badge Canónico -->
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/40 text-brand-graphite text-xs font-semibold tracking-wider uppercase mb-5 shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+          Edición Canónica SPOTLIGHT 2024
+        </div>
+        <!-- Título Principal -->
+        <h1
+          class="text-3xl sm:text-5xl lg:text-6xl font-editorial font-bold tracking-tight text-brand-graphite mb-4 leading-tight">
+          Catálogo Maestro Curado: <br />
+          <span class="gold-gradient-text italic">30 Obras Indispensables</span>
+        </h1>
+        <!-- Subtítulo editorial -->
+        <p class="text-base sm:text-lg text-brand-graphite/80 max-w-2xl font-light mb-8 leading-relaxed">
+          Una selección rigurosa libre de algoritmos efímeros. Treinta piezas audiovisuales que definen la excelencia
+          contemporánea: dirección magistral, guiones de culto y trascendencia estética.
+        </p>
+        <!-- Métricas destacadas de la curaduría -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 w-full max-w-3xl pt-6 border-t border-brand-gold/20"
+          data-purpose="curator-metrics">
+          <div class="bg-white/80 p-3.5 rounded-xl border border-brand-gold/20 shadow-xs">
+            <span class="block text-2xl font-editorial font-bold text-brand-graphite">12</span>
+            <span class="text-xs uppercase tracking-wider text-brand-graphite/60 font-semibold">Películas</span>
+          </div>
+          <div class="bg-white/80 p-3.5 rounded-xl border border-brand-gold/20 shadow-xs">
+            <span class="block text-2xl font-editorial font-bold text-brand-graphite">10</span>
+            <span class="text-xs uppercase tracking-wider text-brand-graphite/60 font-semibold">Series</span>
+          </div>
+          <div class="bg-white/80 p-3.5 rounded-xl border border-brand-gold/20 shadow-xs">
+            <span class="block text-2xl font-editorial font-bold text-brand-graphite">8</span>
+            <span class="text-xs uppercase tracking-wider text-brand-graphite/60 font-semibold">Miniseries</span>
+          </div>
+          <div class="bg-white/80 p-3.5 rounded-xl border border-brand-gold/20 shadow-xs">
+            <span class="block text-2xl font-editorial font-bold text-brand-goldDark">8.9 – 9.8</span>
+            <span class="text-xs uppercase tracking-wider text-brand-graphite/60 font-semibold">Puntuación / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: EditorialHeroSection -->
+  <!-- BEGIN: InteractiveControlBar -->
+  <!-- Panel de filtros avanzados: buscador, formato, plataforma y estado de ánimo -->
+  <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-brand-gold/20 py-4 shadow-sm"
+    data-purpose="catalog-filters">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      <!-- Primera fila: Buscador y Filtro de Formato -->
+      <div class="flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between">
+        <!-- Buscador en tiempo real -->
+        <div class="relative flex-1 max-w-md">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-brand-graphite/40">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </div>
+          <input
+            class="w-full pl-10 pr-4 py-2 bg-slate-50 hover:bg-white focus:bg-white text-sm border border-slate-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold rounded-lg transition-all text-brand-graphite"
+            id="searchInput" placeholder="Buscar por título, director o género..." type="text" />
+        </div>
+        <!-- Botones de Formato -->
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0" id="formatButtonGroup">
+          <button
+            class="format-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-brand-graphite bg-brand-graphite text-white transition-all"
+            data-filter="all">Todos (30)</button>
+          <button
+            class="format-btn px-3.5 py-1.5 text-xs font-medium rounded-lg border border-slate-200 bg-white text-brand-graphite hover:border-brand-gold transition-all"
+            data-filter="Película">Películas</button>
+          <button
+            class="format-btn px-3.5 py-1.5 text-xs font-medium rounded-lg border border-slate-200 bg-white text-brand-graphite hover:border-brand-gold transition-all"
+            data-filter="Serie">Series</button>
+          <button
+            class="format-btn px-3.5 py-1.5 text-xs font-medium rounded-lg border border-slate-200 bg-white text-brand-graphite hover:border-brand-gold transition-all"
+            data-filter="Miniserie">Miniseries</button>
+        </div>
+      </div>
+      <!-- Segunda fila: Filtro de Plataforma & Sintonizador de Estado de Ánimo -->
+      <div
+        class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between pt-1 border-t border-slate-100 text-xs">
+        <!-- Filtro por Plataforma -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+          <span class="text-brand-graphite/50 font-medium whitespace-nowrap">Plataforma:</span>
+          <select
+            class="py-1 pl-2.5 pr-8 text-xs font-medium bg-white border border-slate-200 rounded-md text-brand-graphite focus:border-brand-gold focus:ring-1 focus:ring-brand-gold"
+            id="platformSelect">
+            <option value="all">Todas las plataformas</option>
+            <option value="Max">Max</option>
+            <option value="Netflix">Netflix</option>
+            <option value="Filmin / MUBI">Filmin / MUBI</option>
+            <option value="Apple TV+">Apple TV+</option>
+            <option value="Prime Video">Prime Video</option>
+            <option value="Disney+">Disney+</option>
+          </select>
+        </div>
+        <!-- Sintonizador de Estado de Ánimo -->
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+          <span class="text-brand-graphite/50 font-medium whitespace-nowrap">Ánimo:</span>
+          <div class="flex items-center gap-1" id="moodTagsGroup">
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-semibold bg-brand-gold/15 text-brand-goldDark border border-brand-gold/40 rounded-md"
+              data-mood="all">Todos</button>
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-md transition-colors"
+              data-mood="Mente Explotada">🧠 Mente Explotada</button>
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-md transition-colors"
+              data-mood="Mantita y Helado">🛋️ Mantita y Helado</button>
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-md transition-colors"
+              data-mood="Adrenalina Pura">⚡ Adrenalina Pura</button>
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-md transition-colors"
+              data-mood="Melancolía Bella">🌧️ Melancolía Bella</button>
+            <button
+              class="mood-btn px-2.5 py-1 text-[11px] font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-md transition-colors"
+              data-mood="Cero Drama">✨ Cero Drama</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: InteractiveControlBar -->
+  <!-- BEGIN: MasterCatalogGrid -->
+  <!-- Rejilla de las 30 Obras Maestras -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" data-purpose="master-catalog-cards">
+    <!-- Contador y estado de búsqueda -->
+    <div class="flex items-center justify-between mb-6 pb-2 border-b border-slate-200">
+      <p class="text-xs uppercase tracking-widest text-brand-graphite/60 font-semibold">
+        Exhibiendo <span class="text-brand-graphite font-bold" id="visibleCounter">30</span> de 30 títulos
+      </p>
+      <button class="text-xs text-brand-goldDark font-semibold hover:underline hidden" id="resetFiltersBtn">
+        Limpiar Filtros
+      </button>
+    </div>
+    <!-- Contenedor dinámico de tarjetas -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6" id="catalogGrid">
+      <!-- Ficha 1: Past Lives -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Celine Song" data-format="Película" data-mood="Melancolía Bella" data-platform="Filmin / MUBI"
+        data-rating="9.2"
+        data-synopsis="Nora y Hae Sung, dos amigos de la infancia con un lazo inquebrantable, se reencuentran en Nueva York dos décadas después para confrontar las nociones del destino, el amor incondicional y las vidas que pudieron haber tenido."
+        data-title="Past Lives" data-year="2023">
+        <div>
+          <!-- Póster con badges -->
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Past Lives"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv1SljnlRB4XsOgBGo22Rde99eo9tysgx9NP6LP3YoGcfgYYi17N_neDg2btIbExbCB9EwvIywQQS9FU5jWmbadZMi9fofrj0eUUGk7oAQFsTW7aOrerkPTaX6C2Ed0iAKfGKCXi3OQ1UAWQ0ccPGE5wLLU04sFyDSi9KnXcqCg2rR4gLl_AeyaHOukLdyYYJPYFyLno3P1oOEnqvkMGsbWoJcdE-A4o9d9yXgqPk" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.2</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <!-- Metadatos -->
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Past Lives</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Celine Song</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <!-- Acciones -->
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 2: Anatomy of a Fall -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Justine Triet" data-format="Película" data-mood="Mente Explotada" data-platform="Filmin / MUBI"
+        data-rating="9.1"
+        data-synopsis="Sandra, una escritora alemana, vive con su esposo e hijo en un remoto chalé en los Alpes. Cuando su esposo es hallado muerto en la nieve, Sandra es acusada de homicidio y el juicio se convierte en una desoladora autopsia de su matrimonio."
+        data-title="Anatomy of a Fall" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Anatomy of a Fall"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo1agp1uVgcyGJYuh88AAIHnQRts9Mh8RQg9KvYb_XgnSbtoGhYrF0xLrVxr-vvevGiSQX-1BhZXgK-Z-nKoMKupIWjOs6Oj_hNc6LKsoDAbvjjc-MXskdyHygFyifCiLMuvOoRsg7UZrmSdBy1SrUZhddEsu69J64HPlrcFp21VbbqmB0KSh2RvqNGxpHIE5c-NLtKCAWEtun-cLROi-ruoIvylstft_BkwkdDG8" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Anatomy of a Fall</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Justine Triet</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 3: Succession -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Jesse Armstrong" data-format="Serie" data-mood="Adrenalina Pura" data-platform="Max"
+        data-rating="9.8"
+        data-synopsis="La disfuncional dinastía de la familia Roy lucha despiadadamente por el control del mayor conglomerado de medios y entretenimiento global, exponiendo traición, cinismo y la fragilidad del poder."
+        data-title="Succession" data-year="2018-2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Succession"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpZYvxu0wfd34d82355gzLv7w28FczhkP-Ecv2IX0Zzlzwo6LOEEcj19kfG_2zeHVBt2JhJwpBOaDckYT_dZSDhLc9CekYofLDZ_WrsQGb72mNWU1Fax9Saa6l0Yaf2-VwUmcG7CtCyecia3McyqD9IBdo_rEqhMf0aS3YuwpUx9n2jKSTQ4H6TtW3ti7IAgcAPf5IUhUd-Gw-ICb1vkFaA9aiJAer63bm6GsamqA" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.8</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>4 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Succession</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Creada por Jesse Armstrong</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 4: Severance -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Dan Erickson / Ben Stiller" data-format="Serie" data-mood="Mente Explotada"
+        data-platform="Apple TV+" data-rating="9.5"
+        data-synopsis="Mark Scout lidera un equipo en Lumon Industries, cuyos empleados se someten a un procedimiento quirúrgico que separa sus recuerdos entre su vida laboral y personal, destapando una oscura conspiración corporativa."
+        data-title="Severance" data-year="2022-">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Severance"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDGZyhJs2YbFyIm9TYRTrex47-MZnIEDAn2pOas2XHw0NafZm6PxjoUE5esbyFVpRglxzRmCFdw0P8qFgffrL3RQMA0CNJSDStUXaBZMXtAqEB-BV449mAjSwrHYdfrvenCJdy8BwF-TpQrojkqwkKbkolmM6EUJ7WYQn81wPYIlCNEmFgsv4DK0JQv_u33phLukDe7cVlhgwRjZWxubtBadu628uEG3Lod_8xdfE" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.5</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Apple TV+</span>
+              <span>2022-</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Severance</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Ben Stiller</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 5: Chernobyl -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Craig Mazin / Johan Renck" data-format="Miniserie" data-mood="Adrenalina Pura"
+        data-platform="Max" data-rating="9.7"
+        data-synopsis="Crónica minuciosa del catastrófico accidente nuclear ocurrido en abril de 1986 en Ucrania y los sacrificios de héroes anónimos para salvar a Europa entera de una devastación inimaginable."
+        data-title="Chernobyl" data-year="2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Chernobyl"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuANSVAC7VZsefuSvh4k0xvHInH112J-Jk5gQUkcJVZghQ8k3Gk8PwH0-V3UjBvHuJFsV2ji8_PzjVaGZqIuDaDC27A60dmOyK8amwNekBAwwWMTWP1oBv7z_W9rbUokFSe58hRw-3jRjD6ELvCiYbBbqx6MZPQv8oWL8ltLE-Bs2t8rKm23COkQDVBPx5S0BXiLkY3msAyZJObEwqH8bJ-auVm7O1XALAreCBlq7iQ" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.7</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>5 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Chernobyl</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Johan Renck</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 6: Dune: Part Two -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Denis Villeneuve" data-format="Película" data-mood="Adrenalina Pura" data-platform="Max"
+        data-rating="9.4"
+        data-synopsis="Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia. Enfrentando una elección entre el amor de su vida y el destino del universo conocido."
+        data-title="Dune: Part Two" data-year="2024">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Dune: Part Two"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxXWOP21e8TpPGJbmfqPIZKtFngLJXQxZpOrUf6seBf4E0T5muDinNwpOUt_bN8lqGq1psAEjwxVnbqhT93_sD7a7kCWCute9n2vJNsWMi8VPQaWNLzZnXVU83n3-R9tqrBxVujaeCtH07057tvcFbzmRrT-WtJDKhD_HzBgzIibqreGECTMTzoAolEqB8FB5gC7JkHnMHYNZo_8fya1cRMWmXroe2NV8Gej2BLlA" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.4</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>2024</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Dune: Part Two</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Denis Villeneuve</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 7: The Bear -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Christopher Storer" data-format="Serie" data-mood="Adrenalina Pura" data-platform="Disney+"
+        data-rating="9.3"
+        data-synopsis="Un joven y prodigioso chef del mundo de la alta cocina regresa a Chicago para dirigir la tienda de sándwiches de su difunto hermano, lidiando con un personal rebelde y sus propios traumas."
+        data-title="The Bear" data-year="2022-">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de The Bear"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy9dkQHXqoa7Yri33IDLJ0TA22ElDjKOChjGgFTJRFd-FfMnR-ovld461W_UryJ-FjhbMnupCRoCr9B5NDpAFzXrWtk0EaHpBNGAXMC6V0e-DwUyYKbkShy_yaAncJ3UPwp87Xfm9XZQg8HEaw4NflQDkIk4VpgMA2uF-RL2rojHM92lb_MPQT58R7M8wEdX1yhK3cbcsOzmY120CQYCuRaNdWF98rW9N_0u2MlfM" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.3</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Disney+</span>
+              <span>3 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              The Bear</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Christopher Storer</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 8: Shōgun -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Rachel Kondo / Justin Marks" data-format="Miniserie" data-mood="Adrenalina Pura"
+        data-platform="Disney+" data-rating="9.3"
+        data-synopsis="En el Japón feudal de 1600, Lord Toranaga lucha por su supervivencia mientras un misterioso barco europeo naufraga en un pueblo pesquero con secretos trascendentales para la guerra civil."
+        data-title="Shōgun" data-year="2024">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Shōgun"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYk44z40Gnf8db7dVXfXvPNeifr3QHd5CbQ-Rcrriy0F5-7I2E0JOAc3AD71t4XyrAhhVsJDAiP_F3mwP44NnZl1npJSfnXv_tfwmrbyN9LJnlS_iXMyUGrWUq8YzDHPLScx2RlV11thYu_Tp0C7lSFNnpDmDdX8wlVHBvvhERp-4zwcn1n1-b7XeM5LK-_ak0zWVFYOA_FDingPjS8yqSM7hswBTZeTVXFwAf-zo" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.3</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Disney+</span>
+              <span>10 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Shōgun</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Prod. Hiroyuki Sanada</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 9: Poor Things -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Yorgos Lanthimos" data-format="Película" data-mood="Mente Explotada" data-platform="Disney+"
+        data-rating="9.0"
+        data-synopsis="La increíble historia del renacer de Bella Baxter, una joven devuelta a la vida por un excéntrico científico. Ansiosa por aprender y devorar el mundo, escapa en una odisea transcontinental de emancipación e identidad."
+        data-title="Poor Things" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Poor Things"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrz-KqkygPjvlhiSr6_9gLDbKPs4hyrnR6UJRWpNyxPezAMVZ4zWlvA_qRsmYwjTgl4E3--a99hcF2eY3796CXIAkQqW96Z--uk7U1I05NJHw2tzzM4sLuIxZlbINr5UK_WZgYigx-bkLBap5F6Bu_LnT-8v2_uIGkpzg2gOuKhRtx7Eq2fjB8cPALSLoqgo236t3LmbJeudiy-oCq00AeZNcZvPxD1Xt6bmQrPTA" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.0</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Disney+</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Poor Things</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Yorgos Lanthimos</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 10: Perfect Days -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Wim Wenders" data-format="Película" data-mood="Mantita y Helado" data-platform="Filmin / MUBI"
+        data-rating="9.1"
+        data-synopsis="Hirayama trabaja limpiando los baños públicos de Tokio. Pareciendo totalmente satisfecho con su rutina serena de casetes clásicos, árboles y fotografía analógica, su pasado asoma suavemente mediante encuentros imprevistos."
+        data-title="Perfect Days" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Perfect Days"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRiepRjcqI0dYKT6Xn85ZDtOIESx-I37r0yX_c_2vIiAJbAqSJSHcIHdptOcFefTJ-OUJJqh2TBO-X_GlhU5DnwNIx3H60FETPWqPJjsGa1i2eTcvG036bbZuMidSThVpP-LlHnx4o5jKgPkYZ2hvXG22_KdqJlAo8YqS4h8a3HPxBD_A5YbkWEry3HGAVu-iIDcjlkI297oL-CV6CSiZRHgr_3Nm-ZHJh65Iynlc" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Perfect Days</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Wim Wenders</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🛋️
+              Mantita y Helado</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 11: Oppenheimer -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Christopher Nolan" data-format="Película" data-mood="Mente Explotada" data-platform="Prime Video"
+        data-rating="9.3"
+        data-synopsis="La colosal biografía cinematográfica de J. Robert Oppenheimer y su rol decisivo en el Proyecto Manhattan, desentrañando la paradoja moral del hombre que arriesgó quemar el mundo para salvarlo."
+        data-title="Oppenheimer" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Oppenheimer"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXb0eE3gk2HbLONhb1ZwTYY_IuedOkm0aiS8aaKMn3sKgNI44NKwT0iDC11mnXUIO6D6KYUayEvz0BuiFHMn45H7wzMrg0gzKQYjJdV-zA0aiJ4PbN95sgJya7-9Vh7WDRUQkGuTacuDjeIG8uH16z-dfzYMi4KfpCYGENXU0VIYrsZoxlhi2C6cegrrRWBpoSY0D3M5Yv_bxKu0ts9jAMFuRga18sDcWH8DMOKE" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.3</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Prime Video</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Oppenheimer</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Christopher Nolan</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 12: In the Mood for Love -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Wong Kar-wai" data-format="Película" data-mood="Melancolía Bella" data-platform="Filmin / MUBI"
+        data-rating="9.6"
+        data-synopsis="En el Hong Kong de 1962, dos vecinos descubren simultáneamente que sus respectivos cónyuges mantienen un romance secreto. Entre encuentros furtivos y silencios, nace un amor sublime y contenido."
+        data-title="In the Mood for Love" data-year="2000">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de In the Mood for Love"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEntklGj2alAOGy86E13ouyEua2JmmxVMDaDFVorY50Gq9QuDAGNha3D5dEuAhlpAIKwKWb7c4QWmKrLcnEef6BttTu5HA16owtgOgKwkg0iHSBB5z5esqjrZ5Lj7kGU3nVCOpyms0FLtFyrFvEjZLdX34O1eNVEZzcNC05eL24YimDTXFj6or24eop5gemASLJE_qGnD1E8NBHs3GVdr83Y95tv9Rm9JNhiJIwb0" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.6</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2000</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              In the Mood for Love</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Wong Kar-wai</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 13: Parasite -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Bong Joon-ho" data-format="Película" data-mood="Adrenalina Pura" data-platform="Max"
+        data-rating="9.5"
+        data-synopsis="La familia Kim, desempleada y viviendo en un semisótano, urde un ingenioso plan para infiltrarse gradualmente como empleados domésticos en la mansión de la acaudalada familia Park."
+        data-title="Parasite" data-year="2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Parasite"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2k-h6g6gRB_5YS9Ow3ygm20_383xQmXonkce5o3-c50-MFt5XhfpDFcOdrrSV4y7ubQjhplB7cnQd_rTuBginuIZnNt09cGz1DT_woFFYKGN8PYpA6UwwsWljcx03utVon3cMLsbAZimELP2HCz-w7yoVoPTUTtgAdiw28ukS1e14TrSzh_AhXNcfHAWkdG1Kezfsr6HJt0tuXrvIx7syI4U2iwPFO1rQQ4Wofmk" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.5</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>2019</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Parasite</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Bong Joon-ho</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 14: Better Call Saul -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Vince Gilligan / Peter Gould" data-format="Serie" data-mood="Mente Explotada"
+        data-platform="Netflix" data-rating="9.7"
+        data-synopsis="La trágica y magnética metamorfosis del abogado de oficio Jimmy McGill hacia el desvergonzado asesor legal criminal Saul Goodman, en una obra de artesanía visual sin parangón."
+        data-title="Better Call Saul" data-year="2015-2022">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Better Call Saul"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA38PhfVqFlqQAPyrrSqdcfAnTMFWN9rL-8iuIP5WT8fAnvXquS0fp6HQ2l8vATRClpQQPozf6AwnlqlOB-iPO3xu6c2s0w5jzLIkAkOpH1iVId1CWT9Cnobt3AcXYYL5MdHF0dedSFde_thGW1L5T3DqGr9MbEwSbnpX3103ExYE9eNvG2aO0TFnWkNGRtqRlmbldRl7xO-fPdtoGwn6p6MXV74DP3w7JesJ0la6o" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.7</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Netflix</span>
+              <span>6 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Better Call Saul</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Peter Gould</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 15: The Zone of Interest -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Jonathan Glazer" data-format="Película" data-mood="Mente Explotada" data-platform="Filmin / MUBI"
+        data-rating="9.1"
+        data-synopsis="El comandante de Auschwitz, Rudolf Höss, y su esposa Hedwig se esfuerzan por forjar una vida de ensueño burguesa para su familia en una casa con jardín justo al otro lado del muro del campo."
+        data-title="The Zone of Interest" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de The Zone of Interest"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6qB5lvY3kql-DdN4QwLrU-P_2BLMCWiyOO8ePYVE9sSRjHau0FW2tx7nyuFSrnAE7wgGzlSBcUpvm3Lrt49vTxNN2VUrThsL7cmX3olwozRHU3-1HlSZ1Jl-DYqAsLVc-lM0zvdRDNUAOUx6gkXbAnChyybhFcq3nJcwiIf6i_Z9yugVyYOT4YmJZV-2aUXwzFQiHw3SVbTHD_4XcdIGh8qEIT6ECU3jiYXEe10c" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              The Zone of Interest</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Jonathan Glazer</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 16: The Queen's Gambit -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Scott Frank" data-format="Miniserie" data-mood="Mantita y Helado" data-platform="Netflix"
+        data-rating="9.2"
+        data-synopsis="En un orfanato de Kentucky de los años 50, Beth Harmon descubre un don sobrehumano para el ajedrez mientras batalla contra su adicción a los tranquilizantes y las barreras de género."
+        data-title="The Queen's Gambit" data-year="2020">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de The Queen's Gambit"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLwj0T0iHLhlYZUSNBork6BqMwiQcDfO-0aUJt3I062jq_L3S0bVsVce69UdFKRzGUynJjOeLxP4GB_ttzqZ8RvVC5zQV284aCkdTFxMF-cu_z6vDbkLcwdkUQxA44JcRHK-7FpZdBK_VfPz0T5BSqgkT32rz_M_HLMSXXpsRbF-7G9bk1Jemi8wjeUdjNo4YjBN6f0pg10Y2VnRMgb0PuZzvKMGv7lr7yAmzeyFo" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.2</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Netflix</span>
+              <span>7 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              The Queen's Gambit</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Scott Frank</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🛋️
+              Mantita y Helado</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 17: Fargo (Temporada 1/5) -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Noah Hawley" data-format="Serie" data-mood="Adrenalina Pura" data-platform="Prime Video"
+        data-rating="9.3"
+        data-synopsis="Antología criminal con comedia negra inspirada en el clásico homónimo de los hermanos Coen. Personajes comunes se enredan con asesinos despiadados en pueblos gélidos del Medio Oeste."
+        data-title="Fargo" data-year="2014-">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Fargo"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0UmhpsOcjIAziJRzIFPugFBCMOMHyZbrBfgw5ILeaUIXUiC3Bk_oCjaGnuf5cIUzNeVD1k1gqirVP6tMv51913ykc1wnsKylNa8Jee2vQlihepGnvSSCMxOaRdsNyNt4q7Fo7EcFFY8STotkKx_aauLjNdGxd4zSWghDjVQwF4KvZo_4T0s-8sDCTEAJI7hreKeRc_ILBdxO1_MiCNaOL-PX9idsHwpyx-rpwc4s" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.3</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Prime Video</span>
+              <span>5 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Fargo</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Creador: Noah Hawley</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 18: Fleabag -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Phoebe Waller-Bridge" data-format="Serie" data-mood="Cero Drama" data-platform="Prime Video"
+        data-rating="9.4"
+        data-synopsis="Una joven londinense ácida, mordaz e insaciable rompe constantemente la cuarta pared para revelarnos sus inseguridades, duelo no resuelto y una búsqueda hilarante pero desarmante de consuelo."
+        data-title="Fleabag" data-year="2016-2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Fleabag"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB4EcJrGffV8ecLvaBhYSpUVlskX5OOuW_fV5_YLx_N2ootrhW87uMQP28o7W-7CuAWP8FG68l-UfOm8ckrl0Kw8rmA6XDwF_d9z18UbpfVBUGus5LqU_jnQyPhbOMWeViRVxPNg6qOVut176YrLBWheCdukS0MmL9STW4Wc8WgrUtTIg5_XgKWJ13Kry9utI1yXGMsxoiHXJclT5bvjMoCDR9aRLuMmXDu_CCSQU" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.4</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Prime Video</span>
+              <span>2 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Fleabag</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Phoebe Waller-Bridge</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">✨
+              Cero Drama</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 19: Drive My Car -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Ryusuke Hamaguchi" data-format="Película" data-mood="Melancolía Bella"
+        data-platform="Filmin / MUBI" data-rating="9.1"
+        data-synopsis="Un director de teatro viudo viaja a Hiroshima para montar la obra 'Tío Vania'. La organización le asigna como chófer a una joven reservada con quien establece una conexión silenciosa y catártica."
+        data-title="Drive My Car" data-year="2021">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Drive My Car"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB57fItBeNxk_HjL_4I6QozPUXDZZXrynXg6B2DQT07Zu7OJkMA9G7TGAJV4XvfB76VlMyGkFEwSncyz2m_fB7ETvTJSKUxZBmF3ZUCUqpUg4VIndKu0M97p0eCrVxpdDx9QJUSPFmqurkcOMfmsmPGTejvxhGK-D2VZ24zCRC0uKR6cbS72Q6wemBnK9VWRnYwOumAT8HPOWr85iYGUIA78mGAcpj7Ex2W-cPrnJE" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2021</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Drive My Car</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Ryusuke Hamaguchi</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 20: Mare of Easttown -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Craig Zobel" data-format="Miniserie" data-mood="Melancolía Bella" data-platform="Max"
+        data-rating="9.0"
+        data-synopsis="Una detective de una pequeña localidad de Pensilvania investiga un trágico asesinato local mientras su propia vida familiar se desmorona a su alrededor por el peso del duelo."
+        data-title="Mare of Easttown" data-year="2021">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Mare of Easttown"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6XKqh61_ebHZL1-_l88wdBxu_AIcnwrKTBB_un8AVlAO4VvufTr8ru5Cn5-wN1ZhrcJofi_e5JOH3rA3aRB4gKqjGKRmEt8EmZQp9vumZLnDoh8lEOdoQ5zMZMKV4sHj57jPYsTCtgZ2vXpaK3GQMxl_KXzl0hiGNbWUz7bjFOGSbQ0pBrQ4p0PnRj0mpwJCEi7ywDxa3znfIi1ijeh7OAWAdsjGQdSiZadonh1Q" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.0</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>7 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Mare of Easttown</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Prot. Kate Winslet</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 21: Portrait of a Lady on Fire -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Céline Sciamma" data-format="Película" data-mood="Melancolía Bella" data-platform="Filmin / MUBI"
+        data-rating="9.3"
+        data-synopsis="En la Bretaña francesa de finales del siglo XVIII, una pintora recibe el encargo clandestino de pintar el retrato de bodas de una joven aristócrata recién salida del convento, desatando una pasión silenciosa."
+        data-title="Portrait of a Lady on Fire" data-year="2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Portrait of a Lady on Fire"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRxu4sy2KsCUpOAGJ80JvlQZuqwMLyHNA-tNaWrajW8Zgn-YGHhSgTxUCGwS5L8lmXWaTMC8Z78vOUJRzpcs2uXRe7Qb5_84r4k7OuJp6ppjQO2jx3A8mfyojBCYpc7LH0BQkw8tDC3aAvX7S1lRhPQdi01j9eq67Supsm59HkGmoYnnBMsyFKXKuXDmYaiNe2edLFDutC5wJjj0faYsUSY4A0822Y_ipSomqgtzg" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.3</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2019</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Portrait of a Lady</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Céline Sciamma</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 22: Severance (Repetida variante conceptual: Mindhunter) -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="David Fincher" data-format="Serie" data-mood="Mente Explotada" data-platform="Netflix"
+        data-rating="9.4"
+        data-synopsis="A finales de los 70, dos agentes del FBI pioneros en la psicología criminal entrevistan a asesinos seriales encarcelados para comprender su psicología y resolver casos en curso."
+        data-title="Mindhunter" data-year="2017-2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Mindhunter"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4svykePAnYpzrZk8OwcRMo0cJiQ8T2ysvdBBwirePN50PqqaKxATvnI3LpTO8eomCaOInK_gnbC3vs2ydeau_Kr32U16f0oldJJ_deedE-3WpOzP74nUVSsgfX4n-llO0sl6jNC7Jzdvkv_sQPw7zR-XQ5AH4c5V7qco6NmrlL1j-X_dFXfbDHe4y0EXFig_ES-Augcy-cqA8uCRAjq5hpuW0mNmAVdMY-7_qgfo" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.4</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Netflix</span>
+              <span>2 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Mindhunter</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. David Fincher</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🧠
+              Mente Explotada</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 23: When They See Us -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Ava DuVernay" data-format="Miniserie" data-mood="Melancolía Bella" data-platform="Netflix"
+        data-rating="9.1"
+        data-synopsis="La conmovedora historia real de los 'Cinco de Central Park': jóvenes de color injustamente condenados por un crimen que jamás cometieron, y su odisea de 25 años por la justicia."
+        data-title="When They See Us" data-year="2019">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de When They See Us"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvHwoeuVRQXGrFW3Y_7IJrTyrdPpp8-lZPARYGMXEf08gQoemlQDCm9Zyndi4GRnGxNwk6cdt7ZetzkHrygmKy2QqoXkloJJx8ycl1n0qHfB3Nrp3YFxZmpvNNNJddS5uCoiNNdMNY196MQHx1MPjsCSj5023zKW6X4IRXv1OP7ZigLXMdaM0zBi1a1W0IMQpLQacJImiek4qfFptRgLzgVVTCv_HS5Y2HaWcP_F4" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Netflix</span>
+              <span>4 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              When They See Us</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Ava DuVernay</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 24: Band of Brothers -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Steven Spielberg / Tom Hanks" data-format="Miniserie" data-mood="Adrenalina Pura"
+        data-platform="Max" data-rating="9.8"
+        data-synopsis="La travesía heroica de la Easy Company del 506º Regimiento de Infantería Paracaidista del Ejército de EE.UU., desde su entrenamiento hasta la captura del Nido del Águila de Hitler."
+        data-title="Band of Brothers" data-year="2001">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Band of Brothers"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOWnpxjUGJhXPSw69UXMaSpJ51LAkqjkDBp-li8oFPV4cqh2n0sUQt62JKimkP0gFaUo5nIpl6CqkjU8eae_KZ9H5ZMnvd1nYqWzyOCwxYOGrtXrS6IOL6Y2aKej8YvTjnqQPLioaway2Poo-eZXrKDGLAQdm8l3BIrteNcXJfh_cHcxVUU46YXO86NDQSYbzhZp7c2cIGnNsQLK128e1uJWR0O0abbMG4HoXHuE" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.8</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>10 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Band of Brothers</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Prod. Spielberg &amp; Hanks</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 25: Ted Lasso -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Bill Lawrence / Jason Sudeikis" data-format="Serie" data-mood="Mantita y Helado"
+        data-platform="Apple TV+" data-rating="8.9"
+        data-synopsis="Un afable entrenador de fútbol americano universitario es contratado para dirigir un equipo de la Premier League inglesa sin poseer ninguna experiencia, conquistándolos con empatía pura."
+        data-title="Ted Lasso" data-year="2020-2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Ted Lasso"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF2Aiju-K9V3jyAY_hCPx6ay1qBgYiUoKkn7ehB8GDKNbzGNFUrUGEJbgM9P1LKHBZRVlPHzm_R7E8gPLJ9AmDvhT1JLla8Nna5ds3PyFbJd16OmbPVMpTuP_xAqWYVPrZwUXXlrWMtKQyEbFqqUL7zgKya5G7UGimG5NDC6ehHYKkAGupLUXroBuf7H1b2zSVvzaVXvyeTTQkU-gPA9w3h4_dX6sYCCrEI-0G4eg" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">8.9</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Apple TV+</span>
+              <span>3 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Ted Lasso</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Creada por Jason Sudeikis</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🛋️
+              Mantita y Helado</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 26: Aftersun -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Charlotte Wells" data-format="Película" data-mood="Melancolía Bella"
+        data-platform="Filmin / MUBI" data-rating="9.2"
+        data-synopsis="Sophie rememora unas vacaciones compartidas con su joven padre en Turquía dos décadas atrás, combinando grabaciones caseras y recuerdos imaginados para reconciliarse con el enigma de su dolor."
+        data-title="Aftersun" data-year="2022">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Aftersun"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9PNOLJzu0ncjKIjxRsVQ6lDqdrub57PAwbZTYV8dOQKyhEGIyk7hoDsrJimJeLzR7qGeaPW2tGy4s9ph9klgD9WvmcdryWTQ4ne9ogpNYn32ub2Wnkk2Ngh2LbQp-4XiysoCj13XyX1VsG6ZTu8oCEykvTcqSzjgCSJ0Kkw7GTiuUSoODq8mTINGqCWkS-JxLD3bCoo_iIe_oKnE72y6NHl2REhgSJC5rNoB85ao" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.2</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Filmin / MUBI</span>
+              <span>2022</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Aftersun</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Charlotte Wells</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🌧️
+              Melancolía Bella</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 27: Beef -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Lee Sung Jin" data-format="Miniserie" data-mood="Adrenalina Pura" data-platform="Netflix"
+        data-rating="9.0"
+        data-synopsis="Un incidente de furia al volante entre dos extraños en Los Ángeles desencadena una espiral de rencor destructivo que consume sus matrimonios, negocios y salud mental."
+        data-title="Beef" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Beef"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTPAqw7kO3yDDrde4hqwkQgdidNQ5LfwZUUS_PXDmPS_T7I5EJRMHUH0gd5AvcRnEWJZeL2Q5WoBd13NFNwVciBrSXUph1IYDSN3dLPGwCfc93sFBIyNqO3-f4UmDcG5RzSzTbakt6Ni0Hn0CX3GvdgDjVm7lTgS5N3WCEtRW9BskOilyarII6qX23NSFYf3nkJPgZqDFapzyXukttAIB7efs96nIuclqAOciC1N0" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.0</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Netflix</span>
+              <span>10 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Beef</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Prod. A24</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">⚡
+              Adrenalina Pura</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 28: Station Eleven -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Patrick Somerville / Hiro Murai" data-format="Miniserie" data-mood="Mantita y Helado"
+        data-platform="Max" data-rating="9.1"
+        data-synopsis="Una saga postapocalíptica y luminosa que sigue a una compañía itinerante de actores y músicos que viajan por los restos de la civilización interpretando a Shakespeare."
+        data-title="Station Eleven" data-year="2021">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Station Eleven"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5-jFnM1shMIci8XBb29w9DWSXVY6Jv9Ip5muossDqBUKkNSTTWjSP-kFzwMiZvG39zrubralM6H1GtAYP2pwLRDUXLw8yvOoriI_JdPhvTqZiRhiTb7yL0cHu-LBpXeqVfUTk6F_hhA3DSfra_kxcRRhykIny_fygH14AbczPsbM39qtqilKAq2pC-2WCau3R5O_3fbL8ONaC_Jh5Uuxmm7X9ARDnYZA_E9gHXfY" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.1</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white uppercase tracking-wider">Miniserie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Max</span>
+              <span>10 Episodios</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Station Eleven</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Hiro Murai</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🛋️
+              Mantita y Helado</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 29: Only Murders in the Building -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Steve Martin / John Hoffman" data-format="Serie" data-mood="Cero Drama" data-platform="Disney+"
+        data-rating="8.9"
+        data-synopsis="Tres vecinos obsesionados con los crímenes reales se ven envueltos en uno verídico dentro de su exclusivo edificio del Upper West Side de Nueva York."
+        data-title="Only Murders in the Building" data-year="2021-">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de Only Murders in the Building"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXUWUe-rQk-AUqvm4TbePaZAWVKtP4vk4PfHcfIUEadlZvdGsiokpb0wfQN6Ayslte09OhvhHSTc5uZNnkk-NBag7PVUwYoPRIpWlxGmDRKoDg591vfsNKCSnP6QcvCCKiESWwHRzSJZtEZkIriXkci1iUtgrcrng75r2pq6JsJkd2cI_8LTZQTQWwmkifZ_nBMVMPCaD1OPLXpa1lDvFhRnucyZlw_j6Trz4AuAE" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">8.9</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-graphite text-brand-gold uppercase tracking-wider">Serie</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Disney+</span>
+              <span>4 Temporadas</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              Only Murders</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Steve Martin &amp; Martin Short</p>
+            <span class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">✨
+              Cero Drama</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <!-- Ficha 30: The Holdovers -->
+      <article
+        class="catalog-card group bg-white rounded-xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between"
+        data-director="Alexander Payne" data-format="Película" data-mood="Mantita y Helado" data-platform="Prime Video"
+        data-rating="9.2"
+        data-synopsis="Un estricto y solitario profesor de un internado de Nueva Inglaterra se ve obligado a permanecer en el campus durante las vacaciones de Navidad de 1970 con un estudiante problemático y la cocinera jefa."
+        data-title="The Holdovers" data-year="2023">
+        <div>
+          <div class="relative aspect-[2/3] w-full overflow-hidden bg-slate-100">
+            <img alt="Póster de The Holdovers"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrTaRJozBV96OU2TEr6Evs6Qvy8czZDw-Eocwrljd7GS18fAB59NMMHkAwpgVEC5IHrHl6m33mMdPb8p08yGrHJHFajHEPI1ergnBiszmMaV71eNe83vhzYEdbuz4c_eGWnfIKVas7cDd-4CkxRxg-vb-JDKq5PD3GsMtZ1YKmYBsl6xz-qeCaFEXpuu1GQygildKgFkvXFMMsgv_ZXKafGCWdjkoxf5RQlj2NXY0" />
+            <div
+              class="absolute top-2.5 right-2.5 bg-brand-graphite/90 backdrop-blur-md px-2 py-1 rounded-md flex items-center gap-1 border border-brand-gold/30">
+              <span class="text-brand-gold text-xs">★</span>
+              <span class="text-white text-xs font-bold font-editorial">9.2</span>
+            </div>
+            <div class="absolute top-2.5 left-2.5">
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider">Película</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between text-[11px] text-brand-graphite/60 mb-1">
+              <span>Prime Video</span>
+              <span>2023</span>
+            </div>
+            <h3
+              class="font-editorial text-lg font-bold text-brand-graphite group-hover:text-brand-goldDark transition-colors leading-snug mb-1">
+              The Holdovers</h3>
+            <p class="text-xs text-brand-graphite/60 mb-2.5">Dir. Alexander Payne</p>
+            <span
+              class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">🛋️
+              Mantita y Helado</span>
+          </div>
+        </div>
+        <div class="p-4 pt-0 flex gap-2">
+          <button
+            class="btn-open-modal flex-1 py-1.5 px-3 bg-brand-graphite hover:bg-brand-graphiteLight text-white text-xs font-semibold rounded-lg transition-colors">Ver
+            Ficha</button>
+          <button
+            class="btn-save p-1.5 rounded-lg border border-slate-200 text-slate-400 hover:text-brand-gold hover:border-brand-gold transition-colors"
+            title="Guardar">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+    </div>
+    <!-- Mensaje sin resultados -->
+    <div class="hidden text-center py-20 bg-white rounded-2xl border border-dashed border-brand-gold/40 mt-8"
+      id="noResultsState">
+      <div
+        class="w-12 h-12 rounded-full bg-brand-gold/10 text-brand-goldDark flex items-center justify-center mx-auto mb-3 text-xl">
+        ✦
+      </div>
+      <h4 class="font-editorial text-xl font-bold text-brand-graphite mb-1">No se hallaron obras con estos criterios
+      </h4>
+      <p class="text-xs text-slate-500 max-w-sm mx-auto mb-4">Intenta ajustar los filtros de formato, estado de ánimo o
+        el texto buscado.</p>
+      <button
+        class="px-4 py-2 text-xs font-semibold bg-brand-graphite text-white rounded-lg hover:bg-brand-graphiteLight transition-colors"
+        onclick="document.getElementById('resetFiltersBtn').click()">
+        Reestablecer Catálogo Completo
+      </button>
+    </div>
+  </main>
+  <!-- END: MasterCatalogGrid -->
+  <!-- BEGIN: InteractiveModal -->
+  <!-- Modal interactivo para visualizar detalles de cada ficha con un click -->
+  <div aria-modal="true"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-graphiteDark/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+    id="filmModal" role="dialog">
+    <div
+      class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-brand-gold/40 transform scale-95 transition-transform duration-300"
+      id="modalBox">
+      <!-- Modal Header -->
+      <div
+        class="p-6 bg-gradient-to-r from-brand-graphite to-brand-graphiteLight text-white flex justify-between items-start">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-gold text-brand-graphiteDark uppercase tracking-wider"
+              id="modalFormatBadge"></span>
+            <span class="text-xs text-slate-300" id="modalYear"></span>
+            <span class="text-slate-400">•</span>
+            <span class="text-xs text-brand-goldLight font-medium" id="modalPlatform"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-editorial font-bold text-white leading-tight" id="modalTitle"></h2>
+          <p class="text-xs text-slate-300 mt-1" id="modalDirector"></p>
+        </div>
+        <button aria-label="Cerrar ventana modal"
+          class="text-white/70 hover:text-white p-1 rounded-lg hover:bg-white/10 transition-colors" id="modalCloseBtn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Modal Body -->
+      <div class="p-6 space-y-4">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-brand-graphite/40 mb-1">Sinopsis Canónica</h4>
+          <p class="text-sm text-brand-graphite/80 leading-relaxed font-light" id="modalSynopsis"></p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 py-3 border-y border-slate-100">
+          <div>
+            <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Puntuación de la
+              Crítica</span>
+            <div class="flex items-baseline gap-1 mt-0.5">
+              <span class="text-2xl font-bold font-editorial text-brand-graphite" id="modalScore"></span>
+              <span class="text-xs text-slate-400">/ 10</span>
+            </div>
+          </div>
+          <div>
+            <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Sintonía Anímica</span>
+            <span
+              class="inline-block mt-1 text-xs font-semibold px-2.5 py-1 rounded bg-brand-gold/10 text-brand-goldDark"
+              id="modalMood"></span>
+          </div>
+        </div>
+        <!-- Acciones del Modal -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a class="flex-1 text-center py-2.5 px-4 bg-brand-graphite hover:bg-brand-graphiteLight text-brand-gold font-semibold text-xs tracking-wider uppercase rounded-xl transition-all shadow-md"
+            href="reviews.html" id="modalWatchLink">
+            Reproducir en Plataforma Directa
+          </a>
+          <button
+            class="py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-brand-graphite font-semibold text-xs rounded-xl transition-colors"
+            id="modalAddWatchlist">
+            + Añadir a Lista Personal
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: InteractiveModal -->
+  <!-- BEGIN: MainFooter -->
+  <!-- Pie de página editorial con newsletter e información curatorial -->
+  <footer class="bg-brand-graphiteDark text-white pt-16 pb-12 border-t-2 border-brand-gold/30 mt-20"
+    data-purpose="editorial-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <!-- Identidad SPOTLIGHT -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img alt="SPOTLIGHT" class="h-9 w-9 object-contain rounded ring-1 ring-brand-gold/40"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1XK68YSv8g_kjHVgZpbW8EDZ8zCju0ujnwft3ytCfedpygJj24LcWxXgIiwzGl8ySV3J21o2KE2YfJHh9FMJFDW_rta4RcQSYYk1aUK-ad-OK1NztScgDeiOcwSk21fmZl8k_7UsjRpbz0n35DiM2VnU-6pY66htTYXbXzMCfC7L_KcdOKafKMi8O2J6FRcxHmwMaBTwfieImz_6-5IPdsAJZz_Z6tWwRwotaxZuHKZfFM8CleRgTTTYqQ" />
+            <span class="text-xl font-editorial font-bold tracking-widest text-white">SPOTLIGHT</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            El archivo canónico de las narrativas en movimiento. Un santuario editorial que prioriza la estética, la
+            visión autoral y la discusión sosegada frente a la marea de contenido efímero.
+          </p>
+          <div class="text-[11px] text-brand-gold tracking-widest uppercase font-semibold">
+            Dorado Real • Cinematografía Canónica
+          </div>
+        </div>
+        <!-- Enlaces Rápidos -->
+        <div class="md:col-span-3 space-y-3">
+          <h5 class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Ecosistema Editorial</h5>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="reviews.html">Manifiesto de la Selección 2024</a></li>
+            <li><a class="hover:text-white transition-colors" href="reviews.html">Directorio de Críticos Invitados</a></li>
+            <li><a class="hover:text-white transition-colors" href="catalogo.html">MUBI &amp; Filmin: Alianzas de Frecuencia</a>
+            </li>
+            <li><a class="hover:text-white transition-colors" href="reviews.html">Criterios de Puntuación Canónica</a></li>
+            <li><a class="hover:text-white transition-colors" href="reviews.html">Ágora de Debates Cinematográficos</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter: El Fotograma Semanal -->
+        <div class="md:col-span-4 space-y-3">
+          <h5 class="text-xs uppercase tracking-widest text-brand-gold font-semibold">El Fotograma Semanal</h5>
+          <p class="text-xs text-slate-400">
+            Recibe cada domingo un ensayo breve, una gema oculta y el desglose de un plano maestro directo en tu buzón.
+          </p>
+          <form class="flex gap-2" onsubmit="event.preventDefault(); alert('¡Bienvenido al Fotograma Semanal!');">
+            <input
+              class="w-full bg-white/5 border border-white/20 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-gold"
+              placeholder="tu.correo@cine.com" required="" type="email" />
+            <button
+              class="bg-brand-gold hover:bg-brand-goldLight text-brand-graphiteDark font-bold px-4 py-2 rounded-lg text-xs transition-colors whitespace-nowrap"
+              type="submit">
+              Suscribirme
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Créditos inferiores -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500 gap-4">
+        <p>© 2024 SPOTLIGHT Editorial Inc. Diseñado bajo la norma 'Cinematic Editorial'.</p>
+        <div class="flex gap-4">
+          <a class="hover:text-slate-400 transition-colors" href="login.html">Privacidad Canónica</a>
+          <a class="hover:text-slate-400 transition-colors" href="login.html">Términos de Curaduría</a>
+          <a class="hover:text-slate-400 transition-colors" href="index.html#seccion-comunidad">Contacto de Redacción</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: MainFooter -->
+  <!-- BEGIN: InteractiveScripts -->
+  <!-- Manejador de filtrado reactivo del catálogo y ventana modal de detalles -->
+  <script data-purpose="filtering-and-modal-logic" src="js/catalogo.js"></script>
+  <!-- END: InteractiveScripts -->
+</body>
+
+</html>

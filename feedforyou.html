@@ -1,0 +1,814 @@
+  <!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>SPOTLIGHT - Cine &amp; Streaming Editorial</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config" src="js/config/feedforyou-tailwind.config.js"></script>
+<link rel="stylesheet" href="css/global.css">
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><a href="index.html" aria-label="SPOTLIGHT Inicio"><img alt="Brand logo. - Primary color: #d4af37
+  - Font: plusJakartaSans
+  - Mode: light
+  - Roundness: rounded-md
+  " class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XK68YSv8g_kjHVgZpbW8EDZ8zCju0ujnwft3ytCfedpygJj24LcWxXgIiwzGl8ySV3J21o2KE2YfJHh9FMJFDW_rta4RcQSYYk1aUK-ad-OK1NztScgDeiOcwSk21fmZl8k_7UsjRpbz0n35DiM2VnU-6pY66htTYXbXzMCfC7L_KcdOKafKMi8O2J6FRcxHmwMaBTwfieImz_6-5IPdsAJZz_Z6tWwRwotaxZuHKZfFM8CleRgTTTYqQ"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">SPOTLIGHT</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="transition-colors py-space-xs px-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm" data-path="feed-para-ti" href="feedforyou.html">Feed Para Ti</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-lg" data-path="catalogo-resenas" href="catalogo.html">Catálogo &amp; Reseñas</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-lg" data-path="vibracion-del-momento" href="index.html#seccion-animo">Vibración del Momento</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-lg" data-path="debates-agora" href="reviews.html">Debates &amp; Ágora</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-lg" data-path="backoffice-admin" href="dashboard.html">Backoffice Admin</a></nav><div class="flex items-center gap-space-md"><button aria-label="Abrir accesos directos" class="flex xl:hidden items-center justify-center w-10 h-10 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" onclick="document.getElementById('mobile-drawer').classList.toggle('translate-x-full')" type="button"><span class="material-symbols-outlined text-[22px]">widgets</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Va8dYnRG1cYX0ZMOJSRiUPetkgf70MiKp8Rii9OY7HTzsULll533ymgPXRBvbStdJ8V-vm3noD6YHwn0ilF6Z0zXspJwk2MtAXO85cYEmmC7z0OvkoMIcNeOvxNl7GoTj2Zz4xMIz584jvQKuBFtS6Gt6sV-Si19MXNVySS2tWOwUu1pIGfTGIjCeO2LmZ5N0KH8r7uvlNDgQSPCvY9xJ3iPezsrWuBRYHW6a__oKkNdf3XIUYI_MA5g"><span class="hidden md:inline font-label-meta text-label-meta text-on-surface-variant">Cinéfilo Curador</span></div></div></div></header><div class="fixed top-20 right-0 bottom-0 w-72 max-w-[80vw] z-40 bg-surface-container-lowest shadow-[0_12px_24px_-6px_rgba(31,40,51,0.08)] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-space-lg overflow-y-auto" id="mobile-drawer"><div class="flex items-center justify-between pb-space-md"><span class="font-headline-sm text-headline-sm text-on-surface">Dock Rápido</span><button aria-label="Cerrar dock" class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex flex-col gap-space-sm pt-space-sm"><a class="flex items-center gap-space-sm p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="catalogo-resenas" href="catalogo.html"><span class="material-symbols-outlined text-primary">explore</span><span class="font-label-prominent text-label-prominent">Explorador rápido</span></a><a class="flex items-center gap-space-sm p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ruleta-del-cine" href="catalogo.html"><span class="material-symbols-outlined text-primary">casino</span><span class="font-label-prominent text-label-prominent">Ruleta del Cine</span></a><a class="flex items-center gap-space-sm p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="quiz-que-ver-hoy" href="index.html#seccion-feed"><span class="material-symbols-outlined text-primary">psychology_alt</span><span class="font-label-prominent text-label-prominent">Quiz 'Qué ver hoy'</span></a><a class="flex items-center gap-space-sm p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="vibracion-del-momento" href="index.html#seccion-animo"><span class="material-symbols-outlined text-primary">mood</span><span class="font-label-prominent text-label-prominent">Filtro por Ánimo</span></a><a class="flex items-center gap-space-sm p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feed-para-ti" href="index.html"><span class="material-symbols-outlined text-primary">auto_awesome</span><span class="font-label-prominent text-label-prominent">Modo Algorítmico</span></a><div class="pt-space-md mt-space-sm"><a class="flex items-center justify-center gap-space-xs w-full py-space-sm bg-primary-container text-on-primary-container font-label-prominent text-label-prominent rounded-lg hover:brightness-105 transition-all shadow-[0_4px_14px_rgba(212,175,55,0.35)]" data-path="login" href="login.html"><span class="material-symbols-outlined text-[18px]">login</span><span class="">Cuenta / Login</span></a></div></div></div><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+  <!-- Toast Notification System -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-space-xs pointer-events-none" id="toast-container"></div>
+  <!-- FLOATING QUICK-ACCESS DOCK (RIGHT CORRIDOR BAR) -->
+  <aside class="fixed right-0 top-24 z-40 flex items-center transition-transform duration-300 translate-x-[calc(100%-52px)] hover:translate-x-0 group" id="spotlight-dock">
+  <!-- Handle Tab -->
+  <button class="w-[52px] h-14 bg-surface-container-lowest text-primary rounded-l-xl shadow-xl flex items-center justify-center cursor-pointer transition-all hover:bg-secondary-container" id="dock-toggle-btn">
+  <span class="material-symbols-outlined text-[26px] animate-pulse">keyboard_double_arrow_left</span>
+  </button>
+  <!-- Dock Content Body -->
+  <div class="w-64 bg-surface-container-lowest/95 backdrop-blur-xl p-space-md shadow-2xl rounded-l-2xl flex flex-col gap-space-sm max-h-[80vh] overflow-y-auto">
+  <div class="flex items-center justify-between pb-space-xs">
+  <div class="flex items-center gap-space-xs">
+  <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+  <span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface">Dock SPOTLIGHT</span>
+  </div>
+  <span class="font-label-meta text-label-meta text-primary font-bold">V 3.4</span>
+  </div>
+  <nav class="flex flex-col gap-1.5 font-label-prominent text-label-prominent text-body-sm">
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('feed-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">bolt</span>
+  <span class="">⚡ Para Ti (Feed)</span>
+  </button>
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('vibe-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">mood</span>
+  <span class="">🎭 Vibración Anímica</span>
+  </button>
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('roulette-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">casino</span>
+  <span class="">🎲 Ruleta del Cine</span>
+  </button>
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('quiz-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">psychology</span>
+  <span class="">🧠 Quiz Express 60s</span>
+  </button>
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('agora-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">forum</span>
+  <span class="">💬 Ágora de Crítica</span>
+  </button>
+  <button class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-left text-on-surface hover:bg-secondary-container/40 transition-colors" onclick="scrollToSection('catalog-section')">
+  <span class="material-symbols-outlined text-[20px] text-primary">local_movies</span>
+  <span class="">🎬 Catálogo &amp; Filtros</span>
+  </button>
+  </nav>
+  <div class="pt-space-xs flex flex-col gap-1.5">
+  <button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-surface-container-high hover:bg-secondary-container font-label-badge text-label-badge text-on-surface uppercase tracking-wider transition-colors" onclick="openAuthModal()">
+  <span class="material-symbols-outlined text-[16px]">account_circle</span>
+  <span id="dock-auth-btn-label" class="">Iniciar Sesión</span>
+  </button>
+  <button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-inverse-surface text-inverse-on-surface font-label-badge text-label-badge uppercase tracking-wider hover:brightness-110 transition-all" onclick="toggleAdminPanel()">
+  <span class="material-symbols-outlined text-[16px] text-primary-fixed">admin_panel_settings</span>
+  <span class="">Backoffice Admin</span>
+  </button>
+  </div>
+  </div>
+  </aside>
+  <!-- AUTHENTICATION MODAL -->
+  <div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-md hidden items-center justify-center p-space-md" id="auth-modal">
+  <div class="w-full max-w-md bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+  <!-- Modal Header -->
+  <div class="bg-surface-container-low px-space-lg py-space-md flex items-center justify-between">
+  <div class="flex items-center gap-space-xs">
+  <span class="w-3 h-3 rounded-full bg-primary-container"></span>
+  <span class="font-headline-sm text-headline-sm text-on-surface">Club SPOTLIGHT</span>
+  </div>
+  <button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-highest transition-colors text-on-surface" onclick="closeAuthModal()">
+  <span class="material-symbols-outlined">close</span>
+  </button>
+  </div>
+  <!-- Auth Switcher Tabs -->
+  <div class="flex bg-surface-container">
+  <button class="flex-1 py-space-sm font-label-prominent text-label-prominent text-center bg-surface-container-lowest text-primary" id="tab-login" onclick="switchAuthTab('login')">
+            Iniciar Sesión
+          </button>
+  <button class="flex-1 py-space-sm font-label-prominent text-label-prominent text-center text-on-surface-variant hover:text-on-surface" id="tab-register" onclick="switchAuthTab('register')">
+            Crear Cuenta
+          </button>
+  </div>
+  <!-- Quick Roles Bar -->
+  <div class="p-space-lg flex flex-col gap-space-md">
+  <div class="bg-surface-container-low p-space-sm rounded-xl">
+  <p class="font-label-meta text-label-meta text-on-surface-variant mb-1.5 uppercase tracking-wide">Acceso Rápido por Rol:</p>
+  <div class="grid grid-cols-3 gap-space-xs">
+  <button class="px-2 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-secondary-container font-label-badge text-label-badge text-on-surface transition-colors truncate" onclick="quickLogin('Lucía Mendez', 'lucia@spotlight.film', 'Crítica Senior')">
+                🖋️ Crítico
+              </button>
+  <button class="px-2 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-secondary-container font-label-badge text-label-badge text-on-surface transition-colors truncate" onclick="quickLogin('Mateo Rossi', 'mateo@cinema.io', 'Curador Algorítmico')">
+                🍿 Cinéfilo
+              </button>
+  <button class="px-2 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-secondary-container font-label-badge text-label-badge text-on-surface transition-colors truncate" onclick="quickLogin('Admin Spotlight', 'admin@spotlight.film', 'Super Admin')">
+                ⚡ Admin
+              </button>
+  </div>
+  </div>
+  <!-- Dynamic Form -->
+  <form class="flex flex-col gap-space-sm" id="auth-form" onsubmit="handleAuthSubmit(event)">
+  <div class="hidden flex flex-col gap-1" id="field-name">
+  <label class="font-label-meta text-label-meta text-on-surface-variant">Nombre de Cinéfilo</label>
+  <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="auth-input-name" placeholder="Ej. Sofia Coppola Stan" type="text">
+  </div>
+  <div class="flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-on-surface-variant">Correo Electrónico</label>
+  <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="auth-input-email" placeholder="tu@critica.com" required="" type="email">
+  </div>
+  <div class="flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-on-surface-variant">Contraseña</label>
+  <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="auth-input-password" placeholder="••••••••" required="" type="password">
+  </div>
+  <button class="mt-space-xs w-full py-3 bg-primary-container text-on-primary-container font-label-prominent text-label-prominent rounded-xl hover:brightness-105 transition-all shadow-md" id="auth-submit-btn" type="submit">
+              Ingresar al Club
+            </button>
+  </form>
+  </div>
+  </div>
+  </div>
+  <!-- HERO TOP BAR CONTEXT / SESSION CONTROLLER -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full pt-space-lg pb-space-md">
+  <div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-md">
+  <!-- Left: State & User Tagline -->
+  <div class="flex items-center gap-space-md w-full lg:w-auto">
+  <div class="relative">
+  <img class="w-14 h-14 rounded-full object-cover shadow-inner" data-alt="Portrait photography of an engaging film curator with soft cinematic rim light, crisp contemporary editorial styling, and confident demeanor." id="user-avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDGeLqw9XdvOawVAFn-ljbHCMR0w904u9GGpkFd1z-GWIp7Mb7qEFY3JrVg3gcxo7N2kvYzTRq-sPq-0238AL42BPT-JyX_fEPFZC1RkSkibg20rBsTAWCjnHhkoOzp6oFgQ3HaoGTS-EyG0WLsU6DsbLAJOdLrVL866f4D0cxGhLXz2ZkaVnOxW77Guapvs7eBVlOirDd2da-BQOb06EbrNe4hqr0EF10Zmehmf4nUnAX_kAgQ-XV">
+  <span class="absolute bottom-0 right-0 w-4 h-4 bg-primary-container rounded-full" id="user-status-dot"></span>
+  </div>
+  <div>
+  <div class="flex items-center gap-space-xs">
+  <h2 class="font-headline-sm text-headline-sm text-on-surface" id="user-display-name">Cinéfilo Curador</h2>
+  <span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-wider" id="user-role-badge">Miembro Gold</span>
+  </div>
+  <p class="font-body-sm text-body-sm text-on-surface-variant" id="user-subtext">
+              Algoritmo calibrado: <strong class="text-primary">98% afinidad</strong> con Nouvelle Vague &amp; Thrillers Distópicos.
+            </p>
+  </div>
+  </div>
+  <!-- Right: Saved Counter & Interactive Actions -->
+  <div class="flex items-center gap-space-sm flex-wrap w-full lg:w-auto justify-end">
+  <div class="flex items-center gap-space-xs px-space-md py-2 bg-surface-container-low rounded-xl">
+  <span class="material-symbols-outlined text-primary text-[20px]">bookmark</span>
+  <span class="font-label-meta text-label-meta text-on-surface-variant">Mi Lista Guardada:</span>
+  <span class="font-label-prominent text-label-prominent text-on-surface" id="saved-count-pill">4 títulos</span>
+  </div>
+  <button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-secondary-container font-label-badge text-label-badge text-on-surface uppercase tracking-wider transition-colors flex items-center gap-1" id="btn-session-action" onclick="openAuthModal()">
+  <span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+  <span class="">Cambiar Perfil</span>
+  </button>
+  <button class="p-2 rounded-xl bg-error-container text-on-error-container hover:brightness-95 transition-all" id="btn-logout" onclick="handleLogout()" title="Cerrar sesión">
+  <span class="material-symbols-outlined text-[20px]">logout</span>
+  </button>
+  </div>
+  </div>
+  </section>
+  <!-- QUICK MOOD TAPESTRY (VIBRATION DEL MOMENTO) -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-sm" id="vibe-section">
+  <div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-space-sm gap-2">
+  <div>
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">Sintonizador Emocional</span>
+  <h3 class="font-headline-sm text-headline-sm text-on-surface">¿Qué necesita tu espíritu hoy?</h3>
+  </div>
+  <span class="font-label-meta text-label-meta text-on-surface-variant">Filtro instantáneo de catálogo</span>
+  </div>
+  <!-- Mood Ribbons -->
+  <div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar">
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-primary-container text-on-primary-container shadow-sm shrink-0" onclick="filterByMood('all', this)">
+            🔥 Todos los Ritmos
+          </button>
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-surface-container-low text-on-surface hover:bg-secondary-container shrink-0" onclick="filterByMood('mente', this)">
+            🤯 Mente Explotada
+          </button>
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-surface-container-low text-on-surface hover:bg-secondary-container shrink-0" onclick="filterByMood('mantita', this)">
+            🍦 Mantita y Helado
+          </button>
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-surface-container-low text-on-surface hover:bg-secondary-container shrink-0" onclick="filterByMood('adrenalina', this)">
+            ⚡ Adrenalina Pura
+          </button>
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-surface-container-low text-on-surface hover:bg-secondary-container shrink-0" onclick="filterByMood('cero-drama', this)">
+            😌 Cero Drama
+          </button>
+  <button class="mood-btn px-space-md py-2 rounded-full font-label-badge text-label-badge uppercase tracking-wider transition-all bg-surface-container-low text-on-surface hover:bg-secondary-container shrink-0" onclick="filterByMood('melancolia', this)">
+            🌧️ Melancolía Bella
+          </button>
+  </div>
+  </div>
+  </section>
+  <!-- LIVE REAL-TIME SOCIAL FEED & DISCOVERY GRID (PARA TI) -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-md" id="feed-section">
+  <!-- Section Header & Filter Tabs -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-md">
+  <div>
+  <div class="flex items-center gap-space-xs">
+  <span class="w-3 h-3 rounded-full bg-primary-container"></span>
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">Social Streaming Feed</span>
+  </div>
+  <h2 class="font-headline-lg text-headline-lg text-on-surface">Curaduría Social &amp; Reseñas 'Para Ti'</h2>
+  </div>
+  <!-- Feed Mode Switcher -->
+  <div class="flex bg-surface-container-low p-1 rounded-xl shadow-inner">
+  <button class="feed-tab-btn px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-badge text-label-badge uppercase tracking-wide text-on-surface shadow-sm" onclick="switchFeedTab('para-ti', this)">
+            🔥 Para Ti
+          </button>
+  <button class="feed-tab-btn px-space-md py-1.5 rounded-lg font-label-badge text-label-badge uppercase tracking-wide text-on-surface-variant hover:text-on-surface" onclick="switchFeedTab('siguiendo', this)">
+            ✨ Siguiendo
+          </button>
+  <button class="feed-tab-btn px-space-md py-1.5 rounded-lg font-label-badge text-label-badge uppercase tracking-wide text-on-surface-variant hover:text-on-surface" onclick="switchFeedTab('tendencias', this)">
+            🏆 Tendencias
+          </button>
+  </div>
+  </div>
+  <!-- FEED POSTS CONTAINER (Social Cards with Likes, Live Comments, and Save to LocalStorage) -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg" id="feed-posts-container">
+  <!-- CARD 1 -->
+  <article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-mood="mente" data-post-id="film-1">
+  <div>
+  <!-- Poster / Still Header -->
+  <div class="relative h-64 w-full overflow-hidden">
+  <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Cinematic production still of a sleek neon-lit neo-tokyo cityscape at dusk with warm golden and cyan atmospheric volumetric lighting, cinematic anamorphic bokeh, high contrast 35mm film aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ4H6mg6CVFAVC2PUUrIwu6ZPYNVxy3oF7UeaZmmAhPEQ2TQ39HvQw4T0QDecTRvFjRLr0sVCqqmxBSu-kThBJEh9oF90bzT5gueByDyGSwOvCAJiFs-kkBRN38k8tenX7KE47_UBNOD6sVuWyjhBX7933hymtevRaeye5378D4qFOOysCCpIrD_e7qHXG53AeXnsUGEDmEpenE6vWfJhuZS6LrvWKdI1Pi-52egK7D3DY0hdNoDLO">
+  <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+  <span class="absolute top-3 left-3 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-md font-label-badge text-label-badge text-on-surface uppercase tracking-wider">
+                Prime Video • Max
+              </span>
+  <span class="absolute top-3 right-3 px-2 py-0.5 bg-primary-container text-on-primary-container rounded-md font-label-badge text-label-badge font-bold">
+                98% Afinidad
+              </span>
+  <div class="absolute bottom-3 left-3 right-3 text-inverse-on-surface">
+  <span class="font-label-meta text-label-meta text-primary-fixed uppercase tracking-wider">Denis Villeneuve • 2024</span>
+  <h3 class="font-headline-sm text-headline-sm leading-tight text-white">Duna: Parte Dos (Edición Expandida)</h3>
+  </div>
+  </div>
+  <!-- Review Editorial Body -->
+  <div class="p-space-md flex flex-col gap-space-sm">
+  <div class="flex items-center justify-between">
+  <div class="flex items-center gap-space-xs">
+  <img class="w-7 h-7 rounded-full object-cover" data-alt="Close-up editorial avatar of a woman film critic wearing minimalist glasses with soft ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnqjHGLDe9JdzCGlmUzb1zdgTdCh3Tr8kXBDT3cscOqseBtgzl1-5iemQcS53bivoMCRapfmyX9JDf7dYV2catAp-f5UAsf7jB82a7j5PA6quYhEZ0tsE092igMu-Paws_JjEtwrZIg8Ltqz2Ju8DtpqHO0QosAD-Yiw5gWRAUY8554gSwxntdr8DkOJZl25ow7l8X4MuTuR1XVuQakTBI7IaGRr1q1na0c7OzK4LTQuZphQCDCbqi">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Elena Belmonte</span>
+  </div>
+  <div class="flex items-center text-primary-container">
+  <span class="material-symbols-outlined text-[18px]">star</span>
+  <span class="font-label-prominent text-label-prominent ml-1 text-on-surface">4.9</span>
+  <span class="font-label-meta text-label-meta text-on-surface-variant ml-1">/ 5.0</span>
+  </div>
+  </div>
+  <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                "Una sinfonía visual abrumadora donde el diseño sonoro y el montaje rozan la perfección operística. No se ve: se experimenta en el plexo solar."
+              </p>
+  <div class="flex flex-wrap gap-1">
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">🤯 Mente Explotada</span>
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">Sci-Fi Crítico</span>
+  </div>
+  </div>
+  </div>
+  <!-- Social Action Bar -->
+  <div class="px-space-md pb-space-md pt-space-xs bg-surface-container-lowest">
+  <div class="flex items-center justify-between py-2 bg-surface-container-low/60 rounded-xl px-space-sm mb-space-sm">
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors" onclick="togglePostLike('film-1', this)">
+  <span class="material-symbols-outlined text-[20px]">favorite_border</span>
+  <span class="font-label-badge text-label-badge like-count">342</span>
+  </button>
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleCommentDrawer('film-1')">
+  <span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+  <span class="font-label-badge text-label-badge comment-count">18</span>
+  </button>
+  <button class="save-film-btn flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleSaveFilm('Duna: Parte Dos', 'Denis Villeneuve', 'film-1', this)">
+  <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+  <span class="font-label-badge text-label-badge">Guardar</span>
+  </button>
+  </div>
+  <!-- Collapsible Live Comments Container -->
+  <div class="hidden flex-col gap-2 pt-space-xs" id="comments-film-1">
+  <div class="comments-list max-h-36 overflow-y-auto flex flex-col gap-1.5 pr-1">
+  <div class="bg-surface-container p-2 rounded-lg text-body-sm">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Javier C.</span>
+  <p class="text-on-surface-variant">El trabajo de sonido con los gusanos de arena es historia del cine.</p>
+  </div>
+  <div class="bg-surface-container p-2 rounded-lg text-body-sm">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Clara R.</span>
+  <p class="text-on-surface-variant">Totalmente de acuerdo, la vi en IMAX tres veces.</p>
+  </div>
+  </div>
+  <!-- Quick Add Comment Form -->
+  <div class="flex gap-1.5 mt-1">
+  <input class="comment-input flex-1 bg-surface-container px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="Escribe tu opinión cinéfila..." type="text">
+  <button class="px-space-sm py-1.5 bg-primary-container text-on-primary-container rounded-lg font-label-badge text-label-badge uppercase hover:brightness-105" onclick="submitComment('film-1', this)">
+                  Enviar
+                </button>
+  </div>
+  </div>
+  </div>
+  </article>
+  <!-- CARD 2 -->
+  <article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-mood="mantita" data-post-id="film-2">
+  <div>
+  <!-- Poster / Still Header -->
+  <div class="relative h-64 w-full overflow-hidden">
+  <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Cinematic frame of a quiet sun-drenched Tokyo ramen shop interior, soft steam rising, warm wood tones, amber ambient lighting, delicate gentle intimacy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCYAOVSQBd1AMRIKG9_RVbD3ue6lupEA8fCeHjsOexlb2UU6lnVr-NzqxWaaKg3Yj_W0uteubXDaaNP7kNr1lLJA5rnvVTKn_44N04_AKaHuZMTae-mrpuaiKYMXnOi95ibaA9j-B-tHtOrP0gqUI4abI6RaVo6_fhjDI6Jz-8TYmSk7r-UzslkGQk6Re9pRmGfWOhQUNpK3QKnIZY6cEpFu2q2X_pZmortYotlIHi9sLcZwXQqanU">
+  <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+  <span class="absolute top-3 left-3 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-md font-label-badge text-label-badge text-on-surface uppercase tracking-wider">
+                MUBI • Filmin
+              </span>
+  <span class="absolute top-3 right-3 px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded-md font-label-badge text-label-badge font-bold">
+                95% Afinidad
+              </span>
+  <div class="absolute bottom-3 left-3 right-3 text-inverse-on-surface">
+  <span class="font-label-meta text-label-meta text-primary-fixed uppercase tracking-wider">Wim Wenders • 2023</span>
+  <h3 class="font-headline-sm text-headline-sm leading-tight text-white">Perfect Days</h3>
+  </div>
+  </div>
+  <!-- Review Editorial Body -->
+  <div class="p-space-md flex flex-col gap-space-sm">
+  <div class="flex items-center justify-between">
+  <div class="flex items-center gap-space-xs">
+  <img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait photo of a young male film curator with warm studio lighting and relaxed expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUqV55XawCDYSENmx9qZothoCbfrCk6k18B0M4m0Ji4WfcDQUqgDBXYrK8o-RGOZL9RcY-MdfEOuFL5TR_Hrpr0t5WDugNYzh1i_qhCnePS2gdnJ0mfvMztTaslwX1mvjdGbZay-VEvnbVeuHlXU3yFpoEn_-tHurz8dhP62noCa8FffRQybK8EY-YYblE0AVILGawAecqc6EPI93ijRw7IOIBkte82_bN-q0wQTpuwLMVBayE7bzT">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Carlos Santoro</span>
+  </div>
+  <div class="flex items-center text-primary-container">
+  <span class="material-symbols-outlined text-[18px]">star</span>
+  <span class="font-label-prominent text-label-prominent ml-1 text-on-surface">4.8</span>
+  <span class="font-label-meta text-label-meta text-on-surface-variant ml-1">/ 5.0</span>
+  </div>
+  </div>
+  <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                "Un antídoto puro contra la ansiedad contemporánea. Kōji Yakusho regala una de las interpretaciones más luminosas y templadas del siglo."
+              </p>
+  <div class="flex flex-wrap gap-1">
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">🍦 Mantita y Helado</span>
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">Poesía Cotidiana</span>
+  </div>
+  </div>
+  </div>
+  <!-- Social Action Bar -->
+  <div class="px-space-md pb-space-md pt-space-xs bg-surface-container-lowest">
+  <div class="flex items-center justify-between py-2 bg-surface-container-low/60 rounded-xl px-space-sm mb-space-sm">
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors" onclick="togglePostLike('film-2', this)">
+  <span class="material-symbols-outlined text-[20px]">favorite_border</span>
+  <span class="font-label-badge text-label-badge like-count">219</span>
+  </button>
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleCommentDrawer('film-2')">
+  <span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+  <span class="font-label-badge text-label-badge comment-count">9</span>
+  </button>
+  <button class="save-film-btn flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleSaveFilm('Perfect Days', 'Wim Wenders', 'film-2', this)">
+  <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+  <span class="font-label-badge text-label-badge">Guardar</span>
+  </button>
+  </div>
+  <div class="hidden flex-col gap-2 pt-space-xs" id="comments-film-2">
+  <div class="comments-list max-h-36 overflow-y-auto flex flex-col gap-1.5 pr-1">
+  <div class="bg-surface-container p-2 rounded-lg text-body-sm">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Nuria M.</span>
+  <p class="text-on-surface-variant">Lloré de pura paz en los créditos finales con Lou Reed sonando.</p>
+  </div>
+  </div>
+  <div class="flex gap-1.5 mt-1">
+  <input class="comment-input flex-1 bg-surface-container px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="Escribe tu opinión cinéfila..." type="text">
+  <button class="px-space-sm py-1.5 bg-primary-container text-on-primary-container rounded-lg font-label-badge text-label-badge uppercase hover:brightness-105" onclick="submitComment('film-2', this)">
+                  Enviar
+                </button>
+  </div>
+  </div>
+  </div>
+  </article>
+  <!-- CARD 3 -->
+  <article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-mood="adrenalina" data-post-id="film-3">
+  <div>
+  <!-- Poster / Still Header -->
+  <div class="relative h-64 w-full overflow-hidden">
+  <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Moody cinematic production still of a nighttime highway chase, taillights streaking across wet asphalt, intense shadows with golden flare reflections, dramatic crime cinema mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUvBcvcKa9skpSdptRhgAuU5iyRizC18R9kcp9MJCKoh83pNA6kqIKdaLpx5lmDaujtFbnIBgGauC-feYX6RnbBGID87wtYPBAJg_GSntxGU9XXDDVEUL5o1BLqpRUKBtNSBN6RTxYFUry2fRAr_q8J8RBxrqzGwD2gTdRMnOsr7fe3MhfYPOL-2f-smWEG9W0ZC-9fo9YkzshLq6igTAjFb84QsyuGn23wjF5SMGzFZUY4x8hIMzo">
+  <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+  <span class="absolute top-3 left-3 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-md font-label-badge text-label-badge text-on-surface uppercase tracking-wider">
+                Netflix • Apple TV+
+              </span>
+  <span class="absolute top-3 right-3 px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded-md font-label-badge text-label-badge font-bold">
+                91% Afinidad
+              </span>
+  <div class="absolute bottom-3 left-3 right-3 text-inverse-on-surface">
+  <span class="font-label-meta text-label-meta text-primary-fixed uppercase tracking-wider">David Fincher • 2023</span>
+  <h3 class="font-headline-sm text-headline-sm leading-tight text-white">The Killer</h3>
+  </div>
+  </div>
+  <!-- Review Editorial Body -->
+  <div class="p-space-md flex flex-col gap-space-sm">
+  <div class="flex items-center justify-between">
+  <div class="flex items-center gap-space-xs">
+  <img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait photography of an arts critic woman smiling gently, dressed in monochrome chic attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAu4219INEA4UesgFjqs73JZBrDyZ7QYDX_4BWSxDdknETurq4xavTCwnzbQXG1zTLxfZi_YgEbgWh-qecZOwcfwXMK9cYAMQURmPkVEaU89wMuojUD2FRqqkvuGuC85JZDDKUG_wcrICgTbsATVzWxogLKyAH_YcjaZWJCg4xsLfYv1b4ctcQ7SH7vB_RVgopvJdNUR7uN6RByuhblwU2rqi2nSre94gmnlRlY9lZrENqX0s1Ry1o">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Mariana De la Torre</span>
+  </div>
+  <div class="flex items-center text-primary-container">
+  <span class="material-symbols-outlined text-[18px]">star</span>
+  <span class="font-label-prominent text-label-prominent ml-1 text-on-surface">4.6</span>
+  <span class="font-label-meta text-label-meta text-on-surface-variant ml-1">/ 5.0</span>
+  </div>
+  </div>
+  <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                "Un ejercicio metódico de precisión clínica. Michael Fassbender ejecuta su coreografía fría con la cadencia de una canción de The Smiths."
+              </p>
+  <div class="flex flex-wrap gap-1">
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">⚡ Adrenalina Pura</span>
+  <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-badge text-label-badge text-on-surface">Neo-Noir Preciso</span>
+  </div>
+  </div>
+  </div>
+  <!-- Social Action Bar -->
+  <div class="px-space-md pb-space-md pt-space-xs bg-surface-container-lowest">
+  <div class="flex items-center justify-between py-2 bg-surface-container-low/60 rounded-xl px-space-sm mb-space-sm">
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors" onclick="togglePostLike('film-3', this)">
+  <span class="material-symbols-outlined text-[20px]">favorite_border</span>
+  <span class="font-label-badge text-label-badge like-count">481</span>
+  </button>
+  <button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleCommentDrawer('film-3')">
+  <span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+  <span class="font-label-badge text-label-badge comment-count">31</span>
+  </button>
+  <button class="save-film-btn flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleSaveFilm('The Killer', 'David Fincher', 'film-3', this)">
+  <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+  <span class="font-label-badge text-label-badge">Guardar</span>
+  </button>
+  </div>
+  <div class="hidden flex-col gap-2 pt-space-xs" id="comments-film-3">
+  <div class="comments-list max-h-36 overflow-y-auto flex flex-col gap-1.5 pr-1">
+  <div class="bg-surface-container p-2 rounded-lg text-body-sm">
+  <span class="font-label-prominent text-label-prominent text-on-surface">Rodrigo F.</span>
+  <p class="text-on-surface-variant">La pelea en la casa de Florida es top 3 escenas de acción de Fincher.</p>
+  </div>
+  </div>
+  <div class="flex gap-1.5 mt-1">
+  <input class="comment-input flex-1 bg-surface-container px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="Escribe tu opinión cinéfila..." type="text">
+  <button class="px-space-sm py-1.5 bg-primary-container text-on-primary-container rounded-lg font-label-badge text-label-badge uppercase hover:brightness-105" onclick="submitComment('film-3', this)">
+                  Enviar
+                </button>
+  </div>
+  </div>
+  </div>
+  </article>
+  </div>
+  </section>
+  <!-- DYNAMIC CATALOG SEARCH & MULTI-FILTER SECTION -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-md" id="catalog-section">
+  <div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+  <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md mb-space-md">
+  <div>
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">Explorador Inteligente</span>
+  <h2 class="font-headline-md text-headline-md text-on-surface">Catálogo Maestro SPOTLIGHT</h2>
+  </div>
+  <!-- Live Reactive Input Search -->
+  <div class="w-full md:w-80 relative">
+  <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="catalog-search-input" oninput="handleCatalogSearch(this.value)" placeholder="Buscar película, director o año..." type="text">
+  <span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+  </div>
+  </div>
+  <!-- Platform Provider Filters -->
+  <div class="flex items-center gap-space-xs flex-wrap pb-space-md">
+  <span class="font-label-meta text-label-meta text-on-surface-variant mr-1">Plataforma:</span>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-primary-container text-on-primary-container font-label-badge text-label-badge" onclick="filterByPlatform('all', this)">Todos</button>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container font-label-badge text-label-badge" onclick="filterByPlatform('Netflix', this)">Netflix</button>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container font-label-badge text-label-badge" onclick="filterByPlatform('Max', this)">Max</button>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container font-label-badge text-label-badge" onclick="filterByPlatform('Prime Video', this)">Prime Video</button>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container font-label-badge text-label-badge" onclick="filterByPlatform('Apple TV+', this)">Apple TV+</button>
+  <button class="platform-chip px-3 py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container font-label-badge text-label-badge" onclick="filterByPlatform('Filmin', this)">Filmin / MUBI</button>
+  </div>
+  <!-- Live Searchable Movie Cards Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-space-md" id="catalog-grid">
+  <!-- Catalog Item 1 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="Celine Song" data-platform="Filmin" data-title="Past Lives" onclick="previewFilmModal('Past Lives', 'Celine Song', '9.4', 'Filmin')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic vertical poster framing two souls looking at each other across a subway platform in New York, warm amber golden dusk hues, poignant Korean-American indie cinema aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVMPpfntNQ8JYtO0p7LK0g3VEek7DzdXGD-8-5xVA07MT4hvOrvoMt8OBDi6HR2fT94rozMHs__YLtnlcm66VpAGPIFkPs0u3wZ6-W_dpl69wifUBtHphHfrk1XPHqI4JFDjpWDwPwwF8rrugWrY9ClAFkyGgGCC8SB1BsZ4_Iu_8VTm3dWz_7cL17mhxZenKq292zlssBVFzWq3j_nlbB9NPfm6v_4DtFLNmUEQ0Xj0k7ACYCiphN">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 9.4</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Filmin</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Past Lives</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">Celine Song • 2023</p>
+  </div>
+  </div>
+  <!-- Catalog Item 2 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="Justine Triet" data-platform="Max" data-title="Anatomy of a Fall" onclick="previewFilmModal('Anatomy of a Fall', 'Justine Triet', '9.1', 'Max')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic poster of snowy French alpine chalet courtroom drama with Sandra Hüller, cool alpine blues, high crisp contrast, Palme d'Or editorial styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArIgk13ShNG8At0NcM4RQc6Lt0TEQ6i9yCCVppVMu9duIXe81iX5XSlTtDxcAYsJ0p3a2fMBvdKRpCa33CNZPoo5qzQsTZ_8gUztLRtycf4npmrA2_p9yWwy3HaDoDJGSuXpl9WJfC-eEPs_QH2AvjSlW_xDIMZOz8gLYEkl9xWY9iWbIpuHDo19etnz3lfO6hHalVGzuf_y0Mef-xBel-E0SgJ5ks1MdQp2XTN4w674gs_mW-7Tt6">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 9.1</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Max</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Anatomy of a Fall</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">Justine Triet • 2023</p>
+  </div>
+  </div>
+  <!-- Catalog Item 3 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="Yorgos Lanthimos" data-platform="Disney+" data-title="Poor Things" onclick="previewFilmModal('Poor Things', 'Yorgos Lanthimos', '9.2', 'Disney+')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Surreal Victorian high-fashion portrait with Emma Stone, saturated pastel yellows and vivid sky blues, baroque eccentricity and fine art cinema composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQJ07XQ4SJjHeDQiRt-EmirLdQHS-2Rh2FcqCSrLnU93fsjobFOCBE3AcCd7DOoHg0vFEYC9gKLkrqOjx8mFKsWmEuI6fkEMnVpY5pqAUHih05UcPxrR01S2LR7_UeZCa0z608THqn_S2j5U2pKfrIeIFPlQq380ip4IJjbpSKtCFe5aqsxk3s0VB6jczzi2eJcsbQ-iQLwOwKuYF3cYyCgnkeyP_wqjnDT-UKyUE929Nsc_oQNLao">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 9.2</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Disney+</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Poor Things</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">Yorgos Lanthimos • 2023</p>
+  </div>
+  </div>
+  <!-- Catalog Item 4 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="Luca Guadagnino" data-platform="Prime Video" data-title="Challengers" onclick="previewFilmModal('Challengers', 'Luca Guadagnino', '8.9', 'Prime Video')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High adrenaline sports cinema close-up portrait of Zendaya in chic tennis sunglasses with warm golden hour reflections and intense electric gaze." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnABU9ydLRWjhQI3jOuXshAhQcXvxO3EpwkhjdNodrp1fugicdZhh_OkDr6Q-IapZ2dS2CL1TbXOJv7IoxoChgl0a-Zpi_EECgNvcMhM2yNSYp5Lw8iLGqQh3kxNx6MRtkzIOmVtsZPasCrepBHoLzCgXVIkpDMFCI9PytA2_BiMM9ljqttPl6lAX_EC93jZhV4X4OLGXIzoKfojWq690peYQanSbeVdy02qGJ6qrDJbVOAHucA0nF">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 8.9</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Prime Video</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Challengers</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">L. Guadagnino • 2024</p>
+  </div>
+  </div>
+  <!-- Catalog Item 5 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="J.A. Bayona" data-platform="Netflix" data-title="Society of the Snow" onclick="previewFilmModal('Society of the Snow', 'J.A. Bayona', '9.0', 'Netflix')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Majestic and harrowing snow-covered Andes mountain peaks with warm golden sunlight piercing deep blue sub-zero clouds, epic survival cinema composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLLd-XOoTErQe6XobKSUyLEkXmXeJALBeVDwB6TN9mG6niIAg0rJi3sXYZmDeNUVJ1yfzlJ2qk-z36BwIzp3QUldPx6txmNsd3jM1rSUg9hepVIRw1HQ3RuoHtLCW9cA0EKWRplTeMokCYvMM8xbHExt7WNIJQz_u3Slq-hsvkpUxNqY8zXa5gZ3R4-01tP7PkROwSFK-Ua331LiyH8uaeEJxZrGgOt5PU_YBl7bXYgC9erFeC-8-x">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 9.0</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Netflix</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Society of the Snow</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">J.A. Bayona • 2023</p>
+  </div>
+  </div>
+  <!-- Catalog Item 6 -->
+  <div class="catalog-card group cursor-pointer flex flex-col gap-2" data-director="Martin Scorsese" data-platform="Apple TV+" data-title="Killers of the Flower Moon" onclick="previewFilmModal('Killers of the Flower Moon', 'Martin Scorsese', '9.3', 'Apple TV+')">
+  <div class="relative aspect-[2/3] rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
+  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic period drama portrait of Lily Gladstone in traditional Osage clothing, rich earthy tones, intense historical depth and warm golden natural key light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpBcJ9mHp51WN3kjR5v7k-hDVTT7JX6tDLQCG5cAmr69yq_RpCTwhM1SQ0Gf1r8uJoZl2XMnKLb8T4tKcNhzNSp8KNljlgTl_OnzceIqPIpW2RVSoVaMOPDM4qbUiGHEmO1rf29hsOgw0wdykDRlG3kPRYwGJPixRDn2O3XGhXGdCz1VhlPPxGCq_VF-VY1ihG8fonjCU_lDimxB5CyyiXDI_pU2f3Tx4OqgHXlYXuZEgj6GaEC_Eb">
+  <span class="absolute top-2 right-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[11px] font-bold text-on-surface">★ 9.3</span>
+  <span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold text-primary">Apple TV+</span>
+  </div>
+  <div>
+  <h4 class="font-label-prominent text-label-prominent text-on-surface truncate">Killers of Flower Moon</h4>
+  <p class="font-label-meta text-label-meta text-on-surface-variant truncate">M. Scorsese • 2023</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- INTERACTIVE PLAYGROUND: RULETA DEL CINE & QUIZ EXPRESS 60s -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-md">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+  <!-- MODULE A: RULETA DEL CINE -->
+  <div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between" id="roulette-section">
+  <div>
+  <div class="flex items-center justify-between mb-space-xs">
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">¿No sabes qué ver?</span>
+  <span class="material-symbols-outlined text-primary text-[24px]">casino</span>
+  </div>
+  <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Ruleta Cinemática Instantánea</h3>
+  <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Deja que el azar curado elija tu noche. Sin desplazamientos infinitos, con garantía editorial SPOTLIGHT.
+            </p>
+  <!-- Roulette Visual Reel -->
+  <div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col items-center justify-center text-center relative overflow-hidden min-h-[160px]"><div class="flex flex-col items-center py-space-sm text-center" id="roulette-display"><span class="material-symbols-outlined text-[44px] text-primary mb-1">motion_photos_on</span><p class="font-label-prominent text-label-prominent text-on-surface text-lg">Presiona Girar Ruleta</p><span class="font-label-meta text-label-meta text-on-surface-variant">Base curada de 850+ obras premiadas</span></div><div class="hidden w-full flex-col md:flex-row items-center gap-space-md p-space-sm rounded-xl bg-surface-container-lowest shadow-sm text-left" id="roulette-winner-card"><div class="relative w-28 h-40 shrink-0 rounded-lg overflow-hidden shadow-md"><img alt="Poster ganador de la ruleta" class="w-full h-full object-cover" id="roulette-winner-poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVMPpfntNQ8JYtO0p7LK0g3VEek7DzdXGD-8-5xVA07MT4hvOrvoMt8OBDi6HR2fT94rozMHs__YLtnlcm66VpAGPIFkPs0u3wZ6-W_dpl69wifUBtHphHfrk1XPHqI4JFDjpWDwPwwF8rrugWrY9ClAFkyGgGCC8SB1BsZ4_Iu_8VTm3dWz_7cL17mhxZenKq292zlssBVFzWq3j_nlbB9NPfm6v_4DtFLNmUEQ0Xj0k7ACYCiphN"><span class="absolute bottom-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded font-bold text-[10px] text-primary uppercase" id="roulette-winner-platform">MUBI</span></div><div class="flex flex-col justify-between flex-1 gap-1"><div class="flex items-center justify-between gap-1"><span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-label-badge uppercase tracking-wider">¡Selección Ganadora!</span><div class="flex items-center text-primary"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-label-badge text-label-badge ml-1 text-on-surface" id="roulette-winner-score">4.9</span></div></div><h4 class="font-headline-sm text-headline-sm text-on-surface" id="roulette-winner-title">Aftersun</h4><p class="font-label-meta text-label-meta text-on-surface-variant" id="roulette-winner-director">Charlotte Wells • 2022</p><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mt-1" id="roulette-winner-synopsis">Un conmovedor retrato de la memoria, el amor paternal y los momentos fugaces durante unas vacaciones en Turquía que marcan una vida entera.</p></div></div><div class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-500 bg-gradient-to-r from-primary-fixed/20 via-transparent to-primary-fixed/20" id="roulette-sparkles"></div></div>
+  </div>
+  <div class="pt-space-md flex gap-space-xs">
+  <button class="flex-1 py-3 px-space-lg bg-primary-container text-on-primary-container font-label-prominent text-label-prominent rounded-xl hover:brightness-105 transition-all shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-space-sm cursor-pointer" id="roulette-spin-btn" onclick="spinRoulette()"><span class="material-symbols-outlined text-[22px]">casino</span><span class="">Girar Ruleta Curada</span></button>
+  <button class="hidden px-space-md py-3 bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-prominent text-label-prominent rounded-xl transition-all" id="roulette-save-btn" onclick="saveRoulettePick()">
+  <span class="material-symbols-outlined">bookmark_add</span>
+  </button>
+  </div>
+  </div>
+  <!-- MODULE B: QUIZ EXPRESS 60s -->
+  <div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between" id="quiz-section">
+  <div>
+  <div class="flex items-center justify-between mb-space-xs">
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">Diagnóstico en 3 Pasos</span>
+  <span class="material-symbols-outlined text-primary text-[24px]">psychology_alt</span>
+  </div>
+  <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Quiz Cinemático: 'Qué Ver Hoy'</h3>
+  <!-- Step indicator -->
+  <div class="flex items-center gap-2 mb-space-md">
+  <div class="h-1.5 flex-1 rounded-full bg-primary-container" id="quiz-bar-1"></div>
+  <div class="h-1.5 flex-1 rounded-full bg-surface-container-highest" id="quiz-bar-2"></div>
+  <div class="h-1.5 flex-1 rounded-full bg-surface-container-highest" id="quiz-bar-3"></div>
+  </div>
+  <!-- Step 1 -->
+  <div class="quiz-step flex flex-col gap-space-sm" id="quiz-step-1">
+  <p class="font-label-prominent text-label-prominent text-on-surface">1. ¿Cuánto tiempo libre tienes para dedicarle?</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(1, 'menos de 90 min')">
+                  ⏱️ Menos de 90 min (Ligero &amp; conciso)
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(1, '2 horas estándar')">
+                  🎬 ~2 Horas (Película estándar redonda)
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(1, 'maratón 3+ horas')">
+                  ⏳ 3+ Horas (Quiero una experiencia épica)
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(1, 'miniserie 4 episodios')">
+                  📺 Miniserie adictiva autoconclusiva
+                </button>
+  </div>
+  </div>
+  <!-- Step 2 -->
+  <div class="quiz-step hidden flex flex-col gap-space-sm" id="quiz-step-2">
+  <p class="font-label-prominent text-label-prominent text-on-surface">2. ¿Con quién estás viendo la pantalla?</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(2, 'solo con auriculares')">
+                  🎧 A solas con auriculares (Inmersión total)
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(2, 'en pareja')">
+                  🥂 En pareja (Buen diálogo y química)
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(2, 'amigos y pizza')">
+                  🍕 Amigos y risas / adrenalina
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="answerQuiz(2, 'plan familiar')">
+                  🛋️ Con familia (Apto para todo público)
+                </button>
+  </div>
+  </div>
+  <!-- Step 3 -->
+  <div class="quiz-step hidden flex flex-col gap-space-sm" id="quiz-step-3">
+  <p class="font-label-prominent text-label-prominent text-on-surface">3. Elige el tono estético predominante:</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="finishQuiz('Fotografía hipnótica y atmósfera')">
+                  🎨 Fotografía hipnótica y poética
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="finishQuiz('Giros de guion inesperados')">
+                  🪤 Giros de guión que no te dejen pestañear
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="finishQuiz('Comedia ácida inteligente')">
+                  🥂 Comedia ácida e inteligente
+                </button>
+  <button class="p-3 text-left bg-surface-container-low hover:bg-secondary-container rounded-xl font-body-sm text-body-sm text-on-surface transition-colors" onclick="finishQuiz('Tensión psicológica pura')">
+                  👁️ Tensión psicológica contenida
+                </button>
+  </div>
+  </div>
+  <!-- Quiz Result Display -->
+  <div class="hidden flex-col gap-2 p-space-md bg-secondary-container/40 rounded-xl text-center" id="quiz-result">
+  <span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">Recomendación Match 99%</span>
+  <h4 class="font-headline-sm text-headline-sm text-on-surface" id="quiz-result-title">Drive My Car (Ryûsuke Hamaguchi)</h4>
+  <p class="font-body-sm text-body-sm text-on-surface-variant" id="quiz-result-desc">
+                Disponible en MUBI • Ideal para tu sesión en soledad con inmersión visual.
+              </p>
+  <div class="pt-2 flex justify-center gap-2">
+  <button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-badge text-label-badge text-on-surface" onclick="resetQuiz()">Reiniciar Quiz</button>
+  <button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-badge text-label-badge" onclick="saveCurrentQuizResult()">Guardar a Mi Lista</button>
+  </div>
+  </div>
+  </div>
+  <div class="pt-space-md">
+  <p class="font-label-meta text-label-meta text-on-surface-variant text-center">
+              Respuestas ponderadas por la redacción de críticos SPOTLIGHT.
+            </p>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- ÁGORA DE DEBATES CINÉFILOS (COMMUNITY VOTING & POLLS) -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-md" id="agora-section">
+  <div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+  <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm mb-space-md">
+  <div>
+  <div class="flex items-center gap-space-xs">
+  <span class="w-3 h-3 rounded-full bg-primary-container"></span>
+  <span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">El Ágora de Crítica</span>
+  </div>
+  <h2 class="font-headline-lg text-headline-lg text-on-surface">Debate de la Semana: El Dilema</h2>
+  </div>
+  <div class="flex items-center gap-2 bg-surface-container-low px-space-md py-1.5 rounded-xl font-label-meta text-label-meta text-on-surface-variant">
+  <span class="material-symbols-outlined text-[18px] text-primary">how_to_vote</span>
+  <span id="agora-total-votes" class="">1,842 votos emitidos</span>
+  </div>
+  </div>
+  <!-- Debate Topic Container -->
+  <div class="bg-surface-container-low/70 rounded-2xl p-space-lg flex flex-col lg:flex-row gap-space-lg items-center">
+  <div class="flex-1">
+  <span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-wider">
+              Votación Viva
+            </span>
+  <h3 class="font-headline-md text-headline-md text-on-surface mt-2 mb-2">
+              ¿Es el 'Cine de Autor' incompatible con los presupuestos astronómicos contemporáneos de streaming?
+            </h3>
+  <p class="font-body-md text-body-md text-on-surface-variant">
+              Desde 'The Irishman' hasta las macro-inversiones en franquicias, vota tu postura cinéfila con argumentación directa.
+            </p>
+  </div>
+  <!-- Interactive Poll Buttons & Bars -->
+  <div class="w-full lg:w-96 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+  <!-- Option A -->
+  <div class="flex flex-col gap-1 cursor-pointer" onclick="voteAgora('A')">
+  <div class="flex justify-between font-label-prominent text-label-prominent text-on-surface text-body-sm">
+  <span class="">Opción A: Incompatibles (mata el riesgo)</span>
+  <span class="text-primary font-bold" id="agora-pct-a">58%</span>
+  </div>
+  <div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+  <div class="h-full bg-primary-container transition-all duration-500" id="agora-bar-a" style="width: 58%;"></div>
+  </div>
+  </div>
+  <!-- Option B -->
+  <div class="flex flex-col gap-1 cursor-pointer" onclick="voteAgora('B')">
+  <div class="flex justify-between font-label-prominent text-label-prominent text-on-surface text-body-sm">
+  <span class="">Opción B: Compatibles (libertad creadora)</span>
+  <span class="text-on-surface font-bold" id="agora-pct-b">42%</span>
+  </div>
+  <div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+  <div class="h-full bg-surface-container-high transition-all duration-500" id="agora-bar-b" style="width: 42%;"></div>
+  </div>
+  </div>
+  <p class="font-label-meta text-label-meta text-center text-on-surface-variant pt-1" id="vote-notice">
+              Haz clic en una opción para sumar tu voto instantáneo.
+            </p>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- BACKOFFICE EDITORIAL ADMIN PANEL (INTEGRATED DRAWER / SECTION) -->
+  <section class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin w-full py-space-md hidden" id="admin-panel-section">
+  <div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-space-lg shadow-2xl">
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-md">
+  <div>
+  <div class="flex items-center gap-space-xs">
+  <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+  <span class="font-label-badge text-label-badge text-primary-fixed uppercase tracking-wider">Backoffice Editorial</span>
+  </div>
+  <h3 class="font-headline-md text-headline-md text-white">Panel de Control &amp; Ingesta de Catálogo</h3>
+  </div>
+  <button class="px-space-md py-1.5 bg-surface-container-high text-on-surface rounded-xl font-label-badge text-label-badge uppercase tracking-wider hover:brightness-105" onclick="toggleAdminPanel()">
+            Ocultar Panel
+          </button>
+  </div>
+  <!-- Quick Stats Metrics -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-lg">
+  <div class="bg-surface-container-lowest/10 p-space-md rounded-xl">
+  <span class="font-label-meta text-label-meta text-tertiary-fixed">Reseñas Publicadas</span>
+  <p class="font-headline-md text-headline-md text-primary-fixed">1,429</p>
+  </div>
+  <div class="bg-surface-container-lowest/10 p-space-md rounded-xl">
+  <span class="font-label-meta text-label-meta text-tertiary-fixed">Cinéfilos Conectados</span>
+  <p class="font-headline-md text-headline-md text-white">8,914</p>
+  </div>
+  <div class="bg-surface-container-lowest/10 p-space-md rounded-xl">
+  <span class="font-label-meta text-label-meta text-tertiary-fixed">Eficacia Algoritmo</span>
+  <p class="font-headline-md text-headline-md text-primary-fixed">97.8%</p>
+  </div>
+  <div class="bg-surface-container-lowest/10 p-space-md rounded-xl">
+  <span class="font-label-meta text-label-meta text-tertiary-fixed">Votos en Ágora</span>
+  <p class="font-headline-md text-headline-md text-white">14.2k</p>
+  </div>
+  </div>
+  <!-- Quick Add Film to Live Catalog Form -->
+  <form class="bg-surface-container-lowest/5 p-space-md rounded-xl flex flex-col md:flex-row gap-space-sm items-end" onsubmit="handleAdminAddFilm(event)">
+  <div class="flex-1 w-full flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-tertiary-fixed">Título de la Obra</label>
+  <input class="w-full bg-surface-container-lowest/10 px-space-sm py-2 rounded-lg text-white font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest/20" id="admin-film-title" placeholder="Ej. La Chimera" required="" type="text">
+  </div>
+  <div class="flex-1 w-full flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-tertiary-fixed">Director</label>
+  <input class="w-full bg-surface-container-lowest/10 px-space-sm py-2 rounded-lg text-white font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest/20" id="admin-film-director" placeholder="Ej. Alice Rohrwacher" required="" type="text">
+  </div>
+  <div class="w-full md:w-36 flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-tertiary-fixed">Puntuación</label>
+  <input class="w-full bg-surface-container-lowest/10 px-space-sm py-2 rounded-lg text-white font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest/20" id="admin-film-score" placeholder="9.5" required="" type="text">
+  </div>
+  <div class="w-full md:w-44 flex flex-col gap-1">
+  <label class="font-label-meta text-label-meta text-tertiary-fixed">Plataforma</label>
+  <select class="w-full bg-inverse-surface border-none px-space-sm py-2 rounded-lg text-white font-body-sm text-body-sm focus:outline-none" id="admin-film-platform">
+  <option value="MUBI">MUBI / Filmin</option>
+  <option value="Netflix">Netflix</option>
+  <option value="Max">Max</option>
+  <option value="Prime Video">Prime Video</option>
+  <option value="Apple TV+">Apple TV+</option>
+  </select>
+  </div>
+  <button class="w-full md:w-auto px-space-lg py-2 bg-primary-container text-on-primary-container font-label-prominent text-label-prominent rounded-lg hover:brightness-110 transition-all shrink-0" type="submit">
+            Publicar al Catálogo
+          </button>
+  </form>
+  </div>
+  </section>
+  <!-- PREVIEW FILM MODAL (POPUP QUICK VIEW) -->
+  <div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-md hidden items-center justify-center p-space-md" id="preview-modal">
+  <div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden p-space-lg flex flex-col gap-space-md">
+  <div class="flex items-center justify-between">
+  <span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-wider" id="preview-platform-tag">Plataforma</span>
+  <button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface" onclick="closePreviewModal()">
+  <span class="material-symbols-outlined">close</span>
+  </button>
+  </div>
+  <div>
+  <h3 class="font-headline-md text-headline-md text-on-surface" id="preview-title">Título Obra</h3>
+  <p class="font-body-md text-body-md text-on-surface-variant" id="preview-director">Director • 2024</p>
+  </div>
+  <div class="flex items-center gap-space-xs text-primary-container">
+  <span class="material-symbols-outlined text-[24px]">stars</span>
+  <span class="font-headline-sm text-headline-sm text-on-surface" id="preview-score">9.5</span>
+  <span class="font-label-meta text-label-meta text-on-surface-variant">Puntuación Media Crítica SPOTLIGHT</span>
+  </div>
+  <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Obra galardonada y verificada por el comité editorial de SPOTLIGHT. Cumple con los estándares de excelencia técnica, visión estética y resonancia narrativa.
+        </p>
+  <div class="flex gap-space-sm pt-space-xs">
+  <button class="flex-1 py-3 bg-primary-container text-on-primary-container font-label-prominent text-label-prominent rounded-xl hover:brightness-105 transition-all shadow-md flex items-center justify-center gap-2" onclick="savePreviewedFilm()">
+  <span class="material-symbols-outlined text-[20px]">bookmark</span>
+  <span class="">Añadir a Mi Lista</span>
+  </button>
+  <button class="px-space-md py-3 bg-surface-container text-on-surface font-label-prominent text-label-prominent rounded-xl hover:bg-surface-container-high transition-all" onclick="closePreviewModal()">
+            Cerrar
+          </button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- CLIENT JAVASCRIPT: PERSISTENCE, QUICK ACCESS DOCK, LIVE SEARCH & REAL INTERACTIONS -->
+  <script src="js/feedforyou.js"></script></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">SPOTLIGHT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">La plataforma cinematográfica editorial que fusiona crítica experta, brújula de estados de ánimo y curaduría sin algoritmo ciego.</p></div><div class="space-y-space-sm"><h4 class="font-label-prominent text-label-prominent text-on-surface">Navegación</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors" data-path="feed-para-ti" href="feedforyou.html">Para Ti</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="catalogo-resenas" href="catalogo.html">Catálogo Editorial</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="vibracion-del-momento" href="index.html#seccion-animo">Vibración por Ánimo</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="debates-agora" href="reviews.html">Ágora Crítica</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-label-prominent text-label-prominent text-on-surface">Experiencias</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors" data-path="ruleta-del-cine" href="catalogo.html">Ruleta del Cine</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="quiz-que-ver-hoy" href="index.html#seccion-feed">Quiz Cinemático</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="backoffice-admin" href="dashboard.html">Panel de Curadores</a></li></ul></div><div class="space-y-space-sm md:col-span-1"><h4 class="font-label-prominent text-label-prominent text-on-surface">Boletín Cinematográfico</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Un dossier semanal con gemas ocultas y estrenos imprescindibles de streaming.</p><div class="flex gap-space-xs"><input class="flex-1 bg-surface-container-low text-on-surface font-body-sm text-body-sm px-space-sm py-space-xs rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="tu@correo.com" type="email"><button class="bg-primary-container text-on-primary-container font-label-badge text-label-badge uppercase tracking-wider px-space-md py-space-xs rounded-lg hover:brightness-105 transition-all" type="button">Unirme</button></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-label-meta text-label-meta text-on-surface-variant"><p class="">© 2025 SPOTLIGHT Film &amp; Streaming Culture. Todos los derechos reservados.</p><div class="flex gap-space-lg"><a class="hover:text-on-surface transition-colors" href="login.html">Privacidad</a><a class="hover:text-on-surface transition-colors" href="login.html">Términos</a><a class="hover:text-on-surface transition-colors" href="reviews.html">Manifiesto Editorial</a></div></div></div></footer>
+
+  </body></html>

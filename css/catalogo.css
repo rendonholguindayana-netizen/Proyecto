@@ -1,0 +1,38 @@
+/* Estilos propios del catálogo */
+
+body {
+      background-color: #f8f9ff;
+      color: #1F2833;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #1F2833 20%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-subtle {
+      border-color: rgba(212, 175, 55, 0.25);
+    }
+
+/* Subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f2f8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d4af37;
+      border-radius: 9999px;
+    }
+    .badge-blur {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+/* El catálogo conserva su scrollbar visible y personalizado. */
+::-webkit-scrollbar { display: block; }
